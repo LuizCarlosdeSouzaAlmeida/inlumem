@@ -5,8 +5,8 @@ public class MainCharacterScript : MonoBehaviour
 	public Rigidbody2D mainCharacterRb;
 	public SpriteRenderer spriteRenderer;
 
-	public float jumpSpeed;
-	public float movementSpeed;
+	public float jumpSpeed = 5f;
+	public float movementSpeed = 0.01f;
 	private bool IsJumpRequested
 	{
 		get =>
@@ -25,7 +25,8 @@ public class MainCharacterScript : MonoBehaviour
 
 	void Start()
 	{
-
+		mainCharacterRb = GetComponent<Rigidbody2D>();
+		spriteRenderer = GetComponent<SpriteRenderer>();
 	}
 
 	void Update()
