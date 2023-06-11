@@ -15,12 +15,14 @@ public class MainCharacterScript : MonoBehaviour
 	private SpriteRenderer spriteRenderer;
 	private Animator animator;
 
-	[SerializeField] private float jumpSpeed = 6f;
+	[SerializeField] private float jumpSpeed = 3f;
 	[SerializeField] private float movementSpeed = 5f;
 	[SerializeField] private LayerMask groundLayer;
 	private State state = State.Idle;
 	private float movementValue = 0;
-	private int jumpsRemaining = 2;
+	private int remainingMidAirJumps = 1;
+	private float groundThreshold = .1f;
+	private float fallAnimationThreshold = 1f;
 
 	private void Start()
 	{
@@ -56,7 +58,13 @@ public class MainCharacterScript : MonoBehaviour
 		{
 			if (IsJumpRequested())
 			{
-				mainCharacterRb.velocity = new Vector2(mainCharacterRb.velocity.x, jumpSpeed);
+				mainCharacterRb.velocity = new Vector2(mainCharacterRb.velocity.x, jumpSpeed * (remainingMidAirJumps + 1));
+				remainingMidAirJumps--;
+			}
+
+			if (CharacterIsCloseToGround(groundThreshold))
+			{
+				remainingMidAirJumps = 1;
 			}
 		}
 
@@ -68,11 +76,11 @@ public class MainCharacterScript : MonoBehaviour
 	{
 		state = movementValue == 0 ? State.Idle : State.Walking;
 
-		if (mainCharacterRb.velocity.y > .1f)
+		if (mainCharacterRb.velocity.y > groundThreshold)
 		{
 			state = State.Jumping;
 		}
-		else if (mainCharacterRb.velocity.y < -.1f)
+		else if (mainCharacterRb.velocity.y < -groundThreshold)
 		{
 			if (state == State.Jumping)
 			{
@@ -82,7 +90,7 @@ public class MainCharacterScript : MonoBehaviour
 			state = State.Falling;
 		}
 
-		if (CharacterIsCloseToGround(1f))
+		if (CharacterIsCloseToGround(fallAnimationThreshold))
 		{
 			ResumeAnimation();
 		}
@@ -100,9 +108,7 @@ public class MainCharacterScript : MonoBehaviour
 		animator.speed = 1;
 	}
 
-	private bool IsJumpRequested() =>
-		CharacterIsCloseToGround(.1f) &&
-		Input.GetButtonDown("Jump");
+	private bool IsJumpRequested() => (CharacterIsCloseToGround(groundThreshold) || remainingMidAirJumps > 0) && Input.GetButtonDown("Jump");
 
 
 	private bool CharacterTurnedDirection(float axisValue) =>

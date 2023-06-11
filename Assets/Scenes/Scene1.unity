@@ -2677,11 +2677,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed89d74569bd933458ee11d750b47569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpSpeed: 5
+  jumpSpeed: 3
   movementSpeed: 5
   groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
 --- !u!1 &547401095
 GameObject:
   m_ObjectHideFlags: 0
@@ -2826,7 +2826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e26e72f7d48f33b408e571168893be42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 421519649}
+  playerTransform: {fileID: 0}
 --- !u!1 &1725411439
 GameObject:
   m_ObjectHideFlags: 0
