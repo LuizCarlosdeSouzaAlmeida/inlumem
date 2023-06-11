@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 382096782}
   - component: {fileID: 382096781}
   - component: {fileID: 382096780}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2525,7 +2525,7 @@ GameObject:
   - component: {fileID: 421519655}
   m_Layer: 0
   m_Name: MainCharacter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2677,8 +2677,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed89d74569bd933458ee11d750b47569, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpSpeed: 4
+  jumpSpeed: 5
   movementSpeed: 5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &547401095
 GameObject:
   m_ObjectHideFlags: 0
@@ -2838,6 +2841,7 @@ GameObject:
   - component: {fileID: 1725411443}
   - component: {fileID: 1725411442}
   - component: {fileID: 1725411441}
+  - component: {fileID: 1725411446}
   m_Layer: 0
   m_Name: LeftWall
   m_TagString: Untagged
@@ -2871,7 +2875,7 @@ CompositeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_GeometryType: 0
@@ -4898,6 +4902,25 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!251 &1725411446
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725411439}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 0
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1
 --- !u!1 &1736335721
 GameObject:
   m_ObjectHideFlags: 0
@@ -4912,6 +4935,7 @@ GameObject:
   - component: {fileID: 1736335725}
   - component: {fileID: 1736335724}
   - component: {fileID: 1736335723}
+  - component: {fileID: 1736335728}
   m_Layer: 0
   m_Name: RightWall
   m_TagString: Untagged
@@ -4945,7 +4969,7 @@ CompositeCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_GeometryType: 0
@@ -5020,40 +5044,40 @@ CompositeCollider2D:
         Y: -50000000
   m_CompositePaths:
     m_Paths:
-    - - {x: 15.499971, y: -5}
-      - {x: 15.499971, y: 4.5}
-      - {x: 15, y: 4.5000296}
-      - {x: 14.999992, y: 4.6875076}
-      - {x: 14.9687395, y: 4.71875}
-      - {x: 14.156245, y: 4.718748}
-      - {x: 14, y: 4.656297}
-      - {x: 13.999992, y: 4.6875076}
-      - {x: 13.9687395, y: 4.71875}
-      - {x: 13.843749, y: 4.7187505}
-      - {x: 13.624995, y: 4.749999}
-      - {x: 13.499997, y: 4.71875}
-      - {x: 13.062494, y: 4.718747}
-      - {x: 13, y: 4.687553}
-      - {x: 12.999975, y: 4.7812533}
-      - {x: 12.749998, y: 4.8125}
-      - {x: 12.656242, y: 4.8124943}
-      - {x: 12.5, y: 4.687487}
-      - {x: 12.49997, y: 4.5}
-      - {x: 12.093742, y: 4.4999924}
-      - {x: 12, y: 4.406239}
-      - {x: 11.999939, y: 4.343812}
-      - {x: 11.968737, y: 4.374997}
-      - {x: 11.812496, y: 4.3437476}
-      - {x: 11.5, y: 4.156235}
-      - {x: 11.49997, y: 4}
-      - {x: 11.249996, y: 3.9999983}
-      - {x: 11, y: 3.9062312}
-      - {x: 11.000001, y: 3.656248}
-      - {x: 11.031273, y: 3.5}
-      - {x: 11.5, y: 3.4999704}
-      - {x: 11.50003, y: -5}
+    - - {x: 15.5, y: 4.5}
+      - {x: 15, y: 4.5}
+      - {x: 15, y: 4.6875}
+      - {x: 14.968751, y: 4.71875}
+      - {x: 14.15625, y: 4.71875}
+      - {x: 14, y: 4.65625}
+      - {x: 14, y: 4.6875}
+      - {x: 13.968751, y: 4.71875}
+      - {x: 13.843751, y: 4.71875}
+      - {x: 13.625, y: 4.75}
+      - {x: 13.5, y: 4.71875}
+      - {x: 13.0625, y: 4.71875}
+      - {x: 13, y: 4.6875}
+      - {x: 13, y: 4.78125}
+      - {x: 12.75, y: 4.8125}
+      - {x: 12.65625, y: 4.8125}
+      - {x: 12.5, y: 4.6875}
+      - {x: 12.5, y: 4.5}
+      - {x: 12.093751, y: 4.5}
+      - {x: 12, y: 4.40625}
+      - {x: 12, y: 4.34375}
+      - {x: 11.968751, y: 4.375}
+      - {x: 11.8125, y: 4.34375}
+      - {x: 11.5, y: 4.15625}
+      - {x: 11.5, y: 4}
+      - {x: 11.25, y: 4}
+      - {x: 11, y: 3.90625}
+      - {x: 11, y: 3.65625}
+      - {x: 11.03125, y: 3.5}
+      - {x: 11.5, y: 3.5}
+      - {x: 11.5, y: -5}
+      - {x: 15.5, y: -5}
   m_VertexDistance: 0.0005
-  m_OffsetDistance: 0.00005
+  m_OffsetDistance: 0
 --- !u!50 &1736335724
 Rigidbody2D:
   serializedVersion: 4
@@ -7014,3 +7038,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!251 &1736335728
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736335721}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 0
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1

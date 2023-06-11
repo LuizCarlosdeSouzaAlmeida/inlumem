@@ -5,6 +5,11 @@ public class CameraController : MonoBehaviour
 	[SerializeField] private Transform playerTransform;
 	private float heightOffset = 2;
 
+	private void Start()
+	{
+		playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+	}
+
 	private void Update()
 	{
 		float horizontalPosition = playerTransform.position.x;
