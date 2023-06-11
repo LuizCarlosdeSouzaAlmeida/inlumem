@@ -2,56 +2,55 @@ using UnityEngine;
 
 public class MainCharacterScript : MonoBehaviour
 {
-	public Rigidbody2D mainCharacterRb;
-	public SpriteRenderer spriteRenderer;
+	private Rigidbody2D mainCharacterRb;
+	private SpriteRenderer spriteRenderer;
+	private Animator animator;
 
-	public float jumpSpeed = 5f;
-	public float movementSpeed = 0.01f;
-	private bool IsJumpRequested
-	{
-		get =>
-			// Input.GetAxisRaw("Vertical") > 0 ||
-			Input.GetButtonDown("Jump");
-	}
+	[SerializeField] private float jumpSpeed = 5f;
+	[SerializeField] private float movementSpeed = 5f;
 
-	private bool CharacterTurnedDirection
-	{
-		get
-		{
-			float movement = Input.GetAxis("Horizontal");
-			return (movement < 0 && !spriteRenderer.flipX) || (movement > 0 && spriteRenderer.flipX);
-		}
-	}
-
-	void Start()
+	private void Start()
 	{
 		mainCharacterRb = GetComponent<Rigidbody2D>();
 		spriteRenderer = GetComponent<SpriteRenderer>();
+		animator = GetComponent<Animator>();
 	}
 
-	void Update()
+	private void Update()
 	{
 		HandleMovement();
 		HandleJump();
 	}
 
-	void HandleMovement()
+	private void HandleMovement()
 	{
-		float movement = Input.GetAxis("Horizontal") * movementSpeed;
+		// Decidir entre GetAxis ou GetAxisRaw. No primeiro o personagem vai "escorregando" ao parar, no último ele para diretamente
+		float axisValue = Input.GetAxisRaw("Horizontal");
 
-		if (CharacterTurnedDirection)
+		animator.SetBool("IsWalking", axisValue != 0);
+
+		if (CharacterTurnedDirection(axisValue))
 		{
 			spriteRenderer.flipX = !spriteRenderer.flipX;
 		}
 
-		transform.Translate(movement, 0, 0);
+		mainCharacterRb.velocity = new Vector2(axisValue * movementSpeed, mainCharacterRb.velocity.y);
 	}
 
-	void HandleJump()
+	private void HandleJump()
 	{
-		if (IsJumpRequested)
+		if (IsJumpRequested())
 		{
-			mainCharacterRb.velocity = Vector2.up * jumpSpeed;
+			animator.SetBool("IsJumping", true);
+			mainCharacterRb.velocity = new Vector2(mainCharacterRb.velocity.x, jumpSpeed);
 		}
 	}
+
+	private bool IsJumpRequested() =>
+		// Input.GetAxisRaw("Vertical") > 0 ||
+		Input.GetButtonDown("Jump");
+
+
+	private bool CharacterTurnedDirection(float axisValue) =>
+		 (axisValue < 0 && !spriteRenderer.flipX) || (axisValue > 0 && spriteRenderer.flipX);
 }
