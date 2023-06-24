@@ -3,7 +3,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     [SerializeField] private Transform playerTransform;
-    private float heightOffset = 4;
+    private float heightOffset = 1;
     private float smoothSpeed = 5f;
     private float yOffset = 0f;
 
