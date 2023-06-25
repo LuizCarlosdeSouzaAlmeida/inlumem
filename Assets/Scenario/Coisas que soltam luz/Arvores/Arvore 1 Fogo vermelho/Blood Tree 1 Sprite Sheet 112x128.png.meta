@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 7b6420c71e62b2244a9b09a0cea2a776
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blood Tree 1 Sprite Sheet 112x128_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 112
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09cc51f99a4d9de419cd047a8e7ba839
+      internalID: -681800756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Tree 1 Sprite Sheet 112x128_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 384
+        width: 112
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 615d0acab52c64943869059630ad424a
+      internalID: -479267431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Tree 1 Sprite Sheet 112x128_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 112
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f567c350a37264a98eed6155c7f133
+      internalID: 85574132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Tree 1 Sprite Sheet 112x128_3
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 384
+        width: 112
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c468f0021583a24d9c798b78c511590
+      internalID: -86915098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Tree 1 Sprite Sheet 112x128_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 112
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1ebc0167117404a9a2543c18e699a7
+      internalID: 1328756002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Tree 1 Sprite Sheet 112x128_5
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 384
+        width: 112
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a28dde1d9239fb4ab27af1c1b1b0f87
+      internalID: -987968525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Tree 1 Sprite Sheet 112x128_6
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 384
+        width: 112
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73414066eaeadab428a24bd1be2ed1c6
+      internalID: -1593208276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blood Tree 1 Sprite Sheet 112x128_7
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 384
+        width: 112
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1305fea2861d09f4fbbb0d9d752714cd
+      internalID: -621525631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 41ed6608bcd50184fa5ca38195469294, type: 3}
+      name: _Emission
+    nameFileIdTable:
+      Blood Tree 1 Sprite Sheet 112x128_0: -681800756
+      Blood Tree 1 Sprite Sheet 112x128_1: -479267431
+      Blood Tree 1 Sprite Sheet 112x128_10: -926763398
+      Blood Tree 1 Sprite Sheet 112x128_11: -1974949946
+      Blood Tree 1 Sprite Sheet 112x128_12: 1371825263
+      Blood Tree 1 Sprite Sheet 112x128_13: -1379040781
+      Blood Tree 1 Sprite Sheet 112x128_14: 562805148
+      Blood Tree 1 Sprite Sheet 112x128_15: -17021564
+      Blood Tree 1 Sprite Sheet 112x128_16: 108984954
+      Blood Tree 1 Sprite Sheet 112x128_17: -1242777814
+      Blood Tree 1 Sprite Sheet 112x128_18: -1955149209
+      Blood Tree 1 Sprite Sheet 112x128_19: -628869085
+      Blood Tree 1 Sprite Sheet 112x128_2: 85574132
+      Blood Tree 1 Sprite Sheet 112x128_20: 1738361700
+      Blood Tree 1 Sprite Sheet 112x128_21: -370929336
+      Blood Tree 1 Sprite Sheet 112x128_22: -1736908339
+      Blood Tree 1 Sprite Sheet 112x128_23: -996774694
+      Blood Tree 1 Sprite Sheet 112x128_24: -1814261452
+      Blood Tree 1 Sprite Sheet 112x128_25: -732320103
+      Blood Tree 1 Sprite Sheet 112x128_26: -572678837
+      Blood Tree 1 Sprite Sheet 112x128_27: -1087193841
+      Blood Tree 1 Sprite Sheet 112x128_28: -638770847
+      Blood Tree 1 Sprite Sheet 112x128_29: 166135429
+      Blood Tree 1 Sprite Sheet 112x128_3: -86915098
+      Blood Tree 1 Sprite Sheet 112x128_30: -1628614989
+      Blood Tree 1 Sprite Sheet 112x128_31: -22762932
+      Blood Tree 1 Sprite Sheet 112x128_32: 1438475109
+      Blood Tree 1 Sprite Sheet 112x128_33: -647899268
+      Blood Tree 1 Sprite Sheet 112x128_34: -908117259
+      Blood Tree 1 Sprite Sheet 112x128_35: 1977479123
+      Blood Tree 1 Sprite Sheet 112x128_36: 452249777
+      Blood Tree 1 Sprite Sheet 112x128_37: -1587793129
+      Blood Tree 1 Sprite Sheet 112x128_38: 238258517
+      Blood Tree 1 Sprite Sheet 112x128_39: -1296661910
+      Blood Tree 1 Sprite Sheet 112x128_4: 1328756002
+      Blood Tree 1 Sprite Sheet 112x128_40: -1611142877
+      Blood Tree 1 Sprite Sheet 112x128_41: -1199249007
+      Blood Tree 1 Sprite Sheet 112x128_42: -1380408303
+      Blood Tree 1 Sprite Sheet 112x128_43: -980334917
+      Blood Tree 1 Sprite Sheet 112x128_44: 2059369437
+      Blood Tree 1 Sprite Sheet 112x128_5: -987968525
+      Blood Tree 1 Sprite Sheet 112x128_6: -1593208276
+      Blood Tree 1 Sprite Sheet 112x128_7: -621525631
+      Blood Tree 1 Sprite Sheet 112x128_8: -1731704284
+      Blood Tree 1 Sprite Sheet 112x128_9: 2144451899
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
