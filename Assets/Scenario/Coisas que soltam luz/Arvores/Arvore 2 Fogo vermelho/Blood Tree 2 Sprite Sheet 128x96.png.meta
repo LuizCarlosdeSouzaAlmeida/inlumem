@@ -281,7 +281,9 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 4647ad03af134ac4abe0a569fc0393da, type: 3}
+      name: Emission
     nameFileIdTable:
       Blood Tree 2 Sprite Sheet 128x96_0: 932519414
       Blood Tree 2 Sprite Sheet 128x96_1: -722651532

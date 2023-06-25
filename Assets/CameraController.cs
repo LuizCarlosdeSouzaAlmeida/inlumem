@@ -28,7 +28,7 @@ public class CameraController : MonoBehaviour
         }
 
         float verticalPosition = playerTransform.position.y + yOffset;
-
+        // Evitar que a câmera desça abaixo do chão
         if (playerTransform.position.x < -3.5f)
         {
             horizontalPosition = -3.5f;
