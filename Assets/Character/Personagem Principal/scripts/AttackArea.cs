@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class AttackArea : MonoBehaviour
 {
-	private int damage = 3;
+	[SerializeField] private float damage = 3f;
 
 	private void OnTriggerEnter2D(Collider2D collider)
 	{
-		Player character = collider.GetComponent<Player>();
-		if (character != null)
+		Health playerHealth = collider.GetComponent<Health>();
+		if (playerHealth != null)
 		{
-			character.TakeDamage(damage);
+			playerHealth.TakeDamage(damage);
 		}
-
-		// Implementar dano aqui
 	}
 }
