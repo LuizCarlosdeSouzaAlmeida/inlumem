@@ -1,24 +1,30 @@
 using UnityEngine;
 
-public class MainCharacterScript : MonoBehaviour
+public class Player : MonoBehaviour
 {
-	private enum State
+	private enum AnimationState
 	{
 		Idle,
 		Walking,
 		Jumping,
-		Falling
+		Falling,
+		Attacking
 	}
 
 	private Rigidbody2D mainCharacterRb;
 	private BoxCollider2D boxCollider;
 	private SpriteRenderer spriteRenderer;
 	private Animator animator;
+	private GameObject attackArea = default;
 
+	[SerializeField] private float health = 5f;
 	[SerializeField] private float jumpSpeed = 3f;
 	[SerializeField] private float movementSpeed = 5f;
 	[SerializeField] private LayerMask groundLayer;
-	private State state = State.Idle;
+	private bool isAttacking = false;
+	private float timeToAttack = 0.6f;
+	private float timer = 0f;
+	private AnimationState animationState = AnimationState.Idle;
 	private float movementValue = 0;
 	private int remainingMidAirJumps = 1;
 	private float groundThreshold = .1f;
@@ -31,6 +37,7 @@ public class MainCharacterScript : MonoBehaviour
 		spriteRenderer = GetComponent<SpriteRenderer>();
 		animator = GetComponent<Animator>();
 		groundLayer = LayerMask.GetMask("Ground");
+		attackArea = transform.Find("AttackArea").gameObject;
 	}
 
 	private void Update()
@@ -68,26 +75,62 @@ public class MainCharacterScript : MonoBehaviour
 			}
 		}
 
+		void HandleAttack()
+		{
+			if (Input.GetButtonDown("MeleeAttack"))
+			{
+				isAttacking = true;
+				attackArea.SetActive(isAttacking);
+			}
+
+			if (isAttacking)
+			{
+				timer += Time.deltaTime;
+				if (timer >= timeToAttack)
+				{
+					timer = 0;
+					isAttacking = false;
+					attackArea.SetActive(isAttacking);
+
+				}
+			}
+		}
+
+		void HandleDeath()
+		{
+			if (health <= 0f)
+			{
+				Debug.Log("Foi de comes e bebes");
+				Destroy(gameObject);
+			}
+		}
+
 		HandleMovement();
 		HandleJump();
+		HandleAttack();
+		HandleDeath();
 	}
 
 	private void HandleStates()
 	{
-		state = movementValue == 0 ? State.Idle : State.Walking;
+		animationState = movementValue == 0 ? AnimationState.Idle : AnimationState.Walking;
 
-		if (mainCharacterRb.velocity.y > groundThreshold)
+		if (isAttacking)
 		{
-			state = State.Jumping;
+			animationState = AnimationState.Attacking;
+		}
+		else if (mainCharacterRb.velocity.y > groundThreshold)
+		{
+			animationState = AnimationState.Jumping;
 		}
 		else if (mainCharacterRb.velocity.y < -groundThreshold)
 		{
-			if (state == State.Jumping)
+			if (animationState == AnimationState.Jumping)
 			{
 				ResumeAnimation();
 			}
 
-			state = State.Falling;
+			animationState = AnimationState.Falling;
 		}
 
 		if (CharacterIsCloseToGround(fallAnimationThreshold))
@@ -95,7 +138,7 @@ public class MainCharacterScript : MonoBehaviour
 			ResumeAnimation();
 		}
 
-		animator.SetInteger("State", (int)state);
+		animator.SetInteger("State", (int)animationState);
 	}
 
 	private void FreezeAnimation()
@@ -116,4 +159,10 @@ public class MainCharacterScript : MonoBehaviour
 
 	private bool CharacterIsCloseToGround(float distance) =>
 		Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, distance, groundLayer);
+
+	public void TakeDamage(float damage)
+	{
+		float newHealth = health - damage;
+		health = newHealth < 0 ? 0 : newHealth;
+	}
 }

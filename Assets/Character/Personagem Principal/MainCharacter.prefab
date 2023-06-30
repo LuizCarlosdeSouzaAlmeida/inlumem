@@ -277,10 +277,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1606218882931571761}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed89d74569bd933458ee11d750b47569, type: 3}
+  m_Script: {fileID: 11500000, guid: 092f9527388d50a419b043e4bc5f79b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpSpeed: 5
+  health: 5
+  jumpSpeed: 3
   movementSpeed: 5
   groundLayer:
     serializedVersion: 2
