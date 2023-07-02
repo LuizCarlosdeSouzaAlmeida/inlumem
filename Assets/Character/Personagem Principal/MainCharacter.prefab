@@ -214,7 +214,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -44151514, guid: 9974498b7d868d06bab1ffa1cdac23ef, type: 3}
+  m_Sprite: {fileID: -1666251523, guid: a710ea6734fe1a149930d2bca2132297, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -299,7 +299,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  jumpSpeed: 3
+  jumpSpeed: 5
   movementSpeed: 5
   distance: 0
   groundThreshold: 0.1
@@ -388,9 +388,9 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.6, y: 0.3}
+    - - {x: 0.8, y: 0.5}
       - {x: 0, y: -0.2}
-      - {x: 0.6, y: -0.7}
+      - {x: 0.8, y: -0.9}
 --- !u!114 &8856710855841403622
 MonoBehaviour:
   m_ObjectHideFlags: 0
