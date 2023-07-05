@@ -11,7 +11,7 @@ public class MeleeEnemy : MonoBehaviour
     [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D boxCollider;
 
-    [Header ("Player Layer")]
+    [Header ("Enemy Layer")]
     [SerializeField] private LayerMask playerLayer;
     private float cooldownTimer = Mathf.Infinity;
 

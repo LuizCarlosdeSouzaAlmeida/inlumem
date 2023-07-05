@@ -21188,6 +21188,8 @@ GameObject:
   - component: {fileID: 1801090415}
   - component: {fileID: 1801090414}
   - component: {fileID: 1801090419}
+  - component: {fileID: 1801090421}
+  - component: {fileID: 1801090422}
   - component: {fileID: 1801090420}
   - component: {fileID: 1801090413}
   m_Layer: 8
@@ -21240,9 +21242,7 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 0
-  distance: 1
-  groundThreshold: 0.1
-  fallAnimationThreshold: 0.1
+  rollCooldown: 0
   dashForce: 10
   rollForce: 5
 --- !u!50 &1801090415
@@ -21279,7 +21279,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00008583069, y: -0.20950603}
+  m_Offset: {x: -0.00008583069, y: -0.20629102}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -21290,7 +21290,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.33417892, y: 0.58098793}
+  m_Size: {x: 0.33417892, y: 0.5745579}
   m_EdgeRadius: 0
 --- !u!212 &1801090417
 SpriteRenderer:
@@ -21373,7 +21373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6b9030c2ea57ab4f8705470dc96194b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 1
+  attackCooldown: 2
   firePoint: {fileID: 1528483797}
   fireballs:
   - {fileID: 752125487}
@@ -21399,8 +21399,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 10
-  iFramesDuration: 2
+  iFramesDuration: 1
   numberOfFlashes: 3
+--- !u!114 &1801090421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801090412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4172245a0d64247b762452e28a75b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackCooldown: 1
+  range: 1.4
+  damage: 1
+  colliderDistance: 0.19
+  boxCollider: {fileID: 1801090416}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
+--- !u!114 &1801090422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801090412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 960a5cdb5729acf46aaff3258415bf4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldCooldown: 1
 --- !u!1 &1866884419 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1245735412075950068, guid: a2c6d8ae0bfe6404bbf983d4838739eb, type: 3}
@@ -23240,6 +23273,10 @@ PrefabInstance:
     - target: {fileID: 2777535709586468533, guid: dcd8b432f31d68d4e9f51aa0c3947a22, type: 3}
       propertyPath: m_Name
       value: Saw
+      objectReference: {fileID: 0}
+    - target: {fileID: 2777535709586468533, guid: dcd8b432f31d68d4e9f51aa0c3947a22, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dcd8b432f31d68d4e9f51aa0c3947a22, type: 3}
