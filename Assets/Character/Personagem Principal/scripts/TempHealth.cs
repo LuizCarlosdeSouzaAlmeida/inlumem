@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public class TempHealth : MonoBehaviour
 {
 	[SerializeField] private float health = 5f;
 
