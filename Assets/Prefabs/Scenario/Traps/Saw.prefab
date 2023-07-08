@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2777535709586468530}
   - component: {fileID: 2777535709586468531}
   - component: {fileID: 2777535709586468532}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Saw
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 1991666369, guid: 75d7dbad4b080b24c978e9171c782a7a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -146,6 +146,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d080092c24386ac4d8ebf9ddb345eae2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementDistance: 0
+  movementDistance: 2
   speed: 5
-  damage: 3
+  damage: 1

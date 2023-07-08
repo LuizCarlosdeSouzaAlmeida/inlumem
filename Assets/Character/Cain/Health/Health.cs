@@ -27,8 +27,10 @@ public class Health : MonoBehaviour
 
         if (currentHealth > 0)
         {
-            
-            //anim.SetTrigger("hurt");
+            if(GetComponent<PlayerMovement>() == null){
+                anim.SetTrigger("hurt");
+            }
+            //
             StartCoroutine(Invunerability());
         }
         else
@@ -36,7 +38,7 @@ public class Health : MonoBehaviour
             if (!dead)
             {
                 anim.SetTrigger("die");
-
+                
                 if(GetComponent<PlayerMovement>() != null)
                     GetComponent<PlayerMovement>().enabled = false;
 
@@ -59,7 +61,7 @@ public class Health : MonoBehaviour
         Physics2D.IgnoreLayerCollision(8, 7, true);
         for (int i = 0; i < numberOfFlashes; i++)
         {
-            spriteRend.color = Color.red;
+            spriteRend.color = Color.black;
 
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
             spriteRend.color = Color.white;

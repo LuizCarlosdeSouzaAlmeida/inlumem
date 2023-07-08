@@ -3,8 +3,6 @@ using UnityEngine;
 public class PlayerShield : MonoBehaviour
 {
     [SerializeField] private float shieldCooldown;
-
-
     private Animator anim;
     private PlayerMovement playerMovement;
     private float cooldownTimer = Mathf.Infinity;
@@ -19,7 +17,6 @@ public class PlayerShield : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R) && cooldownTimer > shieldCooldown && playerMovement.canAttack()){
             Defend();
         }
-            
 
         cooldownTimer += Time.deltaTime;
     }
