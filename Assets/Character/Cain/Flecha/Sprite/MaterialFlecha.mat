@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MaterialFlecha
-  m_Shader: {fileID: -6465566751694194690, guid: f3af09526a6f63341ae3ea1eb8d55df4, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 96793847a826afc4f9c55c949c0cd2c1, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -25,7 +25,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: eb468c6518895af48a945b9884017348, type: 3}
+        m_Texture: {fileID: 2800000, guid: aa4836969d60a4844bff0d1e0991ee7d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -44,4 +44,5 @@ Material:
     m_Floats: []
     m_Colors:
     - _Color: {r: 57.0379, g: 57.0379, b: 57.0379, a: 1}
+    - _Vector4: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

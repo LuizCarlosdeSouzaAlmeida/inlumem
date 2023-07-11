@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Moita3
-  m_Shader: {fileID: -6465566751694194690, guid: f3d4e928465e9d8408885dab41495aa2, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 96793847a826afc4f9c55c949c0cd2c1, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -44,4 +44,5 @@ Material:
     m_Floats: []
     m_Colors:
     - _Color: {r: 23.968628, g: 23.968628, b: 23.968628, a: 0}
+    - _Vector4: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
