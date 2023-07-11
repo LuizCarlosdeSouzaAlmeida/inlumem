@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MaterialDefault
+  m_Name: MaterialCagedShocker
   m_Shader: {fileID: -6465566751694194690, guid: 96793847a826afc4f9c55c949c0cd2c1, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -21,7 +21,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Emission:
-        m_Texture: {fileID: 2800000, guid: fcf83c77652495e488f159bde4b948bb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3d691f364c4fe584db6f531980c5d6b7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -43,6 +43,6 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 420.78067, g: 420.78067, b: 420.78067, a: 1}
-    - _Vector4: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 482.27872, g: 482.27872, b: 482.27872, a: 1}
+    - _Vector4: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

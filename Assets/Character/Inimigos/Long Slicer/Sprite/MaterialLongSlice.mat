@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MaterialDefault
+  m_Name: MaterialLongSlice
   m_Shader: {fileID: -6465566751694194690, guid: 96793847a826afc4f9c55c949c0cd2c1, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -21,11 +21,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Emission:
-        m_Texture: {fileID: 2800000, guid: fcf83c77652495e488f159bde4b948bb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 416ae1cf4d5b4284894075584831b284, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: acb61c1b4cfe09b4ca76ec16dce265a5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 872ec68763ec8114995da74d2fffa268, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -43,6 +43,6 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 420.78067, g: 420.78067, b: 420.78067, a: 1}
-    - _Vector4: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 16, g: 16, b: 16, a: 1}
+    - _Vector4: {r: 0.1, g: 0.1, b: 0.1, a: 0.1}
   m_BuildTextureStacks: []
