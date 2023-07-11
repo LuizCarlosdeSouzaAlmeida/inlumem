@@ -54,7 +54,7 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 513
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: d39b23ff20be3264f872e211d32ef628, type: 2}
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 32767
+  m_SortingOrder: 0
   m_Sprite: {fileID: -104084037, guid: fa76d2d5cca82fd4b869f31933116e63, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -122,6 +122,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d2bab7e4f9cfe4438e3ef9a2bbcb378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attack1Cooldown: 1
+  sliceAttackCooldown: 5
+  rangeAttack1: 2
+  rangeSliceAttack: 6
+  damage: 1
   speed: 7
   jumpPower: 10
   groundLayer:
@@ -130,6 +135,10 @@ MonoBehaviour:
   detectionRadius: 10
   body: {fileID: 3000836628609978933}
   boxCollider: {fileID: 3000836628609978934}
+  colliderDistance: 0.3
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &3000836628609978932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,7 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 397f0af43fcab78438fb1389107bbd83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 10
+  startingHealth: 5
   iFramesDuration: 0
   numberOfFlashes: 0
 --- !u!61 &3000836628609978934

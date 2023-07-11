@@ -8,7 +8,6 @@ public class Health : MonoBehaviour
     public float currentHealth { get; private set; }
     private Animator anim;
     private bool dead;
-
     [Header("iFrames")]
     [SerializeField] private float iFramesDuration;
     [SerializeField] private int numberOfFlashes;
@@ -25,13 +24,14 @@ public class Health : MonoBehaviour
         
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
 
-        if (currentHealth > 0)
+        if (currentHealth > 0) 
         {
-            if(GetComponent<PlayerMovement>() == null){
-                anim.SetTrigger("hurt");
-            }
-            //
-            StartCoroutine(Invunerability());
+                if(GetComponent<PlayerMovement>() == null){
+                    anim.SetTrigger("hurt");
+                }
+                //
+                StartCoroutine(Invunerability());
+            
         }
         else
         {
@@ -48,6 +48,8 @@ public class Health : MonoBehaviour
                 if(GetComponent<MeleeEnemy>() != null)
                     GetComponent<MeleeEnemy>().enabled = false;    
 
+                if(GetComponent<AssassinScript>() != null)
+                    GetComponent<AssassinScript>().enabled = false;
                 dead = true;
             }
         }
@@ -56,17 +58,21 @@ public class Health : MonoBehaviour
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
     }
+    // method make player invulnerable for a short period of time
+
+
+
+    // Não está funcionando, o personagem pisca mas toma dano ainda, consertar.
     private IEnumerator Invunerability()
     {
-        Physics2D.IgnoreLayerCollision(8, 7, true);
         for (int i = 0; i < numberOfFlashes; i++)
         {
-            spriteRend.color = Color.black;
+            
+            spriteRend.color =  new Color(0, 0, 0, 0.5f);
 
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
             spriteRend.color = Color.white;
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
-        Physics2D.IgnoreLayerCollision(8, 7, false);
     }
 }
