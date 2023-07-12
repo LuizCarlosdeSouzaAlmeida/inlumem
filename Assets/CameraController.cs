@@ -29,11 +29,6 @@ public class CameraController : MonoBehaviour
 
         float verticalPosition = playerTransform.position.y + yOffset;
 
-        if (playerTransform.position.x < -3.5f)
-        {
-            horizontalPosition = -3.5f;
-        }
-
 
         Vector3 targetPosition = new Vector3(horizontalPosition, targetVerticalPosition, transform.position.z);
         transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * smoothSpeed);

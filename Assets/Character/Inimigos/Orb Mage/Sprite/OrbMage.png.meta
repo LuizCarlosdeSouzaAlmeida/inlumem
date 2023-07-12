@@ -1,0 +1,1665 @@
+fileFormatVersion: 2
+guid: 9b8f2f95b359ae6448ff0e5c8f065501
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OrbMage_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 238
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485a23b6ff2b4c543aaa0cb07b6126ae
+      internalID: -594075573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_1
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 238
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5b76db3170ce04da3cbf0c4d398581
+      internalID: -1534183533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_2
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 238
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6298ad94d00935b4c8b7f470d0ff2a39
+      internalID: -1000087422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 204
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71dc738f8c2d62540b2987fd6ffce51a
+      internalID: 796946877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_4
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 204
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef587168f1bb974f8ad8bb47248436e
+      internalID: 503857506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_5
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 204
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556961b065f852341a89acae1e27734f
+      internalID: 1330267219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_6
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 204
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d156ad2377516341b56a5ffd113ea6b
+      internalID: 1880155036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_7
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 204
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3749de1bd7e8a254990c220d6f5bf0cb
+      internalID: -1919380727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_8
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 204
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab7c32cd1ab4c740bba9d18fea7b191
+      internalID: -802156990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_9
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 204
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7644d9e7dc82aa548bcc7fd18f7a8d17
+      internalID: 778581622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_10
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 204
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033fc2655f0143942ab50c45dca1d69e
+      internalID: 1028172490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 170
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7e7dbe36e655e4483dcd7a192a29ce
+      internalID: -1616363410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_12
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 170
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e742fdbe1b72c2448b16a5f609826fbe
+      internalID: 688708519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_13
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 170
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f8c6b6d8656234ab8706636f2f3089
+      internalID: -1837953881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_14
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 170
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d60d7f0da89a1489f996939adf07dd
+      internalID: -2095340127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_15
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 170
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd2211fbca2b944eb2a92ff8f089d43
+      internalID: 164577842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_16
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 170
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac06b39e4d14734eb3f34d680cb97bf
+      internalID: 1537986379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_17
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 170
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d94c9f9378e7ff42bf0fe023522cf7f
+      internalID: -1766834629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_18
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 170
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c973f7491e8ae2a46bd02772b451717b
+      internalID: -1853549864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_19
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 170
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d487af8936236f245bae479f315808a1
+      internalID: -1831556520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_20
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 170
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ace4167c76a2d4faa0ae3d21816e3b
+      internalID: 533282678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_21
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 170
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc57ed04268df03419ea6f2220d1f7ee
+      internalID: 592509390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_22
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 170
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a128d1cc5af3b3d468fe674a6df2370f
+      internalID: 1983711871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_23
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 170
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2529b75e9374a8428b10346c4cf3996
+      internalID: -1921267462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_24
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 170
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2252611e92d225b43a407d48ed80ad05
+      internalID: -200262246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abe680f5b8fb28d4e89705c7a429c293
+      internalID: 1301163365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_26
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 136
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765661d08a433964ca1783a1bc6c9933
+      internalID: -1778727596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_27
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 136
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0b708fca1d4354ca9935e810052aaf
+      internalID: -1833683584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_28
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 136
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dc0e9df3239954cb0da5915db4ca80
+      internalID: 113607362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_29
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 136
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6497c1b5f1eac844eaa32f0cebe20a45
+      internalID: 748906985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_30
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 136
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe000329b9075342a40d0a4ed69cae1
+      internalID: 2018503546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_31
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 136
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f3b6ad5f08095448f0d53de8252d3c
+      internalID: 1886776495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_32
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 136
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd63b6aaf2af5f4fb14a990056f1f52
+      internalID: -1048307894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_33
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 136
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d097a2daa93084abf1b46d5a787d8f
+      internalID: 1953553174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_34
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 136
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410a5425bfb0ff747a777f0a443be77b
+      internalID: 1225421696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_35
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 136
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d47433f0f82b846bfb59dee0c78ac9
+      internalID: 1250727340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_36
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 136
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55fce1802c53c9489be360cd0451f74
+      internalID: -1914807794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_37
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 136
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58dd08cb109177c4db7b6697fcb46c1f
+      internalID: -713652842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 102
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67acda8cbb873148aa77e1e740cbf83
+      internalID: -1794247806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_39
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 102
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941db87af7bf09041876d6c9823c9ed7
+      internalID: -1604069169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_40
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 102
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a73416261c90f64ab0303b4fec00586
+      internalID: -1070716709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_41
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 102
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba09b0c8434eb845b5963bc7b4c52a6
+      internalID: -2033246767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_42
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 102
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d962adc30f0e82942a98557eb2a2a32c
+      internalID: 1558003520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_43
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 102
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ff32aaf3ca87041b7bc1e544e0c6d4
+      internalID: -1431479125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aba1761bb765fa147ae29f0a065df709
+      internalID: 2135643978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_45
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 68
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fbd9ae5a9c7504db072e8d5e25567d
+      internalID: 1151695261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_46
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 68
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aca5518b6fb68546b02593d43bac6a0
+      internalID: -428937537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_47
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 68
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e981b019520d44ea995508cfbdbd5a
+      internalID: 1909353014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_48
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 68
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474ea1ee3a2e5ae448d5315b6d4904bc
+      internalID: -917343163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_49
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 68
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae98961528678148a49b173f83cf5c0
+      internalID: -1049719034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_50
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 68
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e478a9a6ad64c4a409ebc9a7380bff29
+      internalID: -1183528641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_51
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 68
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3469abfb17590ee4e89f7c491a20ac93
+      internalID: -1079416975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_52
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 68
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5dd65dbbd8dae46818a3dc7bb34293
+      internalID: -109648567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_53
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 68
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c062dd8c9abee409488549aa9c8de5
+      internalID: 1492873501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_54
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 68
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f822259543a3e142a48f119eee830d1
+      internalID: 1737390339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_55
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 68
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cb8c69d81e0594cab936f5f6dba958
+      internalID: -335556227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_56
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 68
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce8076aac2c9034c85f181d3728a7b1
+      internalID: 238471214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_57
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 68
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00323361bc5fb814490fc41919a52d9d
+      internalID: 1139338126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_58
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 68
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ec8832de1e6f7438360a73b340bab0
+      internalID: 849830378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_59
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 68
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c91deb7ecf4f545925d840aa71b6e3
+      internalID: -1937208381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98468aa336aede42b7b55c609659ce8
+      internalID: 392955075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_61
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 34
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2698f09cb186f4ca8a710f13346323
+      internalID: 1057088555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_62
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 34
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2337785f0f121514a8dbaec3932696c3
+      internalID: 1288726113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb22a35d6c399147aaeaa41fbc1f0fe
+      internalID: -1125246011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_64
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 0
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69b02785e51817478e8ae32802bb4bb
+      internalID: -2107580892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_65
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 0
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3741035177d76894994f70fbd430f0cc
+      internalID: -1463107800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_66
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 0
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa7cdbf79ef326f4387b38e5f71668cb
+      internalID: -657543389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_67
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 0
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5256055f3879b894ba2335d99f05b7be
+      internalID: 1239836132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_68
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 0
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba1cfecde98a3b40bff576e06edfad7
+      internalID: -2033708583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrbMage_69
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 0
+        width: 119
+        height: 34
+      alignment: 9
+      pivot: {x: 0.184874, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a2314c72f0fa8449b0de13b9f7fdca
+      internalID: -274053348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: fdb0afb2631736a4eab8a910cff6cfd9, type: 3}
+      name: Emission
+    nameFileIdTable:
+      OrbMage_0: -594075573
+      OrbMage_1: -1534183533
+      OrbMage_10: 1028172490
+      OrbMage_11: -1616363410
+      OrbMage_12: 688708519
+      OrbMage_13: -1837953881
+      OrbMage_14: -2095340127
+      OrbMage_15: 164577842
+      OrbMage_16: 1537986379
+      OrbMage_17: -1766834629
+      OrbMage_18: -1853549864
+      OrbMage_19: -1831556520
+      OrbMage_2: -1000087422
+      OrbMage_20: 533282678
+      OrbMage_21: 592509390
+      OrbMage_22: 1983711871
+      OrbMage_23: -1921267462
+      OrbMage_24: -200262246
+      OrbMage_25: 1301163365
+      OrbMage_26: -1778727596
+      OrbMage_27: -1833683584
+      OrbMage_28: 113607362
+      OrbMage_29: 748906985
+      OrbMage_3: 796946877
+      OrbMage_30: 2018503546
+      OrbMage_31: 1886776495
+      OrbMage_32: -1048307894
+      OrbMage_33: 1953553174
+      OrbMage_34: 1225421696
+      OrbMage_35: 1250727340
+      OrbMage_36: -1914807794
+      OrbMage_37: -713652842
+      OrbMage_38: -1794247806
+      OrbMage_39: -1604069169
+      OrbMage_4: 503857506
+      OrbMage_40: -1070716709
+      OrbMage_41: -2033246767
+      OrbMage_42: 1558003520
+      OrbMage_43: -1431479125
+      OrbMage_44: 2135643978
+      OrbMage_45: 1151695261
+      OrbMage_46: -428937537
+      OrbMage_47: 1909353014
+      OrbMage_48: -917343163
+      OrbMage_49: -1049719034
+      OrbMage_5: 1330267219
+      OrbMage_50: -1183528641
+      OrbMage_51: -1079416975
+      OrbMage_52: -109648567
+      OrbMage_53: 1492873501
+      OrbMage_54: 1737390339
+      OrbMage_55: -335556227
+      OrbMage_56: 238471214
+      OrbMage_57: 1139338126
+      OrbMage_58: 849830378
+      OrbMage_59: -1937208381
+      OrbMage_6: 1880155036
+      OrbMage_60: 392955075
+      OrbMage_61: 1057088555
+      OrbMage_62: 1288726113
+      OrbMage_63: -1125246011
+      OrbMage_64: -2107580892
+      OrbMage_65: -1463107800
+      OrbMage_66: -657543389
+      OrbMage_67: 1239836132
+      OrbMage_68: -2033708583
+      OrbMage_69: -274053348
+      OrbMage_7: -1919380727
+      OrbMage_8: -802156990
+      OrbMage_9: 778581622
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
