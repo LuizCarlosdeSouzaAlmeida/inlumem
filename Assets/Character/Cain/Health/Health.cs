@@ -50,6 +50,8 @@ public class Health : MonoBehaviour
 
                 if(GetComponent<AssassinScript>() != null)
                     GetComponent<AssassinScript>().enabled = false;
+                if(GetComponent<OrbMageScript>() != null)
+                    GetComponent<OrbMageScript>().enabled = false;
                 dead = true;
             }
         }
