@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: acb61c1b4cfe09b4ca76ec16dce265a5
+guid: 154247f3bb6faa547af5af48340d677a
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,1975 +105,2122 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_0
+      name: CainSprite_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 432
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 640
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23321a4b80658b749afeb1b5aef2ecad
-      internalID: -1666251523
+      spriteID: e8e6a52a04f7bcc49a0dd1ce84836404
+      internalID: -1801653853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_1
+      name: CainSprite_1
       rect:
         serializedVersion: 2
-        x: 48
-        y: 432
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 64
+        y: 640
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06c47ef5bbf73f440b431a85c341c8c7
-      internalID: 41858911
+      spriteID: a5440e4a4628bd6438aff178399eaf9a
+      internalID: 988589514
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_2
+      name: CainSprite_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 432
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 128
+        y: 640
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98b898b182a4007408b95b988f94ec1f
-      internalID: 912100637
+      spriteID: 0150701c5234e9a42b44a8ecb878ff62
+      internalID: -659301524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 432
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f0b341c175fd844db49d7957ab0e6c8
-      internalID: -1862884543
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 384
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c3362398b260704fb01119a686bafee
-      internalID: -1429788671
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 384
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad95e87d3a99d0e46a9631b13cb537f8
-      internalID: -78505124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 384
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 819c5fee9b782ba46a8146a9079f53fb
-      internalID: -1640548513
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 384
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9e62f0588d6db0408c41b4b9594098b
-      internalID: -350835747
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_8
+      name: CainSprite_3
       rect:
         serializedVersion: 2
         x: 192
-        y: 384
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 640
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd49634ae0b77d041b29e8ba81411012
-      internalID: -883008726
+      spriteID: 47059f875a325b24fa31f25c5eac271f
+      internalID: -1769158625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_9
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 384
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 37b25a38cebbac94dabaf4dbcb491604
-      internalID: -1396989034
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_10
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 384
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 778b6691394c2e345aaaa90b30ab9e44
-      internalID: -67805062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_11
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 384
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb613085cfae83d4780a79c22d090fb4
-      internalID: 1087615602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_12
+      name: CainSprite_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 336
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 576
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b0378a98caec8549858df2cce92e4e4
-      internalID: 2032901584
+      spriteID: 63cdde6f57f2c2741b63f5fe6884ec6f
+      internalID: -2051586080
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_13
+      name: CainSprite_5
       rect:
         serializedVersion: 2
-        x: 48
-        y: 336
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 64
+        y: 576
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 214799ef4a5f45f4da9a1b2868d2dc09
-      internalID: 830368153
+      spriteID: b72f18f1a33211741b29f3d464246812
+      internalID: 1451906422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_14
+      name: CainSprite_6
       rect:
         serializedVersion: 2
-        x: 96
-        y: 336
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 128
+        y: 576
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2928d6b7fc200f344a857224c7253749
-      internalID: 216553085
+      spriteID: eb77d5f694d2c4b46bcc8e102f8c7458
+      internalID: -749190557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_15
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 336
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 72c07b8c3bf61864383234f1160bfea0
-      internalID: 1406694222
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_16
+      name: CainSprite_7
       rect:
         serializedVersion: 2
         x: 192
-        y: 336
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 576
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5abf39c225883a45ab02dccf5f00b80
-      internalID: 390172525
+      spriteID: c22c9ebf621229243a40de16e19b47e6
+      internalID: -973868637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_17
+      name: CainSprite_8
       rect:
         serializedVersion: 2
-        x: 240
-        y: 336
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 256
+        y: 576
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc9754bce1470ad4ea58779230556b6e
-      internalID: 24094952
+      spriteID: 99f17864213de5e419c35cee13cc0acc
+      internalID: 1993082371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_18
+      name: CainSprite_9
       rect:
         serializedVersion: 2
-        x: 288
-        y: 336
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 320
+        y: 576
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93311ded4264c534a9f723a8ec4c9ba5
-      internalID: -876072923
+      spriteID: 1abcc838829ae8644aeefda133001d0d
+      internalID: -43797486
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_19
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 336
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f8c9d62dba0d6b4db4f11e6dbec5d22
-      internalID: 1438398618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_20
+      name: CainSprite_10
       rect:
         serializedVersion: 2
         x: 0
-        y: 288
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 512
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0d0d10985e74aa4a8e9658f99503782
-      internalID: 1694016840
+      spriteID: be204ce124a28c24b8ee7417c4030bff
+      internalID: 651114774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_21
+      name: CainSprite_11
       rect:
         serializedVersion: 2
-        x: 48
-        y: 288
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 64
+        y: 512
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75cc8de3d86618647a8486f114be8301
-      internalID: -796930764
+      spriteID: 5facb61fb82ecd644afba471f9026669
+      internalID: -109745407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_22
+      name: CainSprite_12
       rect:
         serializedVersion: 2
-        x: 96
-        y: 288
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 128
+        y: 512
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2de0bc349e34b8e4cb8f25925b34bcb5
-      internalID: -1013912662
+      spriteID: d058c65548ca7df49addef1078e07f94
+      internalID: -763471385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_23
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 288
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b2ddcda4613c0048aae43d66d884ed7
-      internalID: -1337933078
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_24
+      name: CainSprite_13
       rect:
         serializedVersion: 2
         x: 192
-        y: 288
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 512
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa734d8ecf9488f44809f40c1454d845
-      internalID: 716061162
+      spriteID: 4c306f9d987424845a01a06b75b72abb
+      internalID: 185765147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_25
+      name: CainSprite_14
       rect:
         serializedVersion: 2
-        x: 240
-        y: 288
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 256
+        y: 512
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a72a6518bc41004d88c242e23aa31e0
-      internalID: -672335654
+      spriteID: bd3bf7def69ae91448d0f58aa0391da9
+      internalID: 965010990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_26
+      name: CainSprite_15
       rect:
         serializedVersion: 2
-        x: 288
-        y: 288
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 320
+        y: 512
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 442cbeb1d4fbb7949ba8c4a091ee9c24
-      internalID: -712194763
+      spriteID: e8635814408f0f446a623035911c2a00
+      internalID: -1591054299
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_27
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 288
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 88b6c74fef7ae014ea7f5beade59a860
-      internalID: 777887261
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_28
+      name: CainSprite_16
       rect:
         serializedVersion: 2
         x: 0
-        y: 240
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 448
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbf9c3670e489cd488ce408bc8fad146
-      internalID: 1296262099
+      spriteID: b6c65faac959b6542a754bf5ce1483a8
+      internalID: -115160803
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_29
+      name: CainSprite_17
       rect:
         serializedVersion: 2
-        x: 48
-        y: 240
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 64
+        y: 448
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57c921ff11ea36642840bc44cd49220a
-      internalID: -1367975386
+      spriteID: a220d12c59432e14da1d543a66091281
+      internalID: 357617992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_30
+      name: CainSprite_18
       rect:
         serializedVersion: 2
-        x: 96
-        y: 240
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 128
+        y: 448
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef0519fa40759c64dbb51ded9413cd88
-      internalID: 441501394
+      spriteID: 149cea331534b044a9f0106d97d95bc8
+      internalID: -1241493625
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_31
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 240
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d1d426831fb97d4d955fbfa1d3b3daf
-      internalID: 142388123
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_32
+      name: CainSprite_19
       rect:
         serializedVersion: 2
         x: 192
-        y: 240
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 448
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93febd348df3b5244ae61725cbd64d2a
-      internalID: -74981979
+      spriteID: 015bf92df7111d345ab6489f205c7c81
+      internalID: 1311861260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_33
+      name: CainSprite_20
       rect:
         serializedVersion: 2
-        x: 240
-        y: 240
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 256
+        y: 448
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44fe370d29f10594d985fb3ba21a6f2f
-      internalID: 280549181
+      spriteID: 03fba5d1187e15444ab419d439106cd8
+      internalID: -951139498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_34
+      name: CainSprite_21
       rect:
         serializedVersion: 2
-        x: 288
-        y: 240
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 320
+        y: 448
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cb010f3461f56a4eb84da7c58e1c0f2
-      internalID: -1045043092
+      spriteID: 96d8f9b33a07b784cb029220e03d654c
+      internalID: 1614947412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_35
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 240
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36b85d9fe176c434d919b0708608198f
-      internalID: 1150860176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_36
+      name: CainSprite_22
       rect:
         serializedVersion: 2
         x: 384
-        y: 240
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 448
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 662b870bd34d2914a92b80efcde3e09c
-      internalID: 2145726549
+      spriteID: 99f88ee577fa45a4dbffbc1e59c13f96
+      internalID: 478213342
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_37
+      name: CainSprite_23
       rect:
         serializedVersion: 2
-        x: 432
-        y: 240
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 448
+        y: 448
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 672dfcb5c2f65ac4492777fb9e3fc4da
-      internalID: 776462799
+      spriteID: f3537fae6f6814d478ebd647d2031221
+      internalID: -824976157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_38
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 240
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f2afb39459b1e2348bfa6dc07b6d35d5
-      internalID: 1304813113
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_39
+      name: CainSprite_24
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 305cc28085ca21349865ef6e1da55e7c
-      internalID: 354409315
+      spriteID: 8d5e6010195dda1468c4159652914ece
+      internalID: 667804050
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_40
+      name: CainSprite_25
       rect:
         serializedVersion: 2
-        x: 48
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 64
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f47434aea9b6eb4ab8f9badafcc7dc6
-      internalID: 208255350
+      spriteID: 6c87d65bdb65ba448818daa1bf863535
+      internalID: -587555864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_41
+      name: CainSprite_26
       rect:
         serializedVersion: 2
-        x: 96
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 128
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4b25e7ea172a7f459e85a4260f33904
-      internalID: 709495641
+      spriteID: 0ea3c8ebdf39d4749ac9fe16dd4f2a36
+      internalID: 1257756493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_42
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d447854aab94ca047b452edd7267311a
-      internalID: -1635577433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_43
+      name: CainSprite_27
       rect:
         serializedVersion: 2
         x: 192
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b619dc557aa0344daf6b0d4e936678b
-      internalID: 1871996810
+      spriteID: cd173b98d39fbb743aaae8ffee23e65f
+      internalID: 111436296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_44
+      name: CainSprite_28
       rect:
         serializedVersion: 2
-        x: 240
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 256
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d180d8f5dd0af084cb5ba00c717e5cd5
-      internalID: -1642672033
+      spriteID: 6189780f2d69d39419116be0b88f2d0f
+      internalID: 912116322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_45
+      name: CainSprite_29
       rect:
         serializedVersion: 2
-        x: 288
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 320
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5989d6a410b41a47970f42e22946fc4
-      internalID: -1749743644
+      spriteID: 1fb1347d629ae8544a6bb81e284ad625
+      internalID: 1763663037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_46
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 013ec18a063a4b9489828cf7475bd839
-      internalID: -101289924
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_47
+      name: CainSprite_30
       rect:
         serializedVersion: 2
         x: 384
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df695c143ae0f584f8729521a0463f4a
-      internalID: -1299284333
+      spriteID: 379a5d8ba64984d4788bad63884603ad
+      internalID: -265153778
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_48
+      name: CainSprite_31
       rect:
         serializedVersion: 2
-        x: 432
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 448
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e26c52080b559a04c83d9609715bc33d
-      internalID: 718162605
+      spriteID: b870c9c960aba5a44ae274dbcfbf96d2
+      internalID: 823383521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_49
+      name: CainSprite_32
       rect:
         serializedVersion: 2
-        x: 480
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 512
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 049f74f9b63889040b6a2d0f59c97c4f
-      internalID: 716744582
+      spriteID: 28f99a5f9f4e3da4f89344fb22a7f69d
+      internalID: 1848987210
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_50
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61b31eb39942a3b4f9ef332e11d5f6e1
-      internalID: 830371557
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_51
+      name: CainSprite_33
       rect:
         serializedVersion: 2
         x: 576
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 384
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5e43a220cf9b7b42ba0973ce4c739b6
-      internalID: -2135053950
+      spriteID: b87b1a7456556134aa8652401f416362
+      internalID: -165839783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_52
-      rect:
-        serializedVersion: 2
-        x: 624
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d2731f5024dde04999412ab5efeb44d
-      internalID: 1889872381
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_53
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbad1c6537329094487d377a86922a54
-      internalID: -223228829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_54
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 192
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 836ff943d634f754690d7cf7cdfd99c6
-      internalID: -855577433
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_55
+      name: CainSprite_34
       rect:
         serializedVersion: 2
         x: 0
-        y: 144
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24ba8053c140281419f26ce7c8224388
-      internalID: 640711839
+      spriteID: 57e3cb735b4abdc4699695a6e0438415
+      internalID: -212544780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_56
+      name: CainSprite_35
       rect:
         serializedVersion: 2
-        x: 48
-        y: 144
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 64
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e19cde7d051dcba42be4a0aeac7dece1
-      internalID: 1972359606
+      spriteID: 1dbde19e3309da24f8e7b91d88ebcfd6
+      internalID: 1295388173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_57
+      name: CainSprite_36
       rect:
         serializedVersion: 2
-        x: 96
-        y: 144
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 128
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dcaf963b6ed3054cb0346007f33d49b
-      internalID: 1801219806
+      spriteID: 2e2add7cd2f589b4ea5c103ea7598181
+      internalID: -1395889541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_58
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 144
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2fa71b1694706ff4ea39daac2e547735
-      internalID: 1340540695
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_59
+      name: CainSprite_37
       rect:
         serializedVersion: 2
         x: 192
-        y: 144
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 590f753e4e7f2654aa90cc39133a594c
-      internalID: -1238526930
+      spriteID: 5c910fe44ec7ee2418475b9c3c1f0c5d
+      internalID: -119414173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_60
+      name: CainSprite_38
       rect:
         serializedVersion: 2
-        x: 240
-        y: 144
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 256
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b5151df8514c064e9bbca463067cffd
-      internalID: -395737744
+      spriteID: ffb30c1a81a0e4f44a8d90d84ca21c4d
+      internalID: 212428683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_61
+      name: CainSprite_39
       rect:
         serializedVersion: 2
-        x: 288
-        y: 144
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 320
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be48687f29a14d041a0cc293df32349a
-      internalID: 1632096613
+      spriteID: e82bbf12db94638408634c04d90b4e22
+      internalID: -2090400802
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_62
+      name: CainSprite_40
       rect:
         serializedVersion: 2
-        x: 336
-        y: 144
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 384
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 976b3d3eba3eb4a458b949077f78f27b
-      internalID: 11705568
+      spriteID: 5adc96642a66f814680cdab6f18e053b
+      internalID: -463394958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_63
+      name: CainSprite_41
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eca34a0d55425341896311b82f6eb2f
+      internalID: 364958657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_42
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af859e5e6e3062a4b9693b387f5a0732
+      internalID: 1980551204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_43
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608ddf4c3bf39eb44975ac15114eb1cf
+      internalID: -787708168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_44
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196928706904dd34caa95d3da84827b8
+      internalID: -458562419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_45
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b025e7f06a8f314478712f841ae23784
+      internalID: -1402848565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_46
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111f73de1ebb0dc4699731607cd2a1cf
+      internalID: 961149845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_47
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4fbf6bd9f0a3d44e9b031e7b3785166
+      internalID: 2102171778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_48
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7d2cdaf0ab36949a468e89817f5ea9
+      internalID: -1758287737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_49
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 320
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7e48ca3614e2e4aab4fe374995851e
+      internalID: -154361931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_50
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c932473ac01e1448a0295c5e0c48e61
-      internalID: -473996636
+      spriteID: cccaddcc2c7bce94196ac76e5fc6fd7c
+      internalID: 1829985502
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_64
+      name: CainSprite_51
       rect:
         serializedVersion: 2
-        x: 48
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 64
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa8b901c0b8b8a04c9dafc4ef3b72ad3
-      internalID: -981102911
+      spriteID: deb0d2dd6df6f4242ac546c1fb98fc24
+      internalID: -814630910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_65
+      name: CainSprite_52
       rect:
         serializedVersion: 2
-        x: 96
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 128
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f9c59593880805488bea291f2f07bf1
-      internalID: 1199945857
+      spriteID: b8037286102fe2b46ae2da35e7c35bc5
+      internalID: 309107246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_66
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 634684bcaf7228940bbcfd2c4e605d1d
-      internalID: -899076336
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_67
+      name: CainSprite_53
       rect:
         serializedVersion: 2
         x: 192
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbb7ea34593c6e940bb7486f9a682c74
-      internalID: 115043093
+      spriteID: 19f869c36d6b1bc4b8ffcfb722be7902
+      internalID: -736760170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_68
+      name: CainSprite_54
       rect:
         serializedVersion: 2
-        x: 240
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 256
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c80e73b0d25bb340ace73ef4224669c
-      internalID: 194491294
+      spriteID: a8cd8c7350d9a074da4af45bab8dc5fa
+      internalID: -935935164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_69
+      name: CainSprite_55
       rect:
         serializedVersion: 2
-        x: 288
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 320
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb48be4181495b04aa215ed0dc1ce2a6
-      internalID: -428553200
+      spriteID: 0eda8894af8d8074886beaca0815d5cd
+      internalID: -341772782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_70
+      name: CainSprite_56
       rect:
         serializedVersion: 2
-        x: 336
-        y: 96
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 384
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e92ef9a8170773141a384f8ed1885963
-      internalID: -286957249
+      spriteID: 9e72d57c97ae3a64793eba9001e72a03
+      internalID: -525160385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_71
+      name: CainSprite_57
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5891ee0f2b1e12488b16900423bfd68
+      internalID: 939859449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_58
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1928c5608a2f2ba4a80a38423e39c0f5
-      internalID: 64523740
+      spriteID: 19b1f7bde7f79644dac9a8c9462d596d
+      internalID: 1467192838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_72
+      name: CainSprite_59
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 64
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b8d67e414556f34fb7ae77fe2aa6f15
-      internalID: -581957208
+      spriteID: fb24c001206d25d48b2e3734352ce1a1
+      internalID: 1228650066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_73
+      name: CainSprite_60
       rect:
         serializedVersion: 2
-        x: 96
-        y: 48
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 128
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0112e79a253d8804e9e27fccfc50392a
-      internalID: -2021835013
+      spriteID: 28ce7c4117788e44ebaa3b25398cbaf1
+      internalID: 1548224654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_74
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 48
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd147f97a1bda074fa5f12f1a119723a
-      internalID: -1202300856
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_75
+      name: CainSprite_61
       rect:
         serializedVersion: 2
         x: 192
-        y: 48
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e8686076aef86a47862b969a1b8422c
-      internalID: -1097807431
+      spriteID: 18c8e558a256b5c42906c5b4082e849c
+      internalID: -1964499755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_76
+      name: CainSprite_62
       rect:
         serializedVersion: 2
-        x: 240
-        y: 48
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 139c7c89493a4684d9be63a4508fcf2a
-      internalID: -145952339
+      spriteID: af362cccc2c01e44fbdcf32e693545f3
+      internalID: 1879967603
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_77
+      name: CainSprite_63
       rect:
         serializedVersion: 2
-        x: 288
-        y: 48
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 536a73a8d4b0b4546909beaf86fe0f01
-      internalID: -344290694
+      spriteID: 09ee4562a974f7148b934a121efb695f
+      internalID: -50132397
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_78
+      name: CainSprite_64
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80a0319edabb002418b38aad32c2e6ce
+      internalID: 1251027235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_65
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e759622499902fc40895bced660c4c7b
+      internalID: 648196529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8a42517b227a04cb26adf3ac9e00f4
+      internalID: -1826650792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_67
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d20269a8f9351641b52b3abe69e6515
+      internalID: -1039341212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa61f572359f6374591af16cce1796b4
+      internalID: 2009577421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_69
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed04786a1e18f374aac73b2e089a57c4
+      internalID: 1616106781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_70
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb99e292b7e1d649b0b7a2608ca6e13
+      internalID: 588465095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_71
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b140d1c2e9ea9a148aa9988b541d3ec5
+      internalID: 86218980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_72
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 192ff29261c3159418087ab23130f901
+      internalID: -1024035867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_73
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6431ddeb151d94a8ed97c6f6555a05
+      internalID: 908621311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_74
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6437a7b1cd95dca48946332eb0dfac83
+      internalID: -791365631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_75
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbfa5a786977aed4582b7afe42afb301
+      internalID: -359288524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_76
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f1d96d16dc6054d87a68e79ab27182
+      internalID: -1163898098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_77
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16157c5c5744fc644aa46f3b1aab726a
+      internalID: 1061361997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_78
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e5ce9831947e94781d3343ba67a76a
+      internalID: 374389295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_79
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad4ee0c6cac9394396eb95bbac5786f
+      internalID: 1732243722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_80
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6eb17bbae3383b4ba7d98974fe92219
+      internalID: 2126977299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_81
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 128
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a88874a31138304294b225c76477983
+      internalID: -373213252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_82
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0054c2e3776b68a4bbc53011cf1e548b
+      internalID: 1297742988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_83
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09fbf3639baa3341840a23b4d484de4
+      internalID: 1648329486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_84
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5339e67bb57c71648b7e4df6be83b5a5
+      internalID: 268948473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_85
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f8f661aa2cd42b4cb92e622a33b3565
+      internalID: 1106378523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_86
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5db304fbe92a642a9268a9975ce534
+      internalID: 1227252720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_87
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6f436dd35b92344795b09581e40c9b1
+      internalID: 1655269438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_88
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b2824199f2ba94dabd95f039a81365
+      internalID: -494364993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CainSprite_89
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb5b7dbb51d2a4047b4e23d7ce6cbd5d
-      internalID: -276447668
+      spriteID: 83d39a1c0de3d414ab628ac08d96a77f
+      internalID: -1333206670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_79
+      name: CainSprite_90
       rect:
         serializedVersion: 2
-        x: 48
+        x: 64
         y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 286254083d7215643834f5d96bcfe5ae
-      internalID: -708097912
+      spriteID: c04c5e9664df5e24a8bac3f7cbc1c305
+      internalID: 549765380
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_80
+      name: CainSprite_91
       rect:
         serializedVersion: 2
-        x: 96
+        x: 128
         y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f9063409855f37419e8b533f9b7364e
-      internalID: 1568389748
+      spriteID: 34273ae5930c8ea41b0f2ca70fac4fa5
+      internalID: -1227789573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_81
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b24938289b8fde4b87674308d4c4e32
-      internalID: 1401243583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_82
+      name: CainSprite_92
       rect:
         serializedVersion: 2
         x: 192
         y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adca5784c50d9e34cac6e597eaa85ca3
-      internalID: 36028220
+      spriteID: 8d3de14544453114088bde1af0d83f71
+      internalID: 1225009043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_83
+      name: CainSprite_93
       rect:
         serializedVersion: 2
-        x: 240
+        x: 256
         y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77182ff4097bf8647a87e28850946169
-      internalID: -626720739
+      spriteID: 7824c27cad8200b43889004e4e1918a0
+      internalID: 1532655314
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_84
+      name: CainSprite_94
       rect:
         serializedVersion: 2
-        x: 288
+        x: 320
         y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8cb0901d0fde564185d0c1a8b22297b
-      internalID: 1103963571
+      spriteID: 10841d16e32e93546a4c4f27db4401ce
+      internalID: 1706176320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_85
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d26e2f1ef26b1a469e402a464c55fd4
-      internalID: 1874655745
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_86
+      name: CainSprite_95
       rect:
         serializedVersion: 2
         x: 384
         y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0386db045411e349a4323cbf63f4a85
-      internalID: 1841521762
+      spriteID: 522a4d1c6f4ae974490a3b79330edc7f
+      internalID: -1301743360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_87
+      name: CainSprite_96
       rect:
         serializedVersion: 2
-        x: 432
+        x: 448
         y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8fb02851c9048248a05eda7c49d04de
-      internalID: -478303093
+      spriteID: 2a4277478d5440945a7e29ed0de3e5bd
+      internalID: 258771459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_88
+      name: CainSprite_97
       rect:
         serializedVersion: 2
-        x: 480
+        x: 512
         y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5e368ddee5e63d4a95c4a383a626725
-      internalID: -1117253277
+      spriteID: 62e36f2a27f352346902f91950de85c0
+      internalID: -2110833609
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_89
-      rect:
-        serializedVersion: 2
-        x: 528
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01ec2c518bd43a54a9eb721ae78724a0
-      internalID: -1867777068
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_90
+      name: CainSprite_98
       rect:
         serializedVersion: 2
         x: 576
         y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0609559c1a904c74899829d4847e8186
-      internalID: -504336231
+      spriteID: dcc6252608a048e459430a5853cd0301
+      internalID: -1662496651
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_91
+      name: CainSprite_99
       rect:
         serializedVersion: 2
-        x: 624
+        x: 640
         y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffc116ca5d521ba449132a7badb60216
-      internalID: 1338785384
+      spriteID: 80934add95ee1f346becc53d91cc942a
+      internalID: 37324886
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cain_Full_Spritesheet_92
+      name: CainSprite_100
       rect:
         serializedVersion: 2
-        x: 672
+        x: 704
         y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 64
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 522215caa7be7da439f69084d0918c93
-      internalID: -58707247
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cain_Full_Spritesheet_93
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 0
-        width: 48
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f079dc01a8b1fa428d817aaeeaa5f6f
-      internalID: -1621978265
+      spriteID: 4ba8d0d50d887cc4ea43f46f9986fb0d
+      internalID: -476337957
       vertices: []
       indices: 
       edges: []
@@ -2087,104 +2234,109 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: ab0beafda4e3aed409e1a6819a1c913f, type: 3}
-      name: Emission
+    secondaryTextures: []
     nameFileIdTable:
-      Cain_Full_Spritesheet_0: -1666251523
-      Cain_Full_Spritesheet_1: 41858911
-      Cain_Full_Spritesheet_10: -67805062
-      Cain_Full_Spritesheet_11: 1087615602
-      Cain_Full_Spritesheet_12: 2032901584
-      Cain_Full_Spritesheet_13: 830368153
-      Cain_Full_Spritesheet_14: 216553085
-      Cain_Full_Spritesheet_15: 1406694222
-      Cain_Full_Spritesheet_16: 390172525
-      Cain_Full_Spritesheet_17: 24094952
-      Cain_Full_Spritesheet_18: -876072923
-      Cain_Full_Spritesheet_19: 1438398618
-      Cain_Full_Spritesheet_2: 912100637
-      Cain_Full_Spritesheet_20: 1694016840
-      Cain_Full_Spritesheet_21: -796930764
-      Cain_Full_Spritesheet_22: -1013912662
-      Cain_Full_Spritesheet_23: -1337933078
-      Cain_Full_Spritesheet_24: 716061162
-      Cain_Full_Spritesheet_25: -672335654
-      Cain_Full_Spritesheet_26: -712194763
-      Cain_Full_Spritesheet_27: 777887261
-      Cain_Full_Spritesheet_28: 1296262099
-      Cain_Full_Spritesheet_29: -1367975386
-      Cain_Full_Spritesheet_3: -1862884543
-      Cain_Full_Spritesheet_30: 441501394
-      Cain_Full_Spritesheet_31: 142388123
-      Cain_Full_Spritesheet_32: -74981979
-      Cain_Full_Spritesheet_33: 280549181
-      Cain_Full_Spritesheet_34: -1045043092
-      Cain_Full_Spritesheet_35: 1150860176
-      Cain_Full_Spritesheet_36: 2145726549
-      Cain_Full_Spritesheet_37: 776462799
-      Cain_Full_Spritesheet_38: 1304813113
-      Cain_Full_Spritesheet_39: 354409315
-      Cain_Full_Spritesheet_4: -1429788671
-      Cain_Full_Spritesheet_40: 208255350
-      Cain_Full_Spritesheet_41: 709495641
-      Cain_Full_Spritesheet_42: -1635577433
-      Cain_Full_Spritesheet_43: 1871996810
-      Cain_Full_Spritesheet_44: -1642672033
-      Cain_Full_Spritesheet_45: -1749743644
-      Cain_Full_Spritesheet_46: -101289924
-      Cain_Full_Spritesheet_47: -1299284333
-      Cain_Full_Spritesheet_48: 718162605
-      Cain_Full_Spritesheet_49: 716744582
-      Cain_Full_Spritesheet_5: -78505124
-      Cain_Full_Spritesheet_50: 830371557
-      Cain_Full_Spritesheet_51: -2135053950
-      Cain_Full_Spritesheet_52: 1889872381
-      Cain_Full_Spritesheet_53: -223228829
-      Cain_Full_Spritesheet_54: -855577433
-      Cain_Full_Spritesheet_55: 640711839
-      Cain_Full_Spritesheet_56: 1972359606
-      Cain_Full_Spritesheet_57: 1801219806
-      Cain_Full_Spritesheet_58: 1340540695
-      Cain_Full_Spritesheet_59: -1238526930
-      Cain_Full_Spritesheet_6: -1640548513
-      Cain_Full_Spritesheet_60: -395737744
-      Cain_Full_Spritesheet_61: 1632096613
-      Cain_Full_Spritesheet_62: 11705568
-      Cain_Full_Spritesheet_63: -473996636
-      Cain_Full_Spritesheet_64: -981102911
-      Cain_Full_Spritesheet_65: 1199945857
-      Cain_Full_Spritesheet_66: -899076336
-      Cain_Full_Spritesheet_67: 115043093
-      Cain_Full_Spritesheet_68: 194491294
-      Cain_Full_Spritesheet_69: -428553200
-      Cain_Full_Spritesheet_7: -350835747
-      Cain_Full_Spritesheet_70: -286957249
-      Cain_Full_Spritesheet_71: 64523740
-      Cain_Full_Spritesheet_72: -581957208
-      Cain_Full_Spritesheet_73: -2021835013
-      Cain_Full_Spritesheet_74: -1202300856
-      Cain_Full_Spritesheet_75: -1097807431
-      Cain_Full_Spritesheet_76: -145952339
-      Cain_Full_Spritesheet_77: -344290694
-      Cain_Full_Spritesheet_78: -276447668
-      Cain_Full_Spritesheet_79: -708097912
-      Cain_Full_Spritesheet_8: -883008726
-      Cain_Full_Spritesheet_80: 1568389748
-      Cain_Full_Spritesheet_81: 1401243583
-      Cain_Full_Spritesheet_82: 36028220
-      Cain_Full_Spritesheet_83: -626720739
-      Cain_Full_Spritesheet_84: 1103963571
-      Cain_Full_Spritesheet_85: 1874655745
-      Cain_Full_Spritesheet_86: 1841521762
-      Cain_Full_Spritesheet_87: -478303093
-      Cain_Full_Spritesheet_88: -1117253277
-      Cain_Full_Spritesheet_89: -1867777068
-      Cain_Full_Spritesheet_9: -1396989034
-      Cain_Full_Spritesheet_90: -504336231
-      Cain_Full_Spritesheet_91: 1338785384
-      Cain_Full_Spritesheet_92: -58707247
-      Cain_Full_Spritesheet_93: -1621978265
+      CainSprite_0: -1801653853
+      CainSprite_1: 988589514
+      CainSprite_10: 651114774
+      CainSprite_100: -476337957
+      CainSprite_11: -109745407
+      CainSprite_12: -763471385
+      CainSprite_13: 185765147
+      CainSprite_14: 965010990
+      CainSprite_15: -1591054299
+      CainSprite_16: -115160803
+      CainSprite_17: 357617992
+      CainSprite_18: -1241493625
+      CainSprite_19: 1311861260
+      CainSprite_2: -659301524
+      CainSprite_20: -951139498
+      CainSprite_21: 1614947412
+      CainSprite_22: 478213342
+      CainSprite_23: -824976157
+      CainSprite_24: 667804050
+      CainSprite_25: -587555864
+      CainSprite_26: 1257756493
+      CainSprite_27: 111436296
+      CainSprite_28: 912116322
+      CainSprite_29: 1763663037
+      CainSprite_3: -1769158625
+      CainSprite_30: -265153778
+      CainSprite_31: 823383521
+      CainSprite_32: 1848987210
+      CainSprite_33: -165839783
+      CainSprite_34: -212544780
+      CainSprite_35: 1295388173
+      CainSprite_36: -1395889541
+      CainSprite_37: -119414173
+      CainSprite_38: 212428683
+      CainSprite_39: -2090400802
+      CainSprite_4: -2051586080
+      CainSprite_40: -463394958
+      CainSprite_41: 364958657
+      CainSprite_42: 1980551204
+      CainSprite_43: -787708168
+      CainSprite_44: -458562419
+      CainSprite_45: -1402848565
+      CainSprite_46: 961149845
+      CainSprite_47: 2102171778
+      CainSprite_48: -1758287737
+      CainSprite_49: -154361931
+      CainSprite_5: 1451906422
+      CainSprite_50: 1829985502
+      CainSprite_51: -814630910
+      CainSprite_52: 309107246
+      CainSprite_53: -736760170
+      CainSprite_54: -935935164
+      CainSprite_55: -341772782
+      CainSprite_56: -525160385
+      CainSprite_57: 939859449
+      CainSprite_58: 1467192838
+      CainSprite_59: 1228650066
+      CainSprite_6: -749190557
+      CainSprite_60: 1548224654
+      CainSprite_61: -1964499755
+      CainSprite_62: 1879967603
+      CainSprite_63: -50132397
+      CainSprite_64: 1251027235
+      CainSprite_65: 648196529
+      CainSprite_66: -1826650792
+      CainSprite_67: -1039341212
+      CainSprite_68: 2009577421
+      CainSprite_69: 1616106781
+      CainSprite_7: -973868637
+      CainSprite_70: 588465095
+      CainSprite_71: 86218980
+      CainSprite_72: -1024035867
+      CainSprite_73: 908621311
+      CainSprite_74: -791365631
+      CainSprite_75: -359288524
+      CainSprite_76: -1163898098
+      CainSprite_77: 1061361997
+      CainSprite_78: 374389295
+      CainSprite_79: 1732243722
+      CainSprite_8: 1993082371
+      CainSprite_80: 2126977299
+      CainSprite_81: -373213252
+      CainSprite_82: 1297742988
+      CainSprite_83: 1648329486
+      CainSprite_84: 268948473
+      CainSprite_85: 1106378523
+      CainSprite_86: 1227252720
+      CainSprite_87: 1655269438
+      CainSprite_88: -494364993
+      CainSprite_89: -1333206670
+      CainSprite_9: -43797486
+      CainSprite_90: 549765380
+      CainSprite_91: -1227789573
+      CainSprite_92: 1225009043
+      CainSprite_93: 1532655314
+      CainSprite_94: 1706176320
+      CainSprite_95: -1301743360
+      CainSprite_96: 258771459
+      CainSprite_97: -2110833609
+      CainSprite_98: -1662496651
+      CainSprite_99: 37324886
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

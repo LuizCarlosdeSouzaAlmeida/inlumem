@@ -16,7 +16,7 @@ public class PlayerMeleeAttack : MonoBehaviour
     private float cooldownTimer = Mathf.Infinity;
     private Health enemyHealth;
     // Start is called before the first frame update
-
+    private int stageAttack = 0;
     private Animator anim;
     private PlayerMovement playerMovement;
 
@@ -34,11 +34,14 @@ public class PlayerMeleeAttack : MonoBehaviour
     }
     private void Attack()
     {
-        anim.SetTrigger("meleeAttack");
+        if (stageAttack == 0){
+            anim.SetTrigger("attack1");
+        }else if (stageAttack == 1){
+            anim.SetTrigger("attack2");
+        }else if (stageAttack == 2){
+            anim.SetTrigger("attack3");
+        }
         cooldownTimer = 0;
-        
-        //fireballs[FindFireball()].transform.position = firePoint.position;
-        //fireballs[FindFireball()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
     }
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
@@ -60,5 +63,8 @@ public class PlayerMeleeAttack : MonoBehaviour
         if (EnemyInSight()){
             enemyHealth.TakeDamage(damage);
         }
+    }
+    private void SetStageAttack(int stage){
+        stageAttack = stage;
     }
 }

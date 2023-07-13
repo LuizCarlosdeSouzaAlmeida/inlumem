@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MaterialCain
-  m_Shader: {fileID: -6465566751694194690, guid: 5f42a04c0e030ec4990725a73d43722d, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 96793847a826afc4f9c55c949c0cd2c1, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -21,11 +21,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Emission:
-        m_Texture: {fileID: 2800000, guid: fcf83c77652495e488f159bde4b948bb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 482b3e14c9eaada4cbee8ea6d622c641, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: acb61c1b4cfe09b4ca76ec16dce265a5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 154247f3bb6faa547af5af48340d677a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -43,5 +43,6 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 420.78067, g: 420.78067, b: 420.78067, a: 1}
+    - _Color: {r: 221.83661, g: 393.90796, b: 408.95096, a: 1}
+    - _Vector4: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

@@ -75,7 +75,7 @@ public class OrbMageScript : MonoBehaviour
          float distanceToPlayerX = Mathf.Abs(player.position.x - transform.position.x);
 
         // Verifica se o jogador está dentro do raio de detecção no eixo X
-        if (distanceToPlayerX <= detectionRadius && !CheckFrontWall())
+        if (distanceToPlayerX <= detectionRadius)
         {
             anim.SetBool("follow", true);
             // Move o inimigo em direção ao jogador apenas no eixo X

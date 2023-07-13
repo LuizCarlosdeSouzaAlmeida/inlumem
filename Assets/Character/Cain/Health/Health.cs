@@ -26,9 +26,9 @@ public class Health : MonoBehaviour
 
         if (currentHealth > 0) 
         {
-                if(GetComponent<PlayerMovement>() == null){
-                    anim.SetTrigger("hurt");
-                }
+                //if(GetComponent<PlayerMovement>() == null){
+                //    anim.SetTrigger("hurt");
+                //}
                 //
                 StartCoroutine(Invunerability());
             
@@ -50,8 +50,12 @@ public class Health : MonoBehaviour
 
                 if(GetComponent<AssassinScript>() != null)
                     GetComponent<AssassinScript>().enabled = false;
+
                 if(GetComponent<OrbMageScript>() != null)
                     GetComponent<OrbMageScript>().enabled = false;
+
+                if(GetComponent<LongSliceScript>() != null)
+                    GetComponent<LongSliceScript>().enabled = false;
                 dead = true;
             }
         }
