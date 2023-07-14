@@ -128,17 +128,17 @@ public class PlayerMovement : MonoBehaviour
         //If coyote counter is 0 or less and not on the wall and don't have any extra jumps don't do anything
 
         //SoundManager.instance.PlaySound(jumpSound);
-        if (isGrounded())
+        if (isGrounded()){
+            anim.SetTrigger("jump");
             body.velocity = new Vector2(body.velocity.x, jumpPower);
-        else
-        {
+        }else{
             //If not on the ground and coyote counter bigger than 0 do a normal jump
-            if (coyoteCounter > 0)
+            if (coyoteCounter > 0){
+                anim.SetTrigger("jump");
                 body.velocity = new Vector2(body.velocity.x, jumpPower);
-            else
-            {
-                if (jumpCounter > 0) //If we have extra jumps then jump and decrease the jump counter
-                {
+            }else{
+                if (jumpCounter > 0){
+                    anim.SetTrigger("jump");
                     body.velocity = new Vector2(body.velocity.x, jumpPower);
                     jumpCounter--;
                 }

@@ -17,24 +17,18 @@ public class MeleeEnemy : MonoBehaviour
 
     private Animator anim;
     private Health playerHealth;
-    private EnemyPatrol enemyPatrol;
 
     private void Awake() {
         anim = GetComponent<Animator>();
-        enemyPatrol = GetComponentInParent<EnemyPatrol>();
     }
     private void Update() {
         cooldownTimer += Time.deltaTime;
-
         //Attack only when player in sight
         if(PlayerInSight()) {
             if(cooldownTimer >= attackCooldown) {
                 cooldownTimer = 0;
                 anim.SetTrigger("meleeAttack");
             }
-        }
-        if (enemyPatrol != null){
-            enemyPatrol.enabled = !PlayerInSight();
         }
     }
 

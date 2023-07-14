@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8916008768999149958}
   - component: {fileID: 8916008768999149957}
   - component: {fileID: 8916008768999149956}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: OrbMageProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,6 +189,7 @@ GameObject:
   - component: {fileID: 8916008769891776574}
   - component: {fileID: 8916008769891776573}
   - component: {fileID: 8916008769891776575}
+  - component: {fileID: 3168827381328555786}
   - component: {fileID: 1710405238}
   m_Layer: 7
   m_Name: OrbMage
@@ -253,7 +254,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -594075573, guid: 9b8f2f95b359ae6448ff0e5c8f065501, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -330,11 +331,9 @@ MonoBehaviour:
   rangeRangedAttack: 10
   damage: 0
   projectileOrb: {fileID: 8916008768999149954}
-  speed: 5
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  detectionRadius: 10
   boxCollider: {fileID: 8916008769891776574}
   colliderDistance: 0.36
   colliderDistanceRangeAttack: 0.33
@@ -353,9 +352,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 397f0af43fcab78438fb1389107bbd83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 2
-  iFramesDuration: 0
-  numberOfFlashes: 0
+  startingHealth: 100
+  iFramesDuration: 2
+  numberOfFlashes: 3
+--- !u!114 &3168827381328555786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8916008769891776569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 011b14e72967940498642cfd5c52112a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  detectionRadius: 7
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  body: {fileID: 1710405238}
+  boxCollider: {fileID: 8916008769891776574}
 --- !u!50 &1710405238
 Rigidbody2D:
   serializedVersion: 4
@@ -386,7 +407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8916008770006440790}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}

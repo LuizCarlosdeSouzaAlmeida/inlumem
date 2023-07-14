@@ -21,19 +21,19 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: -109745407, guid: 154247f3bb6faa547af5af48340d677a, type: 3}
-    - time: 0.033333335
+    - time: 0.05
       value: {fileID: -763471385, guid: 154247f3bb6faa547af5af48340d677a, type: 3}
-    - time: 0.06666667
+    - time: 0.1
       value: {fileID: 185765147, guid: 154247f3bb6faa547af5af48340d677a, type: 3}
-    - time: 0.3
+    - time: 0.55
       value: {fileID: 965010990, guid: 154247f3bb6faa547af5af48340d677a, type: 3}
-    - time: 0.33333334
+    - time: 0.6
       value: {fileID: -1591054299, guid: 154247f3bb6faa547af5af48340d677a, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 30
+  m_SampleRate: 20
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -58,7 +58,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.36666667
+    m_StopTime: 0.65000004
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -85,7 +85,21 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.33333334
+  - time: 0.1
+    functionName: SetIsDefending
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 1
+    messageOptions: 0
+  - time: 0.6
+    functionName: SetIsDefending
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.6
     functionName: SetFalseIsInAction
     data: 
     objectReferenceParameter: {fileID: 0}

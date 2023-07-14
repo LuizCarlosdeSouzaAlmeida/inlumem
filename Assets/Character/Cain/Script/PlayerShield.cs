@@ -6,7 +6,7 @@ public class PlayerShield : MonoBehaviour
     private Animator anim;
     private PlayerMovement playerMovement;
     private float cooldownTimer = Mathf.Infinity;
-
+    public int isDefending = 0;
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -25,8 +25,12 @@ public class PlayerShield : MonoBehaviour
         anim.SetTrigger("shield");
         cooldownTimer = 0;
     }
-    private void SetIsDefending(bool isDefending)
+    private void SetIsDefending(int isDefending)
     {
-        anim.SetBool("isDefending", isDefending);
+        this.isDefending = isDefending;
+    }
+    public int GetIsDefending()
+    {
+        return isDefending;
     }
 }
