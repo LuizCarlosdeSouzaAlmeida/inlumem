@@ -18,7 +18,10 @@ public static class Loader
         Loader.targetScene = targetScene;
 
         SceneManager.LoadScene(Scene.LoadingScene.ToString());
+    }
 
+    public static void LoaderCallback() 
+    {
         SceneManager.LoadScene(targetScene.ToString()); 
     }
 }
