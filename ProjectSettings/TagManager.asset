@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - AttackArea
+  - Enemy
+  - Ground
+  - playerSpotRight
+  - playerSpotLeft
   layers:
   - Default
   - TransparentFX
@@ -12,8 +17,8 @@ TagManager:
   - Water
   - UI
   - Ground
-  - 
-  - 
+  - Enemy
+  - Player
   - 
   - 
   - 
@@ -49,4 +54,7 @@ TagManager:
     locked: 0
   - name: Wall
     uniqueID: 2254577091
+    locked: 0
+  - name: Enemy
+    uniqueID: 3500126171
     locked: 0
