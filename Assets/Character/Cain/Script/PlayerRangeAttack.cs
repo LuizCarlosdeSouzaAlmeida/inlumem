@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerRangeAttack : MonoBehaviour
@@ -10,10 +11,14 @@ public class PlayerRangeAttack : MonoBehaviour
     private PlayerMovement playerMovement;
     private float cooldownTimer = Mathf.Infinity;
 
+    private AudioSource AudioSource;
+    [SerializeField] private AudioClip AttackAudio;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
+        AudioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -31,6 +36,7 @@ public class PlayerRangeAttack : MonoBehaviour
         
         //fireballs[FindFireball()].transform.position = firePoint.position;
         //fireballs[FindFireball()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
+        StartCoroutine(WaitForAttackSound());
     }
     // when triggered, this method will call fireball().
     private void FlechaThrow()
@@ -46,5 +52,11 @@ public class PlayerRangeAttack : MonoBehaviour
                 return i;
         }
         return 0;
+    }
+
+    private IEnumerator WaitForAttackSound()
+    {
+        yield return new WaitForSeconds(0.4f);
+        AudioSource.PlayOneShot(AttackAudio);
     }
 }

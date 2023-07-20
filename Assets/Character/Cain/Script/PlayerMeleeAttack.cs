@@ -19,11 +19,14 @@ public class PlayerMeleeAttack : MonoBehaviour
     private int stageAttack = 0;
     private Animator anim;
     private PlayerMovement playerMovement;
+    private AudioSource AudioSource;
+    [SerializeField] private AudioClip AttackAudio;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
+        AudioSource = GetComponent<AudioSource>();
     }
     private void Update()
     {
@@ -42,6 +45,8 @@ public class PlayerMeleeAttack : MonoBehaviour
             anim.SetTrigger("attack3");
         }
         cooldownTimer = 0;
+
+        AudioSource.PlayOneShot(AttackAudio);
     }
     private void OnDrawGizmos() {
         Gizmos.color = Color.red;
