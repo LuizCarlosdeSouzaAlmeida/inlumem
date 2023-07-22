@@ -14,6 +14,7 @@ public class Projectile : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Traps"));
     }
     private void Update()
     {
