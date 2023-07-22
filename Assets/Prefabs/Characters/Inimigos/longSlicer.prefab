@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack1Cooldown: 2
-  sliceAttackCooldown: 4
+  sliceAttackCooldown: 6
   rangeAttack1: 6
   rangeSliceAttack: 7
   rangeSliceAttack2: 4

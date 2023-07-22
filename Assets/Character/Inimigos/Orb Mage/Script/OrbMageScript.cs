@@ -30,7 +30,7 @@ public class OrbMageScript : MonoBehaviour
     private float cooldownTimer = Mathf.Infinity;
     private float cooldownSliceTimer = Mathf.Infinity;
 
-     private Animator anim;
+    private Animator anim;
     private Health playerHealth;
     private Transform player; // Referência ao transform do jogador
     void Start()
