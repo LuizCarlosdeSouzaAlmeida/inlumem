@@ -175,6 +175,9 @@ MonoBehaviour:
   damage: 0
   colliderDistance: 0.41
   boxCollider: {fileID: 8793877097548758708}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
   playerLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -191,6 +194,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  body: {fileID: 0}
+  boxCollider: {fileID: 0}
   iFramesDuration: 2
   numberOfFlashes: 3
 --- !u!114 &4763709679079416169
@@ -209,7 +214,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  detectionRadius: 10
+  detectionRadius: 7
   playerLayer:
     serializedVersion: 2
     m_Bits: 256

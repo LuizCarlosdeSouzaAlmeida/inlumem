@@ -24374,7 +24374,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1499543455}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.700001, y: 4.0000005, z: -10}
+  m_LocalPosition: {x: -6.700001, y: 1.0000005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26031,7 +26031,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 20
-      m_TileSpriteIndex: 20
+      m_TileSpriteIndex: 21
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -26177,21 +26177,11 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 32, y: -4, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 22
-      m_TileSpriteIndex: 21
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 71, y: -4, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 19
-      m_TileSpriteIndex: 18
+      m_TileSpriteIndex: 20
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -26491,7 +26481,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 13
-      m_TileSpriteIndex: 12
+      m_TileSpriteIndex: 18
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -26953,8 +26943,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 0ee563ae5739bf34797b1626b5fdf69e, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: afd6b19313ecdb7408fad496cf56ab95, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 4f2c1e2e0c2c4ef4e8b521d254c7d6e9, type: 2}
   - m_RefCount: 2
@@ -27046,8 +27036,8 @@ Tilemap:
     m_Data: {fileID: -676569461, guid: e806cd29bb5939b4596aa4e1ac9c5239, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: -161534256, guid: cfe638d5bb610124e8847615e53d6979, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 2
     m_Data: {fileID: 1676102218, guid: cfe638d5bb610124e8847615e53d6979, type: 3}
   - m_RefCount: 2
@@ -27059,13 +27049,13 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: 1974844768, guid: cfe638d5bb610124e8847615e53d6979, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: -546726293, guid: 710679cc26d00fc45adea1dffbf7bfc0, type: 3}
+    m_Data: {fileID: -161534256, guid: cfe638d5bb610124e8847615e53d6979, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1571794629, guid: cfe638d5bb610124e8847615e53d6979, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 984650407, guid: 710679cc26d00fc45adea1dffbf7bfc0, type: 3}
+    m_Data: {fileID: -546726293, guid: 710679cc26d00fc45adea1dffbf7bfc0, type: 3}
   - m_RefCount: 1
-    m_Data: {fileID: 584527438, guid: 710679cc26d00fc45adea1dffbf7bfc0, type: 3}
+    m_Data: {fileID: 984650407, guid: 710679cc26d00fc45adea1dffbf7bfc0, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -938389108, guid: 710679cc26d00fc45adea1dffbf7bfc0, type: 3}
   - m_RefCount: 1
@@ -27135,7 +27125,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -1981677491, guid: e806cd29bb5939b4596aa4e1ac9c5239, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 185
+  - m_RefCount: 184
     m_Data:
       e00: 1
       e01: 0
@@ -27154,7 +27144,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 185
+  - m_RefCount: 184
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -27291,14 +27281,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0, y: 4, z: 0}
-  m_LookaheadTime: 0.5
-  m_LookaheadSmoothing: 5
-  m_LookaheadIgnoreY: 0
-  m_XDamping: 1
+  m_TrackedObjectOffset: {x: 0, y: 1, z: 0}
+  m_LookaheadTime: 0
+  m_LookaheadSmoothing: 0
+  m_LookaheadIgnoreY: 1
+  m_XDamping: 0.5
   m_YDamping: 0.2
   m_ZDamping: 0
-  m_TargetMovementOnly: 1
+  m_TargetMovementOnly: 0
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
@@ -27306,7 +27296,7 @@ MonoBehaviour:
   m_DeadZoneHeight: 0.4
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.8
+  m_SoftZoneWidth: 0.7978284
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
   m_BiasY: -0.15600003

@@ -11,6 +11,9 @@ public class MeleeEnemy : MonoBehaviour
     [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D boxCollider;
 
+    [Header("Layers")]
+    [SerializeField] private LayerMask groundLayer;
+
     [Header ("Enemy Layer")]
     [SerializeField] private LayerMask playerLayer;
     private float cooldownTimer = Mathf.Infinity;
@@ -24,7 +27,7 @@ public class MeleeEnemy : MonoBehaviour
     private void Update() {
         cooldownTimer += Time.deltaTime;
         //Attack only when player in sight
-        if(PlayerInSight()) {
+        if(PlayerInSight() && IsGrounded()) {
             if(cooldownTimer >= attackCooldown) {
                 cooldownTimer = 0;
                 anim.SetTrigger("meleeAttack");
@@ -51,5 +54,10 @@ public class MeleeEnemy : MonoBehaviour
         if (PlayerInSight()){
             playerHealth.TakeDamage(damage);
         }
+    }
+    private bool IsGrounded()
+    {
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
+        return raycastHit.collider != null;
     }
 }

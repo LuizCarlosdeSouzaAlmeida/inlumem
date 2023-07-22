@@ -5,6 +5,11 @@ public class Health : MonoBehaviour
 {
     [Header ("Health")]
     [SerializeField] private float startingHealth;
+
+    [Header ("Collider Parameters")]
+    [SerializeField]private Rigidbody2D body;
+    [SerializeField]private BoxCollider2D boxCollider;
+
     public float currentHealth { get; private set; }
     private Animator anim;
     private bool dead;
@@ -15,6 +20,8 @@ public class Health : MonoBehaviour
 
     private void Awake()
     {
+        boxCollider = GetComponent<BoxCollider2D>();
+        body = GetComponent<Rigidbody2D>();
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
@@ -43,6 +50,7 @@ public class Health : MonoBehaviour
                 }
             }else{
                 Debug.Log("Player blocked damage");
+                
             }
         }else{
             currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
@@ -55,24 +63,36 @@ public class Health : MonoBehaviour
                 if (!dead)
                 {
                     anim.SetTrigger("die");
-                    
-                    if(GetComponent<EnemyFollowPlayer>() != null)
+                    anim.SetBool("IsAlive", false);
+                    if(GetComponent<EnemyFollowPlayer>() != null){
                         GetComponent<EnemyFollowPlayer>().enabled = false;
+                        boxCollider.enabled = false;
+                        body.gravityScale = 0;
+                        body.mass = 0;
+                        body.velocity = new Vector2(0, 0);
+                    }
+                        
 
-                    if(GetComponentInParent<EnemyFollowPlayerJump>() != null)
+                    if(GetComponentInParent<EnemyFollowPlayerJump>() != null){
                         GetComponentInParent<EnemyFollowPlayerJump>().enabled = false;
+                        boxCollider.enabled = false;
+                        body.gravityScale = 0;
+                        body.mass = 0;
+                        body.velocity = new Vector2(0, 0);
+                    }
+                        
 
-                    if(GetComponent<MeleeEnemy>() != null)
-                        GetComponent<MeleeEnemy>().enabled = false;    
+                    //if(GetComponent<MeleeEnemy>() != null)
+                    //    GetComponent<MeleeEnemy>().enabled = false;    
 
-                    if(GetComponent<AssassinScript>() != null)
-                        GetComponent<AssassinScript>().enabled = false;
+                    //if(GetComponent<AssassinScript>() != null)
+                       //GetComponent<AssassinScript>().enabled = false;
 
-                    if(GetComponent<OrbMageScript>() != null)
-                        GetComponent<OrbMageScript>().enabled = false;
+                    //if(GetComponent<OrbMageScript>() != null)
+                        //GetComponent<OrbMageScript>().enabled = false;
 
-                    if(GetComponent<LongSliceScript>() != null)
-                        GetComponent<LongSliceScript>().enabled = false;
+                    //if(GetComponent<LongSliceScript>() != null)
+                        //GetComponent<LongSliceScript>().enabled = false;
                     dead = true;
                 }
             }

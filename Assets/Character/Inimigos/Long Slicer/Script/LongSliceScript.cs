@@ -36,6 +36,7 @@ public class LongSliceScript : MonoBehaviour
     private Health playerHealth;
     private Transform player; // Referência ao transform do jogador
     private bool checkWall; // Verifica se tem uma parede na frente do inimigo
+    private bool PlayerClose = false; // Verifica se o player está perto do inimigo
     //private bool isFacingRight = true; // Verifica a direção em que o inimigo está virado
     //private bool isFalling = false;
     void Start()
@@ -49,8 +50,14 @@ public class LongSliceScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cooldownTimer += Time.deltaTime;
-        cooldownSliceTimer += Time.deltaTime;
+        CheckPlayer();
+        if (PlayerClose){
+            cooldownTimer += Time.deltaTime;
+            cooldownSliceTimer += Time.deltaTime;
+        }else{
+            cooldownTimer = 0;
+            cooldownSliceTimer = 0;
+        }
         
         // Verifica se o inimigo está no chão, se estiver, ele não está caindo
         if (IsGrounded())
@@ -77,11 +84,12 @@ public class LongSliceScript : MonoBehaviour
             }
         }
     }
+    private void CheckPlayer() {
+        PlayerClose = (Vector2.Distance(transform.position, player.position) < 2f);
+    }
     private bool IsGrounded()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
-        anim.SetBool("grounded", raycastHit.collider != null);
-        anim.SetBool("IsFalling", false);
         return raycastHit.collider != null;
     }
     private bool PlayerInSightAttack() {

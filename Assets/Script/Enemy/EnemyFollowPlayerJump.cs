@@ -21,6 +21,7 @@ public class EnemyFollowPlayerJump : MonoBehaviour
     [SerializeField]private Rigidbody2D body;
     [SerializeField]private BoxCollider2D boxCollider;
 
+    
     private Animator anim;
     private Health playerHealth;
     private Transform player; // Referência ao transform do jogador
@@ -29,6 +30,7 @@ public class EnemyFollowPlayerJump : MonoBehaviour
     private bool isFalling = false;
     private Transform playerSpotRight; // Referência ao transform do spotRight do jogador
     private Transform playerSpotLeft; // Referência ao transform do spotLeft do jogador
+    private bool CanFollowPlayer = false; // Verifica se o player está perto do inimigo
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,7 @@ public class EnemyFollowPlayerJump : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CheckClosePlayer();
         IsFalling();
         // Se não estiver realizando nenhuma ação "importante" (como ataque) então verifica se o player está no raio de alcance e segue ele
         if(anim.GetBool("IsInAction") == false) {
@@ -64,6 +67,11 @@ public class EnemyFollowPlayerJump : MonoBehaviour
             isFalling = true;
         }
     }
+    private void CheckClosePlayer() {
+        if (Vector2.Distance(transform.position, player.position) < 3f){
+            CanFollowPlayer = true;
+        }
+    }
     private void FlipEnemy(){
         if (player.position.x < transform.position.x && isFacingRight)
         {
@@ -74,6 +82,18 @@ public class EnemyFollowPlayerJump : MonoBehaviour
         {
             // Restaura a escala padrão quando indo para a direita
             Flip();
+        }
+    }
+    private void CheckIsAlive(){
+        Debug.Log("CheckIsAlive");
+        if (anim.GetBool("IsAlive") == false){
+            Debug.Log("Enemy died");
+            anim.SetTrigger("die");
+
+            boxCollider.enabled = false;
+            body.gravityScale = 0;
+            body.mass = 0;
+            body.velocity = new Vector2(0, 0);
         }
     }
     private void CheckPlayer()
@@ -93,7 +113,7 @@ public class EnemyFollowPlayerJump : MonoBehaviour
             spot = playerSpotLeft;
         }
         // Verifica se o jogador está dentro do raio de detecção no eixo X
-        if (distanceToPlayerX <= detectionRadius && distanceToPlayerX > 0.1f)
+        if (distanceToPlayerX <= detectionRadius && distanceToPlayerX > 0.1f && CanFollowPlayer)
         {
             anim.SetBool("follow", true);
             // Move o inimigo em direção ao jogador apenas no eixo X
@@ -126,6 +146,7 @@ public class EnemyFollowPlayerJump : MonoBehaviour
         {
             anim.SetBool("follow", false);
             body.velocity = new Vector2(0, body.velocity.y);
+            CanFollowPlayer = false;
         }
     }
     private void Flip()
