@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 8075270072712697583}
   - component: {fileID: 8075270072712697580}
   - component: {fileID: 8075270072712697582}
+  - component: {fileID: 4457416385120750982}
   - component: {fileID: 8075270072712697591}
   - component: {fileID: 6589955391674098674}
   m_Layer: 8
@@ -282,6 +283,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79e6b9207385a643b3bcc5ab952613c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whatIsCheckpoint:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &8075270072712697588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,6 +389,18 @@ MonoBehaviour:
   boxCollider: {fileID: 0}
   iFramesDuration: 2
   numberOfFlashes: 3
+--- !u!114 &4457416385120750982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8075270072712697590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9faa10114dd4e794f9236ef2c952cf29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &8075270072712697591
 Animator:
   serializedVersion: 5

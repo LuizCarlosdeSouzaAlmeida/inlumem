@@ -17,7 +17,7 @@ public class Health : MonoBehaviour
     [SerializeField] private float iFramesDuration;
     [SerializeField] private int numberOfFlashes;
     private SpriteRenderer spriteRend;
-
+    private DamageFlash _damageFlash;
     private void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -25,6 +25,7 @@ public class Health : MonoBehaviour
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
+        _damageFlash = GetComponent<DamageFlash>();
     }
     public void TakeDamage(float _damage)
     {
@@ -33,9 +34,10 @@ public class Health : MonoBehaviour
             {
                 currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
                 Debug.Log("Player took damage");
+                _damageFlash.CallDamageFlash();
                 if (currentHealth > 0) 
                 {
-                    StartCoroutine(Invunerability());
+                    //StartCoroutine(Invunerability());
                 }
                 else
                 {
@@ -56,7 +58,8 @@ public class Health : MonoBehaviour
             currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
             if (currentHealth > 0) 
             {
-                StartCoroutine(Invunerability());
+                //StartCoroutine(Invunerability());
+                _damageFlash.CallDamageFlash();
             }
             else
             {
