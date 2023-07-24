@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 8075270072712697580}
   - component: {fileID: 8075270072712697582}
   - component: {fileID: 4457416385120750982}
+  - component: {fileID: 7879791748362214229}
   - component: {fileID: 8075270072712697591}
   - component: {fileID: 6589955391674098674}
   m_Layer: 8
@@ -401,6 +402,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9faa10114dd4e794f9236ef2c952cf29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _flashColor: {r: 1, g: 1, b: 1, a: 1}
+  _flashTime: 1
+  _flashSpeedCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &7879791748362214229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8075270072712697590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c48cd44067bb0c4ba2cefe495465e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttackAudio: {fileID: 0}
 --- !u!95 &8075270072712697591
 Animator:
   serializedVersion: 5

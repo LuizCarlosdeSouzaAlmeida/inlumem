@@ -4,7 +4,7 @@ using System.Collections;
 public class Health : MonoBehaviour
 {
     [Header ("Health")]
-    [SerializeField] private float startingHealth;
+    [SerializeField] public float startingHealth;
 
     [Header ("Collider Parameters")]
     [SerializeField]private Rigidbody2D body;
@@ -59,14 +59,20 @@ public class Health : MonoBehaviour
             if (currentHealth > 0) 
             {
                 //StartCoroutine(Invunerability());
-                _damageFlash.CallDamageFlash();
+                if(GetComponent<GhoulScript>() != null){
+                    anim.SetTrigger("hit");
+                }else{
+                    _damageFlash.CallDamageFlash();
+                }
+            
+                
             }
             else
             {
                 if (!dead)
                 {
                     anim.SetTrigger("die");
-                    anim.SetBool("IsAlive", false);
+                    //anim.SetBool("IsAlive", false);
                     if(GetComponent<EnemyFollowPlayer>() != null){
                         GetComponent<EnemyFollowPlayer>().enabled = false;
                         boxCollider.enabled = false;
@@ -82,6 +88,18 @@ public class Health : MonoBehaviour
                         body.gravityScale = 0;
                         body.mass = 0;
                         body.velocity = new Vector2(0, 0);
+                    }
+                    if(GetComponentInParent<EnemyFollowPlayer>() != null){
+                        GetComponentInParent<EnemyFollowPlayer>().enabled = false;
+                        boxCollider.enabled = false;
+                        body.gravityScale = 0;
+                        body.mass = 0;
+                        body.velocity = new Vector2(0, 0);
+                    }
+                    if(GetComponent<WarpScript>() != null){
+                        //GetComponent<WarpScript>().Desactivate();
+                        GetComponent<WarpScript>().enabled = false;
+                        boxCollider.enabled = false;
                     }
                         
 
@@ -123,5 +141,9 @@ public class Health : MonoBehaviour
             spriteRend.color = Color.white;
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
+    }
+    public float GetHealth()
+    {
+        return startingHealth;
     }
 }
