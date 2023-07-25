@@ -59,7 +59,7 @@ public class Health : MonoBehaviour
             if (currentHealth > 0) 
             {
                 //StartCoroutine(Invunerability());
-                if(GetComponent<GhoulScript>() != null){
+                if(GetComponent<GhoulScript>() != null || GetComponent<SpitterScript>() != null){
                     anim.SetTrigger("hit");
                 }else{
                     _damageFlash.CallDamageFlash();
@@ -71,6 +71,7 @@ public class Health : MonoBehaviour
             {
                 if (!dead)
                 {
+                    Debug.Log("Enemy died");
                     anim.SetTrigger("die");
                     //anim.SetBool("IsAlive", false);
                     if(GetComponent<EnemyFollowPlayer>() != null){
@@ -89,16 +90,16 @@ public class Health : MonoBehaviour
                         body.mass = 0;
                         body.velocity = new Vector2(0, 0);
                     }
-                    if(GetComponentInParent<EnemyFollowPlayer>() != null){
-                        GetComponentInParent<EnemyFollowPlayer>().enabled = false;
-                        boxCollider.enabled = false;
-                        body.gravityScale = 0;
-                        body.mass = 0;
-                        body.velocity = new Vector2(0, 0);
-                    }
                     if(GetComponent<WarpScript>() != null){
                         //GetComponent<WarpScript>().Desactivate();
                         GetComponent<WarpScript>().enabled = false;
+                        boxCollider.enabled = false;
+                    }
+                    if(GetComponent<SpitterScript>() != null){
+                        //GetComponent<WarpScript>().Desactivate();
+                        GetComponent<SpitterScript>().DesactivateAllProjectiles();
+                        GetComponent<SpitterScript>().enabled = false;
+                        
                         boxCollider.enabled = false;
                     }
                         
@@ -145,5 +146,15 @@ public class Health : MonoBehaviour
     public float GetHealth()
     {
         return startingHealth;
+    }
+    public void SetDead(bool _dead)
+    {
+        dead = _dead;
+    }
+    public void AliveAgain()
+    {
+        Debug.Log("Alive again");
+        dead = false;
+        currentHealth = startingHealth;
     }
 }

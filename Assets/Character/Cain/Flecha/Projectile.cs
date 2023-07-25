@@ -15,6 +15,8 @@ public class Projectile : MonoBehaviour
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
         Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("Traps"));
+        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("CheckPoint"));
+        Physics2D.IgnoreLayerCollision(gameObject.layer, LayerMask.NameToLayer("EnemyProjectile"));
     }
     private void Update()
     {
@@ -27,11 +29,13 @@ public class Projectile : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        hit = true;
-        boxCollider.enabled = false;
+
+        
         anim.SetTrigger("explode");
 
         if (collision.tag == "Enemy"){
+            hit = true;
+            boxCollider.enabled = false;
             collision.GetComponent<Health>().TakeDamage(1);
         }
     }

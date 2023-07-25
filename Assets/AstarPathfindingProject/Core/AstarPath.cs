@@ -832,9 +832,9 @@ public class AstarPath : VersionedMonoBehaviour {
 			if (logPathResults == PathLog.InGame) {
 				inGameDebugPath = debug;
 			} else if (path.error) {
-				Debug.LogWarning(debug);
+				//Debug.LogWarning(debug);
 			} else {
-				Debug.Log(debug);
+				//Debug.Log(debug);
 			}
 		}
 	}
@@ -1197,7 +1197,7 @@ public class AstarPath : VersionedMonoBehaviour {
 			int memory = SystemInfo.systemMemorySize;
 
 			if (memory <= 0) {
-				Debug.LogError("Machine reporting that is has <= 0 bytes of RAM. This is definitely not true, assuming 1 GiB");
+				//Debug.LogError("Machine reporting that is has <= 0 bytes of RAM. This is definitely not true, assuming 1 GiB");
 				memory = 1024;
 			}
 
@@ -1951,7 +1951,7 @@ public class AstarPath : VersionedMonoBehaviour {
 		if (astar.graphs == null || astar.graphs.Length == 0) {
 			Debug.LogError("There are no graphs in the scene");
 			path.FailWithError("There are no graphs in the scene");
-			Debug.LogError(path.errorLog);
+			//Debug.LogError(path.errorLog);
 			return;
 		}
 

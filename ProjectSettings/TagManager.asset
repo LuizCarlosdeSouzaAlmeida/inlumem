@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - playerSpotRight
   - playerSpotLeft
+  - FxTemporaire
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Player
   - CheckPoint
   - Traps
-  - 
+  - EnemyProjectile
   - 
   - 
   - 

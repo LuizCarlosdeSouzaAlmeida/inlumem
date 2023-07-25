@@ -19,18 +19,23 @@ public class WarpScript : MonoBehaviour
     private float cooldownTimer = Mathf.Infinity;
 
     private Animator anim;
+
     private Health playerHealth;
+    private Transform player; // Referência ao transform do jogador
     private Health myHealth;
     public AIPath aIPath;
     void Start()
     {
         anim = GetComponent<Animator>();
         myHealth = GetComponent<Health>();
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        aIPath.canMove = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        CheckClosePlayer();
         if(aIPath.desiredVelocity.x >= 0.01f){
             transform.localScale = new Vector3(-1f, 1f, 1f);
         }else if(aIPath.desiredVelocity.x <= -0.01f){
@@ -43,6 +48,11 @@ public class WarpScript : MonoBehaviour
                 cooldownTimer = 0;
                 anim.SetTrigger("attack");
             }
+        }
+    }
+    private void CheckClosePlayer() {
+        if (Vector2.Distance(transform.position, player.position) < 7f){
+            aIPath.canMove = true;
         }
     }
      private bool PlayerInSight() {
@@ -66,7 +76,6 @@ public class WarpScript : MonoBehaviour
         }
     }
     public void Desactivate() {
-        Debug.Log("Desactivate");
         //Desactivate enemy when health is 0
         gameObject.SetActive(false);
         aIPath.enabled = false;
