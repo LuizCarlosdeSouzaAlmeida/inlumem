@@ -19,7 +19,6 @@ public class SpitterScript : MonoBehaviour
 
     
     [SerializeField] private GameObject[] SpitterProjectiles;
-    public AIPath[] aIPath;
 
     private Animator anim;
     private Transform player; // Referência ao transform do jogador
@@ -28,7 +27,6 @@ public class SpitterScript : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        DisableAllaIPath();
     }
 
     // Update is called once per frame
@@ -42,12 +40,6 @@ public class SpitterScript : MonoBehaviour
                 cooldownTimer = 0;
                 anim.SetTrigger("attack");
             }
-        }
-    }
-    private void DisableAllaIPath(){
-        for (int i = 0; i < aIPath.Length; i++)
-        {
-            aIPath[i].canMove = false;
         }
     }
     private void FlipEnemy(){
@@ -66,17 +58,11 @@ public class SpitterScript : MonoBehaviour
     private void ProjectileThrow()
     {
         int projectileIndex = FindProjectile();
-        aIPath[projectileIndex].canMove = true;
-        //SpitterProjectiles[projectileIndex].transform.position = transform.position;
         if (SpitterProjectiles[projectileIndex].GetComponent<SpitterProjectileScript>() != null){
-            //SpitterProjectiles[projectileIndex].GetComponent<Health>().SetDead(false);
-            //SpitterProjectiles[projectileIndex].GetComponent<Health>().AddHealth(1);
-            SpitterProjectiles[projectileIndex].GetComponent<SpitterProjectileScript>().Activate();
+            SpitterProjectiles[projectileIndex].GetComponent<SpitterProjectileScript>().SetFollowPlayer(1);
         }else{
             Debug.Log("SpitterProjectileScript not found");
         }
-        
-        
     }
     private int FindProjectile()
     {

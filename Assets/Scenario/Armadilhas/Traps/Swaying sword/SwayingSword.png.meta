@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 31a5019114d2a5b498eb1013e74aad92
+guid: 9626ed97cf68d9146a0ade61a49a4630
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Swaying sword35x106_0
+      name: SwayingSword_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54868d995e8bec3449f3f537cda15719
-      internalID: 79796700
+      spriteID: a5efd8582f0234542a12c508340d62ea
+      internalID: -1329207783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_1
+      name: SwayingSword_1
       rect:
         serializedVersion: 2
         x: 35
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d455a44c0ea156a4893a54b3423245a2
-      internalID: -1779659859
+      spriteID: e27e08bb7ccd3db41902a7eb5843be40
+      internalID: 610170713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_2
+      name: SwayingSword_2
       rect:
         serializedVersion: 2
         x: 70
@@ -161,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20f114848c08308459619e4d566bf8c4
-      internalID: 317056214
+      spriteID: 66081fc98d5d4b045b5c351a31100e4b
+      internalID: 1420340956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_3
+      name: SwayingSword_3
       rect:
         serializedVersion: 2
         x: 105
@@ -182,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b1fa496ef0262e4c8f860629888e22d
-      internalID: 334993804
+      spriteID: 3eb43a8300484a4489b8a688b5d4aff6
+      internalID: 1885846716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_4
+      name: SwayingSword_4
       rect:
         serializedVersion: 2
         x: 140
@@ -203,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9387e7ca793c6034e8bd7914bc05e9aa
-      internalID: -148123585
+      spriteID: 61aedcbac7d06aa42b791fb7338ab407
+      internalID: 108324507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_5
+      name: SwayingSword_5
       rect:
         serializedVersion: 2
         x: 175
@@ -224,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0f541b2819a865478d23cffaa51aefb
-      internalID: -2113747333
+      spriteID: ab624331409d9964ea0e40344dc808b0
+      internalID: -1984543292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_6
+      name: SwayingSword_6
       rect:
         serializedVersion: 2
         x: 210
@@ -245,14 +245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f761a0474c1789479aaca826f3d397b
-      internalID: 1554593104
+      spriteID: 3cd949b4068ca114ca3b5dc78a0c0220
+      internalID: -1318289885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_7
+      name: SwayingSword_7
       rect:
         serializedVersion: 2
         x: 245
@@ -266,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1063c5d013520a545b9ca7769163bd2f
-      internalID: -823242116
+      spriteID: 138fa0b079cb1844d9e2d3372c5f861d
+      internalID: 1606804913
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_8
+      name: SwayingSword_8
       rect:
         serializedVersion: 2
         x: 280
@@ -287,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6863fba0ca7a0a74d86f1920569ce7d5
-      internalID: -1136987410
+      spriteID: f71c28c5962953c4a9cc782b4ef96411
+      internalID: -1352504500
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_9
+      name: SwayingSword_9
       rect:
         serializedVersion: 2
         x: 315
@@ -308,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d23e9a18fba5058469b8cfdb866c656d
-      internalID: -338677216
+      spriteID: e2d53ece6e3cb044f83ccd90d9d1fe86
+      internalID: 1926657390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_10
+      name: SwayingSword_10
       rect:
         serializedVersion: 2
         x: 350
@@ -329,14 +329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 898dd5378337be449b4a117bfb7c820b
-      internalID: 356165082
+      spriteID: c173d50c81c895d4e93cced6e28db083
+      internalID: 530772764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_11
+      name: SwayingSword_11
       rect:
         serializedVersion: 2
         x: 385
@@ -350,14 +350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca0c2abde495c0748a4b7b8230eed2d8
-      internalID: 319331961
+      spriteID: f6aadf7a52e93374080e6d7b3c51d51f
+      internalID: -1066143307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_12
+      name: SwayingSword_12
       rect:
         serializedVersion: 2
         x: 420
@@ -371,14 +371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b50a96b20d0341b4a877d54b3c38394c
-      internalID: -1216266570
+      spriteID: a2eb3ad4ae8cebe44bdebcd52c3817d0
+      internalID: -204679634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_13
+      name: SwayingSword_13
       rect:
         serializedVersion: 2
         x: 455
@@ -392,14 +392,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a217f74c9bcd85d409d97d74d32b3262
-      internalID: 971095614
+      spriteID: 76736890e5222dc4c8c17834ca1be68c
+      internalID: -215185691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_14
+      name: SwayingSword_14
       rect:
         serializedVersion: 2
         x: 490
@@ -413,14 +413,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b8bc5bd639bf8d4799e9a362390feac
-      internalID: 2053543104
+      spriteID: f693720c00084a940997551b9350a497
+      internalID: 1070836306
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_15
+      name: SwayingSword_15
       rect:
         serializedVersion: 2
         x: 525
@@ -434,14 +434,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dabb7731c06c64e4db34e03047d3c7d1
-      internalID: 1978725368
+      spriteID: 18d4f5f16f1ef0843b675740ffb73131
+      internalID: 1276124131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_16
+      name: SwayingSword_16
       rect:
         serializedVersion: 2
         x: 560
@@ -455,14 +455,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a357b6bda43a53f4fa0b934e9227f72b
-      internalID: -936137950
+      spriteID: 06c165f0f7421604583234b89c72c9de
+      internalID: -664710953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_17
+      name: SwayingSword_17
       rect:
         serializedVersion: 2
         x: 595
@@ -476,14 +476,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 767fb09913f929e43b54804ee7b3f93a
-      internalID: -2085791997
+      spriteID: 110e6d47d1ade49479f0cdecf8aeca97
+      internalID: -561937436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_18
+      name: SwayingSword_18
       rect:
         serializedVersion: 2
         x: 630
@@ -497,14 +497,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15008e9e060c21947bfc7b467138cda1
-      internalID: 1689486337
+      spriteID: f2dfe13b06930004680b1b2acc797357
+      internalID: 569411425
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_19
+      name: SwayingSword_19
       rect:
         serializedVersion: 2
         x: 665
@@ -518,14 +518,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d88ad01bf9db43848a11d1de861676fe
-      internalID: 531958902
+      spriteID: b8d1dec5f23f6474bbc35b815dcc8381
+      internalID: 93805450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_20
+      name: SwayingSword_20
       rect:
         serializedVersion: 2
         x: 700
@@ -539,14 +539,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d2a57301f3fe334aa18a12741919e9d
-      internalID: -77442240
+      spriteID: 78cc9c2ad7d1be64cbe26afd41e8c96b
+      internalID: -1132544706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_21
+      name: SwayingSword_21
       rect:
         serializedVersion: 2
         x: 735
@@ -560,14 +560,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b39fb8e4c8dfa44b9f779c2b24e2d62
-      internalID: 1611759778
+      spriteID: 07cb3a0a8b547a24ab37ace287001c1a
+      internalID: 1633744082
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_22
+      name: SwayingSword_22
       rect:
         serializedVersion: 2
         x: 770
@@ -581,14 +581,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b872c40dc0579d448a37f884f376c86
-      internalID: 1572513974
+      spriteID: 488d6f072d42e204fbf3be45fbc973f0
+      internalID: -1818840734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_23
+      name: SwayingSword_23
       rect:
         serializedVersion: 2
         x: 805
@@ -602,14 +602,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 707095b8057b45348afffd8eb7e02234
-      internalID: 753413120
+      spriteID: 873614dc4eb469f44bc885eafd07ea06
+      internalID: -976937273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_24
+      name: SwayingSword_24
       rect:
         serializedVersion: 2
         x: 840
@@ -623,14 +623,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21e3edc96a72f8846945651a5a2ce050
-      internalID: 1915666279
+      spriteID: 8e8f0362cd5da284e82b1c0a3aaa52c7
+      internalID: -662501471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_25
+      name: SwayingSword_25
       rect:
         serializedVersion: 2
         x: 875
@@ -644,14 +644,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a6850a6d2f7e4140a8d2d06b4e6f005
-      internalID: -1152803501
+      spriteID: 7e12f426f5bd19b4a8abe9bdf1e3016d
+      internalID: -1974262759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_26
+      name: SwayingSword_26
       rect:
         serializedVersion: 2
         x: 910
@@ -665,14 +665,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b668f9f8ef36f646bd00faf5d447a44
-      internalID: 488401545
+      spriteID: 08543916ebc055047b41782588ae5f01
+      internalID: -31673003
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_27
+      name: SwayingSword_27
       rect:
         serializedVersion: 2
         x: 0
@@ -686,14 +686,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6015a668cee34c46af4f7b1ae3c017a
-      internalID: -1832221840
+      spriteID: d386130fd74ac6449b3f2192078771aa
+      internalID: 392713657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_28
+      name: SwayingSword_28
       rect:
         serializedVersion: 2
         x: 35
@@ -707,14 +707,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 004e51abd5a323c4c921f17af8fdb771
-      internalID: -1045808018
+      spriteID: c68c7ae1e7082fb4bbbbba63912b18e6
+      internalID: -1298128716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_29
+      name: SwayingSword_29
       rect:
         serializedVersion: 2
         x: 70
@@ -728,14 +728,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16984d404d3ad714bb1513d564ba8a72
-      internalID: 984561536
+      spriteID: 78116e7cfafbf7948ada2d42957a69d8
+      internalID: -598193915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_30
+      name: SwayingSword_30
       rect:
         serializedVersion: 2
         x: 105
@@ -749,14 +749,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7188729c55076b34cbef232509374fdd
-      internalID: -1131890174
+      spriteID: 60f5dbd4f3db3b04cb3e90222cc87615
+      internalID: -1408419889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_31
+      name: SwayingSword_31
       rect:
         serializedVersion: 2
         x: 140
@@ -770,14 +770,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df7fab55c1e9d82469334352ecdbdcac
-      internalID: 1792497893
+      spriteID: a854072e6e8cf594c832d99efd2b9696
+      internalID: 1664525031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Swaying sword35x106_32
+      name: SwayingSword_32
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 106
+        width: 35
+        height: 106
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84930d5769d53724ba108c458eaf224a
+      internalID: -1666554815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SwayingSword_33
       rect:
         serializedVersion: 2
         x: 0
@@ -791,8 +812,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9d66c181b6e48443badaadbd3ed45fe
-      internalID: 1633098303
+      spriteID: aa367af916ab37f4cbda4ed3d47c0f44
+      internalID: -1437236782
       vertices: []
       indices: 
       edges: []
@@ -806,41 +827,44 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 2141513f815afc44bbac18aa6c669690, type: 3}
+      name: Emission
     nameFileIdTable:
-      Swaying sword35x106_0: 79796700
-      Swaying sword35x106_1: -1779659859
-      Swaying sword35x106_10: 356165082
-      Swaying sword35x106_11: 319331961
-      Swaying sword35x106_12: -1216266570
-      Swaying sword35x106_13: 971095614
-      Swaying sword35x106_14: 2053543104
-      Swaying sword35x106_15: 1978725368
-      Swaying sword35x106_16: -936137950
-      Swaying sword35x106_17: -2085791997
-      Swaying sword35x106_18: 1689486337
-      Swaying sword35x106_19: 531958902
-      Swaying sword35x106_2: 317056214
-      Swaying sword35x106_20: -77442240
-      Swaying sword35x106_21: 1611759778
-      Swaying sword35x106_22: 1572513974
-      Swaying sword35x106_23: 753413120
-      Swaying sword35x106_24: 1915666279
-      Swaying sword35x106_25: -1152803501
-      Swaying sword35x106_26: 488401545
-      Swaying sword35x106_27: -1832221840
-      Swaying sword35x106_28: -1045808018
-      Swaying sword35x106_29: 984561536
-      Swaying sword35x106_3: 334993804
-      Swaying sword35x106_30: -1131890174
-      Swaying sword35x106_31: 1792497893
-      Swaying sword35x106_32: 1633098303
-      Swaying sword35x106_4: -148123585
-      Swaying sword35x106_5: -2113747333
-      Swaying sword35x106_6: 1554593104
-      Swaying sword35x106_7: -823242116
-      Swaying sword35x106_8: -1136987410
-      Swaying sword35x106_9: -338677216
+      SwayingSword_0: -1329207783
+      SwayingSword_1: 610170713
+      SwayingSword_10: 530772764
+      SwayingSword_11: -1066143307
+      SwayingSword_12: -204679634
+      SwayingSword_13: -215185691
+      SwayingSword_14: 1070836306
+      SwayingSword_15: 1276124131
+      SwayingSword_16: -664710953
+      SwayingSword_17: -561937436
+      SwayingSword_18: 569411425
+      SwayingSword_19: 93805450
+      SwayingSword_2: 1420340956
+      SwayingSword_20: -1132544706
+      SwayingSword_21: 1633744082
+      SwayingSword_22: -1818840734
+      SwayingSword_23: -976937273
+      SwayingSword_24: -662501471
+      SwayingSword_25: -1974262759
+      SwayingSword_26: -31673003
+      SwayingSword_27: 392713657
+      SwayingSword_28: -1298128716
+      SwayingSword_29: -598193915
+      SwayingSword_3: 1885846716
+      SwayingSword_30: -1408419889
+      SwayingSword_31: 1664525031
+      SwayingSword_32: -1666554815
+      SwayingSword_33: -1437236782
+      SwayingSword_4: 108324507
+      SwayingSword_5: -1984543292
+      SwayingSword_6: -1318289885
+      SwayingSword_7: 1606804913
+      SwayingSword_8: -1352504500
+      SwayingSword_9: 1926657390
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

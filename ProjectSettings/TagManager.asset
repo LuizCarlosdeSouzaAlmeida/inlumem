@@ -10,6 +10,7 @@ TagManager:
   - playerSpotRight
   - playerSpotLeft
   - FxTemporaire
+  - playerSpotCenter
   layers:
   - Default
   - TransparentFX
