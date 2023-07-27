@@ -12,18 +12,12 @@ public static class Loader
         LoadingScene
     }
 
-    private static Scene targetScene;
+    public static Scene targetScene;
 
     public static void Load(Scene targetScene)
     {
         Loader.targetScene = targetScene;
 
         SceneManager.LoadScene(Scene.LoadingScene.ToString());
-    }
-
-    // Load the target scene at least 1 frame after the loading scene
-    public static void LoaderCallback() 
-    {
-        SceneManager.LoadScene(targetScene.ToString()); 
     }
 }
