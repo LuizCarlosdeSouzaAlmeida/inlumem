@@ -7,8 +7,10 @@ public class Health : MonoBehaviour
     [SerializeField] public float startingHealth;
 
     [Header ("Collider Parameters")]
-    [SerializeField]private Rigidbody2D body;
-    [SerializeField]private BoxCollider2D boxCollider;
+    [SerializeField] private Rigidbody2D body;
+    [SerializeField] private BoxCollider2D boxCollider;
+    //[SerializeField] private GameObject light;
+
 
     public float currentHealth { get; private set; }
     private Animator anim;
@@ -44,7 +46,7 @@ public class Health : MonoBehaviour
                     if (!dead)
                     {
                         anim.SetTrigger("die");
-                        
+                        //light.m_Intensity = 0;
                         if(GetComponent<PlayerMovement>() != null)
                             GetComponent<PlayerMovement>().enabled = false;
                         dead = true;
@@ -59,9 +61,10 @@ public class Health : MonoBehaviour
             if (currentHealth > 0) 
             {
                 //StartCoroutine(Invunerability());
-                if(GetComponent<GhoulScript>() != null || GetComponent<SpitterScript>() != null){
+                if(GetComponent<GhoulScript>() != null || GetComponent<SpitterScript>() != null || GetComponent<PigAssassinScript>()){
                     anim.SetTrigger("hit");
                 }else{
+                    Debug.Log("entrou aqui");
                     _damageFlash.CallDamageFlash();
                 }
             
