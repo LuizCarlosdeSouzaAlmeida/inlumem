@@ -170,6 +170,8 @@ public class Health : MonoBehaviour
         playerDeathCheckPoint.WarpToSafeGround();
         //light.m_Intensity = 0;
         if(GetComponent<PlayerMovement>() != null)
+            anim.SetTrigger("backToLife");
+            anim.SetBool("IsInAction", false);
             GetComponent<PlayerMovement>().enabled = true;
         dead = false;
         currentHealth = startingHealth;
