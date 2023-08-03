@@ -40,6 +40,6 @@ public class SwayingSwordScript : MonoBehaviour
     private void fall(){
         anim.SetTrigger("fall");
         rb.mass = 1;
-        rb.gravityScale = 3;
+        rb.gravityScale = 6;
     }
 }
