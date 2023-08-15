@@ -20,6 +20,7 @@ public class Health : MonoBehaviour
     [SerializeField] private int numberOfFlashes;
     private SpriteRenderer spriteRend;
     private DamageFlash _damageFlash;
+    private PlayerDeathCheckPoint playerDeathCheckPoint;
     private void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -28,6 +29,10 @@ public class Health : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
         _damageFlash = GetComponent<DamageFlash>();
+        if(GetComponent<PlayerMovement>() != null){
+            playerDeathCheckPoint = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerDeathCheckPoint>();
+        }
+        
     }
     public void TakeDamage(float _damage)
     {
@@ -45,6 +50,7 @@ public class Health : MonoBehaviour
                 {
                     if (!dead)
                     {
+
                         anim.SetTrigger("die");
                         //light.m_Intensity = 0;
                         if(GetComponent<PlayerMovement>() != null)
@@ -159,5 +165,16 @@ public class Health : MonoBehaviour
         Debug.Log("Alive again");
         dead = false;
         currentHealth = startingHealth;
+    }
+    private void RevivePlayer(){
+        playerDeathCheckPoint.WarpToSafeGround();
+        //light.m_Intensity = 0;
+        if(GetComponent<PlayerMovement>() != null)
+            anim.SetTrigger("backToLife");
+            anim.SetBool("IsInAction", false);
+            GetComponent<PlayerMovement>().enabled = true;
+        dead = false;
+        currentHealth = startingHealth;
+        //body.velocity = new Vector2(0, 0);
     }
 }
