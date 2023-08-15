@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3000836628609978932}
   - component: {fileID: 3000836628609978934}
   - component: {fileID: 3000836628609978933}
+  - component: {fileID: 6840729238019717185}
   m_Layer: 7
   m_Name: Assassin
   m_TagString: Enemy
@@ -169,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 397f0af43fcab78438fb1389107bbd83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 5
+  startingHealth: 3
   body: {fileID: 0}
   boxCollider: {fileID: 0}
   iFramesDuration: 2
@@ -221,3 +222,50 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &6840729238019717185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3000836628609978939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9faa10114dd4e794f9236ef2c952cf29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _flashColor: {r: 1, g: 1, b: 1, a: 1}
+  _flashTime: 0.5
+  _flashSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -3.799113
+      outSlope: -3.799113
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.17820087
+      value: 0.32299477
+      inSlope: 15.464323
+      outSlope: 15.464323
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.017219037
+    - serializedVersion: 3
+      time: 0.5
+      value: 0
+      inSlope: -1.0037155
+      outSlope: -1.0037155
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4

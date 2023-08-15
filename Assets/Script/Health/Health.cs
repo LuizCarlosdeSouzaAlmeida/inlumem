@@ -4,11 +4,13 @@ using System.Collections;
 public class Health : MonoBehaviour
 {
     [Header ("Health")]
-    [SerializeField] private float startingHealth;
+    [SerializeField] public float startingHealth;
 
     [Header ("Collider Parameters")]
-    [SerializeField]private Rigidbody2D body;
-    [SerializeField]private BoxCollider2D boxCollider;
+    [SerializeField] private Rigidbody2D body;
+    [SerializeField] private BoxCollider2D boxCollider;
+    //[SerializeField] private GameObject light;
+
 
     public float currentHealth { get; private set; }
     private Animator anim;
@@ -17,7 +19,7 @@ public class Health : MonoBehaviour
     [SerializeField] private float iFramesDuration;
     [SerializeField] private int numberOfFlashes;
     private SpriteRenderer spriteRend;
-
+    private DamageFlash _damageFlash;
     private void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -25,6 +27,7 @@ public class Health : MonoBehaviour
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
+        _damageFlash = GetComponent<DamageFlash>();
     }
     public void TakeDamage(float _damage)
     {
@@ -33,16 +36,17 @@ public class Health : MonoBehaviour
             {
                 currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
                 Debug.Log("Player took damage");
+                _damageFlash.CallDamageFlash();
                 if (currentHealth > 0) 
                 {
-                    StartCoroutine(Invunerability());
+                    //StartCoroutine(Invunerability());
                 }
                 else
                 {
                     if (!dead)
                     {
                         anim.SetTrigger("die");
-                        
+                        //light.m_Intensity = 0;
                         if(GetComponent<PlayerMovement>() != null)
                             GetComponent<PlayerMovement>().enabled = false;
                         dead = true;
@@ -56,14 +60,23 @@ public class Health : MonoBehaviour
             currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
             if (currentHealth > 0) 
             {
-                StartCoroutine(Invunerability());
+                //StartCoroutine(Invunerability());
+                if(GetComponent<GhoulScript>() != null || GetComponent<SpitterScript>() != null || GetComponent<PigAssassinScript>()){
+                    anim.SetTrigger("hit");
+                }else{
+                    Debug.Log("entrou aqui");
+                    _damageFlash.CallDamageFlash();
+                }
+            
+                
             }
             else
             {
                 if (!dead)
                 {
+                    Debug.Log("Enemy died");
                     anim.SetTrigger("die");
-                    anim.SetBool("IsAlive", false);
+                    //anim.SetBool("IsAlive", false);
                     if(GetComponent<EnemyFollowPlayer>() != null){
                         GetComponent<EnemyFollowPlayer>().enabled = false;
                         boxCollider.enabled = false;
@@ -79,6 +92,18 @@ public class Health : MonoBehaviour
                         body.gravityScale = 0;
                         body.mass = 0;
                         body.velocity = new Vector2(0, 0);
+                    }
+                    if(GetComponent<WarpScript>() != null){
+                        //GetComponent<WarpScript>().Desactivate();
+                        GetComponent<WarpScript>().enabled = false;
+                        boxCollider.enabled = false;
+                    }
+                    if(GetComponent<SpitterScript>() != null){
+                        //GetComponent<WarpScript>().Desactivate();
+                        GetComponent<SpitterScript>().DesactivateAllProjectiles();
+                        GetComponent<SpitterScript>().enabled = false;
+                        
+                        boxCollider.enabled = false;
                     }
                         
 
@@ -120,5 +145,19 @@ public class Health : MonoBehaviour
             spriteRend.color = Color.white;
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
+    }
+    public float GetHealth()
+    {
+        return startingHealth;
+    }
+    public void SetDead(bool _dead)
+    {
+        dead = _dead;
+    }
+    public void AliveAgain()
+    {
+        Debug.Log("Alive again");
+        dead = false;
+        currentHealth = startingHealth;
     }
 }
