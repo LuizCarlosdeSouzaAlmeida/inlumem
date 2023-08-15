@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 8075270072712697579}
   - component: {fileID: 8075270072712697578}
   - component: {fileID: 8075270072712697589}
+  - component: {fileID: 7456292398243697545}
   - component: {fileID: 8075270072712697588}
   - component: {fileID: 8075270072712697577}
   - component: {fileID: 8075270072712697583}
@@ -269,6 +270,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7456292398243697545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8075270072712697590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79e6b9207385a643b3bcc5ab952613c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &8075270072712697588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,6 +381,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 10
+  body: {fileID: 0}
+  boxCollider: {fileID: 0}
   iFramesDuration: 2
   numberOfFlashes: 3
 --- !u!95 &8075270072712697591
