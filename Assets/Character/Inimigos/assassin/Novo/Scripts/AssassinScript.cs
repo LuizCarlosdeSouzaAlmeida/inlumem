@@ -39,9 +39,10 @@ public class AssassinScript : MonoBehaviour
     {
         cooldownTimer += Time.deltaTime;
         cooldownSliceTimer += Time.deltaTime;
+        
 
         // verifica o player para realizar a primeira animação de ataque, sendo um ataque curto
-        if(PlayerInSightAttack()) {
+        if(PlayerInSightAttack() && IsGrounded() && !anim.GetBool("IsInAction")) {
             // dont move
             body.velocity = new Vector2(0, body.velocity.y);
             // verifica se o cooldown do ataque, se estiver ok, realiza o ataque
@@ -51,7 +52,7 @@ public class AssassinScript : MonoBehaviour
             }
         }
         // verifica o player para realizar a animação de slice ataque, sendo um ataque que vai para frente
-        if(PlayerInSightSliceAttack() && !CheckFrontWall()) {
+        if(PlayerInSightSliceAttack() && !CheckFrontWall()  && IsGrounded() && !anim.GetBool("IsInAction")) {
             // dont move
             body.velocity = new Vector2(0, body.velocity.y);
             if(cooldownSliceTimer >= sliceAttackCooldown) {
@@ -125,7 +126,12 @@ public class AssassinScript : MonoBehaviour
     private bool CheckFrontWall()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size * 0.5f, 0, new Vector2(transform.localScale.x, 0), 4f, groundLayer);
+        //RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size * 0.5f, 0, new Vector2(transform.localScale.x, 0), 4f, groundLayer);
         return raycastHit.collider != null;
     }
-
+    private bool IsGrounded()
+    {
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
+        return raycastHit.collider != null;
+    }
 }

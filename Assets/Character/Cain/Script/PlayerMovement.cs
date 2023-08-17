@@ -157,7 +157,7 @@ public class PlayerMovement : MonoBehaviour
             body.AddForce(new Vector2(dashForce * horizontalInput, 0f), ForceMode2D.Impulse); // Roll no eixo X
         }
     }
-    private bool isGrounded()
+    public bool isGrounded()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
         return raycastHit.collider != null;
