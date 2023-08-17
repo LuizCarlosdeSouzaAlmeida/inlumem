@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - playerSpotRight
   - playerSpotLeft
+  - Dialogue
   - FxTemporaire
   - playerSpotCenter
   layers:
@@ -21,6 +22,10 @@ TagManager:
   - Ground
   - Enemy
   - Player
+  - 
+  - 
+  - Post-Processing
+  - 
   - CheckPoint
   - Traps
   - EnemyProjectile
@@ -59,4 +64,7 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 3500126171
+    locked: 0
+  - name: UI
+    uniqueID: 2844621987
     locked: 0
