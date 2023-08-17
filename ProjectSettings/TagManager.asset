@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - playerSpotRight
   - playerSpotLeft
+  - Dialogue
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Player
   - 
   - 
-  - 
+  - Post-Processing
   - 
   - 
   - 
@@ -57,4 +58,7 @@ TagManager:
     locked: 0
   - name: Enemy
     uniqueID: 3500126171
+    locked: 0
+  - name: UI
+    uniqueID: 2844621987
     locked: 0
