@@ -33,6 +33,8 @@ public class DialogueManager : MonoBehaviour
 
 	public void StartDialogue(Dialogue dialogue)
 	{
+		dialogueText.text = "";
+
 		isOpen = true;
 		animator.SetBool("IsOpen", isOpen);
 
@@ -45,7 +47,8 @@ public class DialogueManager : MonoBehaviour
 			lines.Enqueue(line);
 		}
 
-		DisplayNext();
+
+		StartCoroutine(WaitDialogueAnimation());
 	}
 
 	public void DisplayNext()
@@ -87,6 +90,12 @@ public class DialogueManager : MonoBehaviour
 			}
 		}
 		isTyping = false;
+	}
+
+	private IEnumerator WaitDialogueAnimation()
+	{
+		yield return new WaitForSeconds(0.5f);
+		DisplayNext();
 	}
 
 	private IEnumerator WaitToLoad()
