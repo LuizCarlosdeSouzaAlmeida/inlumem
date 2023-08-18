@@ -31,12 +31,18 @@ public class Projectile : MonoBehaviour
     {
 
         
-        anim.SetTrigger("explode");
+        
 
         if (collision.tag == "Enemy"){
+            anim.SetTrigger("explode");
             hit = true;
             boxCollider.enabled = false;
             collision.GetComponent<Health>().TakeDamage(1);
+        }else if (collision.tag == "Ground")
+        {
+            anim.SetTrigger("explode");
+            hit = true;
+            boxCollider.enabled = false;
         }
     }
     public void SetDirection(float _direction)

@@ -173,6 +173,8 @@ public class Health : MonoBehaviour
             anim.SetTrigger("backToLife");
             anim.SetBool("IsInAction", false);
             GetComponent<PlayerMovement>().enabled = true;
+            GetComponent<PlayerMovement>().enabled = true;
+            GetComponent<PlayerMovement>().isAttacking = false;
         dead = false;
         currentHealth = startingHealth;
         //body.velocity = new Vector2(0, 0);

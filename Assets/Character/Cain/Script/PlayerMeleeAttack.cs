@@ -38,10 +38,13 @@ public class PlayerMeleeAttack : MonoBehaviour
     private void Attack()
     {
         if (stageAttack == 0){
+            Debug.Log("Attack1");
             anim.SetTrigger("attack1");
         }else if (stageAttack == 1){
+            Debug.Log("Attack2");
             anim.SetTrigger("attack2");
         }else if (stageAttack == 2){
+            Debug.Log("Attack3");
             anim.SetTrigger("attack3");
         }
         cooldownTimer = 0;
