@@ -49,8 +49,8 @@ public class LongSliceScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cooldownTimer += Time.deltaTime;
-        cooldownSliceTimer += Time.deltaTime;
+            cooldownTimer += Time.deltaTime;
+            cooldownSliceTimer += Time.deltaTime;
         
         // Verifica se o inimigo está no chão, se estiver, ele não está caindo
         if (IsGrounded())
@@ -80,8 +80,6 @@ public class LongSliceScript : MonoBehaviour
     private bool IsGrounded()
     {
         RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
-        anim.SetBool("grounded", raycastHit.collider != null);
-        anim.SetBool("IsFalling", false);
         return raycastHit.collider != null;
     }
     private bool PlayerInSightAttack() {

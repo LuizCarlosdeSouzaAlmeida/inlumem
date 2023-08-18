@@ -21,17 +21,17 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 416060160, guid: fa76d2d5cca82fd4b869f31933116e63, type: 3}
-    - time: 0.1
+    - time: 0.14285715
       value: {fileID: 782993470, guid: fa76d2d5cca82fd4b869f31933116e63, type: 3}
-    - time: 0.2
+    - time: 0.2857143
       value: {fileID: -1527278643, guid: fa76d2d5cca82fd4b869f31933116e63, type: 3}
-    - time: 0.3
+    - time: 0.42857143
       value: {fileID: 2032058349, guid: fa76d2d5cca82fd4b869f31933116e63, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 10
+  m_SampleRate: 7
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -55,7 +55,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.4
+    m_StopTime: 0.5714286
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -89,14 +89,14 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.3
+  - time: 0.42857143
     functionName: SetIsInAction
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.3
+  - time: 0.42857143
     functionName: PlayerInSightAttack2
     data: 
     objectReferenceParameter: {fileID: 0}

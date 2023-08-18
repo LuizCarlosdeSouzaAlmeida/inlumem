@@ -44,6 +44,6 @@ public class MainMenuUI : MonoBehaviour, IPointerEnterHandler
 	private IEnumerator WaitForAudioToLoad()
 	{
 		yield return new WaitWhile(() => AudioSource.isPlaying);
-		Loader.Load(Loader.Scene.SampleScene);
+		Loader.Load(Loader.Scene.InitialCutscene);
 	}
 }

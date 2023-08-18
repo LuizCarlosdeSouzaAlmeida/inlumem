@@ -30,7 +30,7 @@ public class OrbMageScript : MonoBehaviour
     private float cooldownTimer = Mathf.Infinity;
     private float cooldownSliceTimer = Mathf.Infinity;
 
-     private Animator anim;
+    private Animator anim;
     private Health playerHealth;
     private Transform player; // Referência ao transform do jogador
     void Start()
@@ -46,14 +46,14 @@ public class OrbMageScript : MonoBehaviour
         cooldownTimer += Time.deltaTime;
         cooldownSliceTimer += Time.deltaTime;
 
-        if (PlayerInSightAttack() && anim.GetBool("IsInAction") == false) {
+        if (PlayerInSightAttack() && anim.GetBool("IsInAction") == false && IsGrounded()) {
             // verifica se o cooldown do ataque, se estiver ok, realiza o ataque
             if(cooldownTimer >= attackCooldown) {
                 cooldownTimer = 0;
                 anim.SetTrigger("attack");
             }
         }
-        if (PlayerInSightRangeAttack() && anim.GetBool("IsInAction") == false) {
+        if (PlayerInSightRangeAttack() && anim.GetBool("IsInAction") == false && IsGrounded()) {
             if(cooldownSliceTimer >= rangeAttackCooldown) {
                 cooldownSliceTimer = 0;
                 anim.SetTrigger("rangeAttack");
@@ -103,5 +103,10 @@ public class OrbMageScript : MonoBehaviour
         // OrbMageProjectile receive the coordinate X of the player and y from the enemy
         projectileOrb.GetComponent<OrbMageProjectile>().SetPlace(player.position.x, player.position.y);
         //projectileOrb.GetComponent<OrbMageProjectile>().SetPlace(player.position.x, transform.position.y);
+    }
+    private bool IsGrounded()
+    {
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, Vector2.down, 0.1f, groundLayer);
+        return raycastHit.collider != null;
     }
 }

@@ -26,7 +26,7 @@ public class EnemyFollowPlayer : MonoBehaviour
     private bool isFacingRight = true; // Verifica a direção em que o inimigo está virado
     private Transform playerSpotRight; // Referência ao transform do spotRight do jogador
     private Transform playerSpotLeft; // Referência ao transform do spotLeft do jogador
-
+    private bool CanFollowPlayer = false;
     void Start()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -40,6 +40,7 @@ public class EnemyFollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CheckClosePlayer();
         if(anim.GetBool("IsInAction") == false) {
             CheckPlayer();
             FlipEnemy();
@@ -47,6 +48,11 @@ public class EnemyFollowPlayer : MonoBehaviour
             body.velocity = new Vector2(0, 0);
         }
 
+    }
+    private void CheckClosePlayer() {
+        if (Vector2.Distance(transform.position, player.position) < 3f){
+            CanFollowPlayer = true;
+        }
     }
     private void FlipEnemy(){
         if (player.position.x < transform.position.x && isFacingRight)
@@ -77,7 +83,7 @@ public class EnemyFollowPlayer : MonoBehaviour
             spot = playerSpotLeft;
         }
         // Verifica se o jogador está dentro do raio de detecção no eixo X
-        if (distanceToPlayerX <= detectionRadius && distanceToPlayerX > 0.1f)
+        if (distanceToPlayerX <= detectionRadius && distanceToPlayerX > 0.1f && CanFollowPlayer)
         {
             anim.SetBool("follow", true);
             // Move o inimigo em direção ao jogador apenas no eixo X

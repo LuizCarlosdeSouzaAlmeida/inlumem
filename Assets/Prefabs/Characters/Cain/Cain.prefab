@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 476218589}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Left
   m_TagString: playerSpotLeft
   m_Icon: {fileID: 0}
@@ -31,6 +31,37 @@ Transform:
   m_Father: {fileID: 887872834}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &839484913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 839484914}
+  m_Layer: 0
+  m_Name: Center
+  m_TagString: playerSpotCenter
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &839484914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839484913}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.336, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 887872834}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &887872833
 GameObject:
   m_ObjectHideFlags: 0
@@ -40,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 887872834}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PlayerSpot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,6 +92,7 @@ Transform:
   m_Children:
   - {fileID: 1308971118}
   - {fileID: 476218589}
+  - {fileID: 839484914}
   m_Father: {fileID: 8075270072712697576}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -73,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1308971118}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Right
   m_TagString: playerSpotRight
   m_Icon: {fileID: 0}
@@ -104,7 +136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8075270071903235151}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FlechaSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -138,11 +170,15 @@ GameObject:
   - component: {fileID: 8075270072712697579}
   - component: {fileID: 8075270072712697578}
   - component: {fileID: 8075270072712697589}
+  - component: {fileID: 7456292398243697545}
   - component: {fileID: 8075270072712697588}
   - component: {fileID: 8075270072712697577}
   - component: {fileID: 8075270072712697583}
   - component: {fileID: 8075270072712697580}
   - component: {fileID: 8075270072712697582}
+  - component: {fileID: 4457416385120750982}
+  - component: {fileID: 7879791748362214229}
+  - component: {fileID: 1801090433}
   - component: {fileID: 8075270072712697591}
   - component: {fileID: 6589955391674098674}
   m_Layer: 8
@@ -269,6 +305,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &7456292398243697545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8075270072712697590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79e6b9207385a643b3bcc5ab952613c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whatIsCheckpoint:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &8075270072712697588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,8 +419,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 10
+  body: {fileID: 0}
+  boxCollider: {fileID: 0}
   iFramesDuration: 2
   numberOfFlashes: 3
+--- !u!114 &4457416385120750982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8075270072712697590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9faa10114dd4e794f9236ef2c952cf29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _flashColor: {r: 1, g: 1, b: 1, a: 1}
+  _flashTime: 1
+  _flashSpeedCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &7879791748362214229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8075270072712697590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c48cd44067bb0c4ba2cefe495465e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttackAudio: {fileID: 0}
+--- !u!114 &1801090433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8075270072712697590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ae42d78106f306498ddc46238849667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whatIsCheckpoint:
+    serializedVersion: 2
+    m_Bits: 4096
 --- !u!95 &8075270072712697591
 Animator:
   serializedVersion: 5
@@ -537,21 +638,21 @@ MonoBehaviour:
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_LightVolumeIntensity: 1
-  m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 0f9a135800000000
+  m_LightVolumeIntensity: 0
+  m_LightVolumeIntensityEnabled: 1
+  m_ApplyToSortingLayers: bfeac1d0000000000f9a1358c31d6286dbaf9fd0
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
   m_AlphaBlendOnOverlap: 0
   m_OverlapOperation: 0
   m_NormalMapDistance: 3
-  m_NormalMapQuality: 2
+  m_NormalMapQuality: 1
   m_UseNormalMap: 0
-  m_ShadowIntensityEnabled: 0
-  m_ShadowIntensity: 0.75
-  m_ShadowVolumeIntensityEnabled: 0
-  m_ShadowVolumeIntensity: 0.75
+  m_ShadowIntensityEnabled: 1
+  m_ShadowIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 1
+  m_ShadowVolumeIntensity: 0.5
   m_Vertices:
   - position: {x: 0.9985302, y: 0.9985302, z: 0}
     color: {r: 0.70710677, g: 0.70710677, b: 0, a: 0}
