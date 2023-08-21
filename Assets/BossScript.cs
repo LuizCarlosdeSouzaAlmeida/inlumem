@@ -294,7 +294,7 @@ public class BossScript : MonoBehaviour
     {
         State = state;
     }
-    private void MoveToBase()
+    public void MoveToBase()
     {
         transform.position = new Vector2(0, -4f);
     }

@@ -66,7 +66,6 @@ public class Health : MonoBehaviour
             currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
             if (currentHealth > 0) 
             {
-                //StartCoroutine(Invunerability());
                 if(GetComponent<GhoulScript>() != null || GetComponent<SpitterScript>() != null || GetComponent<PigAssassinScript>()){
                     anim.SetTrigger("hit");
                 }else{
@@ -111,19 +110,12 @@ public class Health : MonoBehaviour
                         
                         boxCollider.enabled = false;
                     }
-                        
-
-                    //if(GetComponent<MeleeEnemy>() != null)
-                    //    GetComponent<MeleeEnemy>().enabled = false;    
-
-                    //if(GetComponent<AssassinScript>() != null)
-                       //GetComponent<AssassinScript>().enabled = false;
-
-                    //if(GetComponent<OrbMageScript>() != null)
-                        //GetComponent<OrbMageScript>().enabled = false;
-
-                    //if(GetComponent<LongSliceScript>() != null)
-                        //GetComponent<LongSliceScript>().enabled = false;
+                    if (GetComponent<BossScript>() != null)
+                    {
+                        GetComponent<BossScript>().MoveToBase();
+                        GetComponent<BossScript>().enabled = false;
+                        boxCollider.enabled = false;
+                    }
                     dead = true;
                 }
             }
