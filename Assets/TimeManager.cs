@@ -7,7 +7,10 @@ public class TimeManager : MonoBehaviour
 
     private void Update()
     {
-        // Defina o timescale para o valor especificado
-        Time.timeScale = timeScale;
+        if (!PauseMenu.GameIsPaused)
+        {
+            // Defina o timescale para o valor especificado
+            Time.timeScale = timeScale;
+        }
     }
 }
