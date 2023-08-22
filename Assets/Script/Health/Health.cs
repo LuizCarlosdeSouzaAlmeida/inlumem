@@ -3,10 +3,10 @@ using System.Collections;
 
 public class Health : MonoBehaviour
 {
-    [Header ("Health")]
+    [Header("Health")]
     [SerializeField] public float startingHealth;
 
-    [Header ("Collider Parameters")]
+    [Header("Collider Parameters")]
     [SerializeField] private Rigidbody2D body;
     [SerializeField] private BoxCollider2D boxCollider;
     //[SerializeField] private GameObject light;
@@ -29,51 +29,55 @@ public class Health : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
         _damageFlash = GetComponent<DamageFlash>();
-        if(GetComponent<PlayerMovement>() != null){
+        if (GetComponent<PlayerMovement>() != null)
+        {
             playerDeathCheckPoint = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerDeathCheckPoint>();
         }
-        
+
     }
     public void TakeDamage(float _damage)
     {
-        if (GetComponent<PlayerMovement>() != null){
+        if (GetComponent<PlayerMovement>() != null)
+        {
             if (GetComponent<PlayerShield>().GetIsDefending() == 0)
             {
                 currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
                 Debug.Log("Player took damage");
                 _damageFlash.CallDamageFlash();
-                if (currentHealth > 0) 
+                if (currentHealth <= 0)
                 {
-                    //StartCoroutine(Invunerability());
+                    Debug.Log("Player died");
+                    anim.SetTrigger("die");
+                    anim.SetBool("CheckDeadCompleted", false);
+                    //light.m_Intensity = 0;
+                    if (GetComponent<PlayerMovement>() != null)
+                        GetComponent<PlayerMovement>().enabled = false;
+                    dead = true;
+                }
+            }
+            else
+            {
+                Debug.Log("Player blocked damage");
+
+            }
+        }
+        else
+        {
+            currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+            if (currentHealth > 0)
+            {
+                //StartCoroutine(Invunerability());
+                if (GetComponent<GhoulScript>() != null || GetComponent<SpitterScript>() != null || GetComponent<PigAssassinScript>())
+                {
+                    anim.SetTrigger("hit");
                 }
                 else
                 {
-                    if (!dead)
-                    {
-
-                        anim.SetTrigger("die");
-                        //light.m_Intensity = 0;
-                        if(GetComponent<PlayerMovement>() != null)
-                            GetComponent<PlayerMovement>().enabled = false;
-                        dead = true;
-                    }
-                }
-            }else{
-                Debug.Log("Player blocked damage");
-                
-            }
-        }else{
-            currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
-            if (currentHealth > 0) 
-            {
-                if(GetComponent<GhoulScript>() != null || GetComponent<SpitterScript>() != null || GetComponent<PigAssassinScript>()){
-                    anim.SetTrigger("hit");
-                }else{
                     Debug.Log("entrou aqui");
                     _damageFlash.CallDamageFlash();
                 }
-            
-                
+
+
             }
             else
             {
@@ -82,46 +86,57 @@ public class Health : MonoBehaviour
                     Debug.Log("Enemy died");
                     anim.SetTrigger("die");
                     //anim.SetBool("IsAlive", false);
-                    if(GetComponent<EnemyFollowPlayer>() != null){
+                    if (GetComponent<EnemyFollowPlayer>() != null)
+                    {
                         GetComponent<EnemyFollowPlayer>().enabled = false;
                         boxCollider.enabled = false;
                         body.gravityScale = 0;
                         body.mass = 0;
                         body.velocity = new Vector2(0, 0);
                     }
-                        
 
-                    if(GetComponentInParent<EnemyFollowPlayerJump>() != null){
+
+                    if (GetComponentInParent<EnemyFollowPlayerJump>() != null)
+                    {
                         GetComponentInParent<EnemyFollowPlayerJump>().enabled = false;
                         boxCollider.enabled = false;
                         body.gravityScale = 0;
                         body.mass = 0;
                         body.velocity = new Vector2(0, 0);
                     }
-                    if(GetComponent<WarpScript>() != null){
+                    if (GetComponent<WarpScript>() != null)
+                    {
                         //GetComponent<WarpScript>().Desactivate();
                         GetComponent<WarpScript>().enabled = false;
                         boxCollider.enabled = false;
                     }
-                    if(GetComponent<SpitterScript>() != null){
+                    if (GetComponent<SpitterScript>() != null)
+                    {
                         //GetComponent<WarpScript>().Desactivate();
                         GetComponent<SpitterScript>().DesactivateAllProjectiles();
                         GetComponent<SpitterScript>().enabled = false;
-                        
+
                         boxCollider.enabled = false;
                     }
-                    if (GetComponent<BossScript>() != null)
-                    {
-                        GetComponent<BossScript>().MoveToBase();
-                        GetComponent<BossScript>().enabled = false;
-                        boxCollider.enabled = false;
-                    }
+
+
+                    //if(GetComponent<MeleeEnemy>() != null)
+                    //    GetComponent<MeleeEnemy>().enabled = false;    
+
+                    //if(GetComponent<AssassinScript>() != null)
+                    //GetComponent<AssassinScript>().enabled = false;
+
+                    //if(GetComponent<OrbMageScript>() != null)
+                    //GetComponent<OrbMageScript>().enabled = false;
+
+                    //if(GetComponent<LongSliceScript>() != null)
+                    //GetComponent<LongSliceScript>().enabled = false;
                     dead = true;
                 }
             }
         }
-        
-        
+
+
     }
     public void AddHealth(float _value)
     {
@@ -136,8 +151,8 @@ public class Health : MonoBehaviour
     {
         for (int i = 0; i < numberOfFlashes; i++)
         {
-            
-            spriteRend.color =  new Color(0, 0, 0, 0.5f);
+
+            spriteRend.color = new Color(0, 0, 0, 0.5f);
 
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
             spriteRend.color = Color.white;
@@ -158,15 +173,43 @@ public class Health : MonoBehaviour
         dead = false;
         currentHealth = startingHealth;
     }
-    private void RevivePlayer(){
+    private void RevivePlayer()
+    {
+        //StartCoroutine(DelayedExecution());
         playerDeathCheckPoint.WarpToSafeGround();
+        anim.ResetTrigger("backToLife");
+        anim.ResetTrigger("attack1");
+        anim.ResetTrigger("attack2");
+        anim.ResetTrigger("attack3");
+        anim.ResetTrigger("rangedAttack");
+        anim.ResetTrigger("die");
+        anim.ResetTrigger("jump");
+        anim.ResetTrigger("falling");
+        anim.ResetTrigger("dash");
+        anim.ResetTrigger("lifeHealing");
         //light.m_Intensity = 0;
-        if(GetComponent<PlayerMovement>() != null)
-            anim.SetTrigger("backToLife");
-            anim.SetBool("IsInAction", false);
-            GetComponent<PlayerMovement>().enabled = true;
+        anim.SetTrigger("backToLife");
+        anim.SetBool("IsInAction", false);
+        GetComponent<PlayerMovement>().enabled = true;
+        GetComponent<PlayerMovement>().isAttacking = false;
+        GetComponent<PlayerMeleeAttack>().stageAttack = 0;
+        anim.SetBool("CheckDeadCompleted", true);
+
+        if (GetComponent<PlayerMovement>() != null)
+        {
+
+        }
+
         dead = false;
         currentHealth = startingHealth;
         //body.velocity = new Vector2(0, 0);
+    }
+    private IEnumerator DelayedExecution()
+    {
+        Debug.Log("Starting execution...");
+
+        yield return new WaitForSeconds(2.0f);  // Espera por 2 segundos
+
+        Debug.Log("Delayed execution after 2 seconds.");
     }
 }

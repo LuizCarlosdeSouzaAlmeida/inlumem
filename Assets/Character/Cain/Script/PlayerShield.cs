@@ -14,8 +14,9 @@ public class PlayerShield : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R) && cooldownTimer > shieldCooldown && playerMovement.canAttack() && playerMovement.isGrounded()){
-            
+        if (Input.GetKeyDown(KeyCode.R) && cooldownTimer > shieldCooldown && playerMovement.canAttack() && playerMovement.isGrounded())
+        {
+
             Defend();
         }
 
