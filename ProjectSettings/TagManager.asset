@@ -13,6 +13,7 @@ TagManager:
   - FxTemporaire
   - playerSpotCenter
   - playerSpotBottomCenter
+  - Cave
   layers:
   - Default
   - TransparentFX
@@ -31,7 +32,7 @@ TagManager:
   - Traps
   - EnemyProjectile
   - CheckPointDeath
-  - 
+  - Cave
   - 
   - 
   - 
