@@ -29,14 +29,18 @@ public class Projectile : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        
-        anim.SetTrigger("explode");
-
-        if (collision.tag == "Enemy"){
+        if (collision.tag == "Enemy")
+        {
+            anim.SetTrigger("explode");
+            hit = true; hit = true;
+            boxCollider.enabled = false; boxCollider.enabled = false;
+            collision.GetComponent<Health>().TakeDamage(1); collision.GetComponent<Health>().TakeDamage(1);
+        }
+        else if (collision.tag == "Ground")
+        {
+            anim.SetTrigger("explode");
             hit = true;
             boxCollider.enabled = false;
-            collision.GetComponent<Health>().TakeDamage(1);
         }
     }
     public void SetDirection(float _direction)
