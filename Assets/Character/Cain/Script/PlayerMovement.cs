@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
     private float dashCount = 1;
     [SerializeField] private float rollCooldown;
 
-    public bool isAttacking = false;
+    private bool isAttacking = false;
     private bool isFalling = false;
 
     private Rigidbody2D body;
@@ -87,14 +87,13 @@ public class PlayerMovement : MonoBehaviour
 
         //Parar o personagem no eixo X caso ele esteja realizando um ataque e esteja no chão
         if (GetIsAttacking() && isGrounded()){
-            body.velocity = new Vector2(horizontalInput * speed * 0.5f, body.velocity.y);
-            //body.velocity = new Vector2(0, body.velocity.y);
+            body.velocity = new Vector2(0, body.velocity.y);
         }else{
             body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
         }
-        
+
         // Verificar se o personagem está com o parâmetro IsInAction ativo, e aplicar força de dash ou roll 
-        if (anim.GetBool("IsInAction")){
+        if(anim.GetBool("IsInAction")){
             DashOrRollForce();
         }
         if (isGrounded())
