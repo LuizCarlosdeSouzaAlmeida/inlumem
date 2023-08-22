@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool isAttacking = false;
     private bool isFalling = false;
-
+    public bool canMove = true;
     private Rigidbody2D body;
     private Animator anim;
     private BoxCollider2D boxCollider;
@@ -46,7 +46,10 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxis("Horizontal");
         body.gravityScale = 3;
-
+        if (!canMove)
+        {
+            CheckCanMove();
+        }
         //Flip player when moving left-right
         //Flip personagem, se está indo para direita ou esquerda
         Flip();
@@ -79,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Executar jump caso tecla de espaço seja pressionada
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && canMove)
             Jump();
 
         //Adjustable jump height
@@ -87,12 +90,12 @@ public class PlayerMovement : MonoBehaviour
             body.velocity = new Vector2(body.velocity.x, body.velocity.y / 2);
 
         //Parar o personagem no eixo X caso ele esteja realizando um ataque e esteja no chão
-        if (GetIsAttacking() && isGrounded())
+        if (GetIsAttacking() && isGrounded() && canMove)
         {
             body.velocity = new Vector2(0, body.velocity.y); body.velocity = new Vector2(horizontalInput * speed * 0.5f, body.velocity.y);
             //body.velocity = new Vector2(0, body.velocity.y);
         }
-        else
+        else if (canMove)
         {
             body.velocity = new Vector2(horizontalInput * speed, body.velocity.y); body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
         }
@@ -132,7 +135,11 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("grounded", isGrounded());
     }
 
-
+    private void CheckCanMove()
+    {
+        Debug.Log("CanMove: " + canMove);
+        body.velocity = new Vector2(0, 0);
+    }
     private void Jump()
     {
         isFalling = false;
@@ -251,5 +258,16 @@ public class PlayerMovement : MonoBehaviour
     private void SetFalseIsInAction()
     {
         anim.SetBool("IsInAction", false);
+    }
+    private void CanMove(int State)
+    {
+        if (State == 0)
+        {
+            canMove = false;
+        }
+        else
+        {
+            canMove = true;
+        }
     }
 }
