@@ -298,4 +298,15 @@ public class BossScript : MonoBehaviour
     {
         transform.position = new Vector2(0, -4f);
     }
+    private void SetBoxCollider(int State)
+    {
+        if (State == 0)
+        {
+            boxCollider.enabled = false;
+        }
+        else
+        { 
+            boxCollider.enabled = true;
+        }
+    }
 }

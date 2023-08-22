@@ -118,6 +118,11 @@ public class Health : MonoBehaviour
 
                         boxCollider.enabled = false;
                     }
+                    if (GetComponent<BossScript>() != null)
+                    {
+                        GetComponent<BossScript>().enabled = false;
+                        boxCollider.enabled = false;
+                    }
 
 
                     //if(GetComponent<MeleeEnemy>() != null)

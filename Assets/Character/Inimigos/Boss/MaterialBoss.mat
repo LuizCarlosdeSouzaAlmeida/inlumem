@@ -44,7 +44,7 @@ Material:
     m_Floats:
     - _FlashAmount: 0
     m_Colors:
-    - _Color: {r: 246.9647, g: 0, b: 0, a: 1}
-    - _FlashColor: {r: 1024, g: 0, b: 0, a: 0}
+    - _Color: {r: 493.92938, g: 0, b: 0, a: 1}
+    - _FlashColor: {r: 64, g: 0, b: 0, a: 0}
     - _Vector4: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
