@@ -376,6 +376,7 @@ MonoBehaviour:
     m_Bits: 0
   rollCooldown: 0
   isAttacking: 0
+  canMove: 1
   dashForce: 10
   rollForce: 5
 --- !u!114 &8075270072712697577
@@ -516,6 +517,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c48cd44067bb0c4ba2cefe495465e5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healingCooldown: 5
   AttackAudio: {fileID: 0}
 --- !u!114 &1801090433
 MonoBehaviour:

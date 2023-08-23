@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PlayerLifeHealing : MonoBehaviour
 {
+    [SerializeField] private float healingCooldown;
     private Health playerHealth;
     private Animator anim;
     private AudioSource AudioSource;
     [SerializeField] private AudioClip AttackAudio;
+
+    private float cooldownTimer = Mathf.Infinity;
 
     private void Awake()
     {
@@ -17,11 +20,11 @@ public class PlayerLifeHealing : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C)){
-            Debug.Log("Healing");
+        if (Input.GetKeyDown(KeyCode.C) && cooldownTimer > healingCooldown){
+            cooldownTimer = 0;
             LifeHealing();
         }
-            
+        cooldownTimer += Time.deltaTime;
     }
     private void LifeHealing()
     {
