@@ -118,6 +118,11 @@ public class Health : MonoBehaviour
 
                         boxCollider.enabled = false;
                     }
+                    if (GetComponent<BossScript>() != null)
+                    {
+                        GetComponent<BossScript>().enabled = false;
+                        boxCollider.enabled = false;
+                    }
 
 
                     //if(GetComponent<MeleeEnemy>() != null)
@@ -167,6 +172,10 @@ public class Health : MonoBehaviour
     {
         dead = _dead;
     }
+    public bool GetDead()
+    {
+        return dead;
+    }
     public void AliveAgain()
     {
         Debug.Log("Alive again");
@@ -177,6 +186,7 @@ public class Health : MonoBehaviour
     {
         //StartCoroutine(DelayedExecution());
         playerDeathCheckPoint.WarpToSafeGround();
+        
         anim.ResetTrigger("backToLife");
         anim.ResetTrigger("attack1");
         anim.ResetTrigger("attack2");
@@ -192,14 +202,9 @@ public class Health : MonoBehaviour
         anim.SetBool("IsInAction", false);
         GetComponent<PlayerMovement>().enabled = true;
         GetComponent<PlayerMovement>().isAttacking = false;
+        GetComponent<PlayerMovement>().canMove = true;
         GetComponent<PlayerMeleeAttack>().stageAttack = 0;
         anim.SetBool("CheckDeadCompleted", true);
-
-        if (GetComponent<PlayerMovement>() != null)
-        {
-
-        }
-
         dead = false;
         currentHealth = startingHealth;
         //body.velocity = new Vector2(0, 0);

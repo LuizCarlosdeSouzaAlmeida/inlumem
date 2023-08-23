@@ -11,7 +11,8 @@ public static class Loader
 		MainMenuScene,
 		InitialCutscene,
 		SampleScene,
-		LoadingScene
+		LoadingScene,
+		SceneBoss
 	}
 
 	public static Scene targetScene;
