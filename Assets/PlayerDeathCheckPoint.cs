@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerDeathCheckPoint : MonoBehaviour
 {
     [SerializeField] private LayerMask whatIsCheckpoint;
+    private Rigidbody2D body;
     public Vector2 SafeGroundLocation { get; private set; } = new Vector2(0, 0);
     private void Start() {
         SafeGroundLocation = transform.position;

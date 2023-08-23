@@ -2,21 +2,21 @@ using UnityEngine;
 
 public class PlayerMeleeAttack : MonoBehaviour
 {
-    [Header ("Attack Parameters")]
+    [Header("Attack Parameters")]
     [SerializeField] private float attackCooldown;
     [SerializeField] private float range;
     [SerializeField] private int damage;
 
-    [Header ("Collider Parameters")]
+    [Header("Collider Parameters")]
     [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D boxCollider;
 
-    [Header ("Player Layer")]
+    [Header("Player Layer")]
     [SerializeField] private LayerMask enemyLayer;
     private float cooldownTimer = Mathf.Infinity;
     private Health enemyHealth;
     // Start is called before the first frame update
-    private int stageAttack = 0;
+    public int stageAttack = 0;
     private Animator anim;
     private PlayerMovement playerMovement;
     private AudioSource AudioSource;
@@ -37,42 +37,50 @@ public class PlayerMeleeAttack : MonoBehaviour
     }
     private void Attack()
     {
-        if (stageAttack == 0){
-            Debug.Log("Attack1");
+        if (stageAttack == 0)
+        {
             anim.SetTrigger("attack1");
-        }else if (stageAttack == 1){
-            Debug.Log("Attack2");
+        }
+        else if (stageAttack == 1)
+        {
             anim.SetTrigger("attack2");
-        }else if (stageAttack == 2){
-            Debug.Log("Attack3");
+        }
+        else if (stageAttack == 2)
+        {
             anim.SetTrigger("attack3");
         }
         cooldownTimer = 0;
 
         AudioSource.PlayOneShot(AttackAudio);
     }
-    private void OnDrawGizmos() {
+    private void OnDrawGizmos()
+    {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
     }
-    private bool EnemyInSight() {
+    private bool EnemyInSight()
+    {
         //Check if player is in sight
         RaycastHit2D hit = Physics2D.BoxCast(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
          new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z), 0, Vector2.left, 0, enemyLayer);
-        if(hit.collider != null) {
+        if (hit.collider != null)
+        {
             enemyHealth = hit.transform.GetComponent<Health>();
         }
-        
+
         return hit.collider != null;
     }
-    private void DamageEnemy() {
+    private void DamageEnemy()
+    {
         // if player in sight, damage player
-        if (EnemyInSight()){
+        if (EnemyInSight())
+        {
             enemyHealth.TakeDamage(damage);
         }
     }
-    private void SetStageAttack(int stage){
+    private void SetStageAttack(int stage)
+    {
         stageAttack = stage;
     }
 }

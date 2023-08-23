@@ -39,11 +39,13 @@ public class SpitterProjectileScript : MonoBehaviour
             anim.SetTrigger("die");
             //DesativateMovement();
             collision.GetComponent<Health>().TakeDamage(1);
-            
+            gameObject.SetActive(false);
+            //boxCollider.enabled = false;
             //gameObject.SetActive(false);
             //followPlayer = false;
         }else if(collision.tag == "Ground"){
             anim.SetTrigger("explode");
+            gameObject.SetActive(false);
             //DesativateMovement();
             //gameObject.SetActive(false);
             //followPlayer = false;
@@ -75,6 +77,7 @@ public class SpitterProjectileScript : MonoBehaviour
         if(follow == 1){
             transform.position = firePoint.position;
             gameObject.SetActive(true);
+            //boxCollider.enabled = true;
             followPlayer = true;
         }else{
             gameObject.SetActive(false);

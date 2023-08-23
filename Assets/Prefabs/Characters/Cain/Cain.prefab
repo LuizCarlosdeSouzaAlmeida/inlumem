@@ -424,6 +424,7 @@ MonoBehaviour:
   enemyLayer:
     serializedVersion: 2
     m_Bits: 128
+  stageAttack: 0
   AttackAudio: {fileID: 8300000, guid: 4cdf5123e14b2f348bfb4ece1029b4ab, type: 3}
 --- !u!114 &8075270072712697580
 MonoBehaviour:
@@ -469,10 +470,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flashColor: {r: 1, g: 1, b: 1, a: 1}
-  _flashTime: 1
+  _flashTime: 0.5
   _flashSpeedCurve:
     serializedVersion: 2
-    m_Curve: []
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -3.799113
+      outSlope: -3.799113
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.17820087
+      value: 0.32299477
+      inSlope: 15.464323
+      outSlope: 15.464323
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.017219037
+    - serializedVersion: 3
+      time: 0.5
+      value: 0
+      inSlope: -1.0037155
+      outSlope: -1.0037155
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -673,7 +701,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 1
-  m_ApplyToSortingLayers: bfeac1d0000000000f9a1358c31d6286dbaf9fd0
+  m_ApplyToSortingLayers: bfeac1d0000000000f9a1358c31d6286dbaf9fd0a37c8da9
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0

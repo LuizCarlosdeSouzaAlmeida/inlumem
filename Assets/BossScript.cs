@@ -294,8 +294,19 @@ public class BossScript : MonoBehaviour
     {
         State = state;
     }
-    private void MoveToBase()
+    public void MoveToBase()
     {
         transform.position = new Vector2(0, -4f);
+    }
+    private void SetBoxCollider(int State)
+    {
+        if (State == 0)
+        {
+            boxCollider.enabled = false;
+        }
+        else
+        { 
+            boxCollider.enabled = true;
+        }
     }
 }
