@@ -1788,7 +1788,7 @@ MonoBehaviour:
     dar um impulso"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f462b920e27ba8d42b52ba18dd4142f4, type: 2}
-  m_sharedMaterial: {fileID: -3298749183170954427, guid: 77d0ef89053dcc04eacc2356df5c80cc, type: 2}
+  m_sharedMaterial: {fileID: -6040096200258348072, guid: f462b920e27ba8d42b52ba18dd4142f4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8216,7 +8216,7 @@ MonoBehaviour:
     para ataque de longa dist\xE2ncia"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f462b920e27ba8d42b52ba18dd4142f4, type: 2}
-  m_sharedMaterial: {fileID: -3298749183170954427, guid: 77d0ef89053dcc04eacc2356df5c80cc, type: 2}
+  m_sharedMaterial: {fileID: -6040096200258348072, guid: f462b920e27ba8d42b52ba18dd4142f4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -8354,7 +8354,7 @@ MonoBehaviour:
     para bloquear'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f462b920e27ba8d42b52ba18dd4142f4, type: 2}
-  m_sharedMaterial: {fileID: -3298749183170954427, guid: 77d0ef89053dcc04eacc2356df5c80cc, type: 2}
+  m_sharedMaterial: {fileID: -6040096200258348072, guid: f462b920e27ba8d42b52ba18dd4142f4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -41500,7 +41500,7 @@ MonoBehaviour:
     pular"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f462b920e27ba8d42b52ba18dd4142f4, type: 2}
-  m_sharedMaterial: {fileID: -3298749183170954427, guid: 77d0ef89053dcc04eacc2356df5c80cc, type: 2}
+  m_sharedMaterial: {fileID: -6040096200258348072, guid: f462b920e27ba8d42b52ba18dd4142f4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -41563,7 +41563,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1798502044

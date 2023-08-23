@@ -23,7 +23,7 @@ public class PlayerLifeHealing : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C) && cooldownTimer > healingCooldown && playerMovement.isGrounded()){
+        if (Input.GetButton("ButtonHealing") && cooldownTimer > healingCooldown && playerMovement.isGrounded()){
             cooldownTimer = 0;
             LifeHealing();
         }

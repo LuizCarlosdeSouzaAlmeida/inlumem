@@ -8,7 +8,7 @@ public class CaveScript : MonoBehaviour
     private bool isInsideTrigger = false;
     private void Update()
     {
-        if (isInsideTrigger && Input.GetKeyDown(KeyCode.W))
+        if (isInsideTrigger && Input.GetButtonDown("ButtonInteraction"))
         {
             ExecuteAction();
         }
