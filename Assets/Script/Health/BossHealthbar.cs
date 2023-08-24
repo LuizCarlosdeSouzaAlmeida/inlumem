@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -23,11 +24,25 @@ public class BossHealthbar : MonoBehaviour
 	{
 		if (!UpdatedBar && bossHealth.currentHealth < bossHealth.startingHealth)
 		{
-			// RectTransform border = (RectTransform)transform.Find("Filled").Find("FilledBorder");
 			borderRect.offsetMax = new Vector2(-10, borderRect.offsetMax.y);
 			UpdatedBar = true;
 		}
 
-		slider.value = bossHealth.currentHealth;
+		StartCoroutine(UpdateHealth());
+	}
+
+	private IEnumerator UpdateHealth()
+	{
+		float targetValue = bossHealth.currentHealth;
+
+		float currentValue = slider.value;
+		while (currentValue >= targetValue)
+		{
+			currentValue -= 2 * Time.deltaTime;
+			slider.value = currentValue;
+			yield return null;
+		}
+
+		slider.value = targetValue;
 	}
 }

@@ -4,24 +4,30 @@ using UnityEngine;
 
 public class PlayerLifeHealing : MonoBehaviour
 {
+    [SerializeField] private float healingCooldown;
     private Health playerHealth;
     private Animator anim;
     private AudioSource AudioSource;
     [SerializeField] private AudioClip AttackAudio;
+
+
+    private float cooldownTimer = Mathf.Infinity;
+    private PlayerMovement playerMovement;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
         playerHealth = GetComponent<Health>();
         AudioSource = GetComponent<AudioSource>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C)){
-            Debug.Log("Healing");
+        if (Input.GetButton("ButtonHealing") && cooldownTimer > healingCooldown && playerMovement.isGrounded()){
+            cooldownTimer = 0;
             LifeHealing();
         }
-            
+        cooldownTimer += Time.deltaTime;
     }
     private void LifeHealing()
     {
