@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BossScript : MonoBehaviour
 {
+    public GameObject creditsUI;
     [Header("Attack Parameters")]
     [SerializeField] private float MoveAttackCooldown;
     [SerializeField] private float GroundAttackCooldown;
@@ -42,7 +43,7 @@ public class BossScript : MonoBehaviour
 
     private Animator anim;
     private Health playerHealth;
-    private Transform player; // Referência ao transform do jogador
+    private Transform player; // Referï¿½ncia ao transform do jogador
     private int State = 0;
     private bool IsAttacking = false;
     private bool CanFollow = false;
@@ -308,5 +309,18 @@ public class BossScript : MonoBehaviour
         { 
             boxCollider.enabled = true;
         }
+    }
+
+    public void ShowCredits()
+    {
+        StartCoroutine(WaitBeforeShowingCredits());
+        
+    }
+
+    IEnumerator WaitBeforeShowingCredits()
+    {
+        yield return new WaitForSeconds(8);
+        
+        creditsUI.GetComponent<CreditsUI>().ShowCredits();
     }
 }

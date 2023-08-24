@@ -21,48 +21,26 @@ public class CreditsUI : MonoBehaviour
         AudioSource = GetComponent<AudioSource>();
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            AudioSource.PlayOneShot(MenuClickSound);
-
-            if (GameIsPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
-        }
-    }
-
     public void Resume()
     {
         AudioSource.PlayOneShot(MenuClickSound);
 
-        pauseMenuUI.SetActive(false);
+        creditsUI.SetActive(false);
+
         Time.timeScale = 1f;
 
         GameAudio.UnPause();
         GameIsPaused = false;
     }
 
-    void Pause()
+    public void ShowCredits()
     {
-        pauseMenuUI.SetActive(true);
+        creditsUI.SetActive(true);
+
         Time.timeScale = 0f;
 
         GameAudio.Pause();
         GameIsPaused = true;
-    }
-
-    private IEnumerator WaitForAudioToLoad(Action afterWait)
-    {
-        yield return new WaitWhile(() => AudioSource.isPlaying);
-
-        afterWait?.Invoke();
     }
 
     public void triggerSoundOnHover()
