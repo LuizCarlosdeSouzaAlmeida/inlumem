@@ -2,8 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
+
+// public enum NextAction
+// {
+// 	Cutscene,
+// 	Dialogue,
+// 	Scene,
+// 	Play
+// }
 
 public class DialogueManager : MonoBehaviour
 {
@@ -13,6 +22,8 @@ public class DialogueManager : MonoBehaviour
 	public Animator animator;
 
 	public Queue<string> lines;
+
+	private UnityEvent onEnd;
 
 	private bool isOpen = false;
 	private bool isTyping = false;
@@ -34,6 +45,7 @@ public class DialogueManager : MonoBehaviour
 	public void StartDialogue(Dialogue dialogue)
 	{
 		dialogueText.text = "";
+		onEnd = dialogue.onEndEvents;
 
 		isOpen = true;
 		animator.SetBool("IsOpen", isOpen);
@@ -74,7 +86,7 @@ public class DialogueManager : MonoBehaviour
 	{
 		isOpen = false;
 		animator.SetBool("IsOpen", isOpen);
-		StartCoroutine(WaitToLoad());
+		StartCoroutine(WaitToEnd());
 	}
 
 	private IEnumerator TypeLine()
@@ -98,9 +110,9 @@ public class DialogueManager : MonoBehaviour
 		DisplayNext();
 	}
 
-	private IEnumerator WaitToLoad()
+	private IEnumerator WaitToEnd()
 	{
 		yield return new WaitForSeconds(1f);
-		Loader.LoadWithNoLoadingScreen(Loader.Scene.SampleScene);
+		onEnd.Invoke();
 	}
 }

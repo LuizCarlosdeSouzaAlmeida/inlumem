@@ -10,13 +10,16 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
     private AudioSource AudioSource;
-	[SerializeField] private AudioClip MenuHoverSound;
-	[SerializeField] private AudioClip MenuClickSound;
+    [SerializeField] private AudioClip MenuHoverSound;
+    [SerializeField] private AudioClip MenuClickSound;
+
+    private AudioSource GameAudio;
 
     void Awake()
-	{
-		AudioSource = GetComponent<AudioSource>();
-	}
+    {
+        GameAudio = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioSource>();
+        AudioSource = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
@@ -24,9 +27,12 @@ public class PauseMenu : MonoBehaviour
         {
             AudioSource.PlayOneShot(MenuClickSound);
 
-            if (GameIsPaused) {
+            if (GameIsPaused)
+            {
                 Resume();
-            } else {
+            }
+            else
+            {
                 Pause();
             }
         }
@@ -39,14 +45,16 @@ public class PauseMenu : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
 
+        GameAudio.UnPause();
         GameIsPaused = false;
     }
-    
+
     void Pause()
     {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
 
+        GameAudio.Pause();
         GameIsPaused = true;
     }
 
@@ -54,9 +62,10 @@ public class PauseMenu : MonoBehaviour
     {
         AudioSource.PlayOneShot(MenuClickSound);
 
-        StartCoroutine(WaitForAudioToLoad(() => {
+        StartCoroutine(WaitForAudioToLoad(() =>
+        {
             GameIsPaused = false;
-            
+
             Time.timeScale = 1f;
             Loader.Load(Loader.Scene.MainMenuScene);
         }));
@@ -65,32 +74,36 @@ public class PauseMenu : MonoBehaviour
     public void RestartGame()
     {
         AudioSource.PlayOneShot(MenuClickSound);
-        
-        StartCoroutine(WaitForAudioToLoad(() => {
+
+        StartCoroutine(WaitForAudioToLoad(() =>
+        {
             GameIsPaused = false;
-            
+
             Time.timeScale = 1f;
-            Loader.Load(Loader.Scene.SampleScene);
+            GameAudio.Stop();
+            Loader.Reload();
+            GameAudio.Play();
         }));
     }
 
     public void QuitGame()
     {
         AudioSource.PlayOneShot(MenuClickSound);
-        
-        StartCoroutine(WaitForAudioToLoad(() => {
+
+        StartCoroutine(WaitForAudioToLoad(() =>
+        {
             GameIsPaused = false;
-            
+
             Application.Quit();
         }));
     }
 
     private IEnumerator WaitForAudioToLoad(Action afterWait)
-	{
-		yield return new WaitWhile(() => AudioSource.isPlaying);
-		
+    {
+        yield return new WaitWhile(() => AudioSource.isPlaying);
+
         afterWait?.Invoke();
-	}
+    }
 
     public void triggerSoundOnHover()
     {

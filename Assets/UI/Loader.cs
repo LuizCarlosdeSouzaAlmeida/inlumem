@@ -12,10 +12,18 @@ public static class Loader
 		InitialCutscene,
 		SampleScene,
 		LoadingScene,
+		BossCutscene,
 		SceneBoss
 	}
 
 	public static Scene targetScene;
+
+
+	public static void Reload()
+	{
+		var currentScene = SceneManager.GetActiveScene();
+		SceneManager.LoadScene(currentScene.name);
+	}
 
 	public static void Load(Scene targetScene)
 	{

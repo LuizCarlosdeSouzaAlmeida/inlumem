@@ -14,15 +14,18 @@ public class DeathMenu : MonoBehaviour
     [SerializeField] private AudioClip MenuClickSound;
     private Health playerHealth;
 
+    private AudioSource GameAudio;
+
     void Awake()
     {
+        GameAudio = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioSource>();
         AudioSource = GetComponent<AudioSource>();
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
     }
 
     void Update()
     {
-        if (playerHealth.GetDead() == true)
+        if (playerHealth.GetDead())
         {
             Pause();
             GameIsPaused = true;
@@ -44,6 +47,8 @@ public class DeathMenu : MonoBehaviour
     {
         deathMenuUI.SetActive(true);
         Time.timeScale = 0f;
+
+        GameAudio.Pause();
 
         GameIsPaused = true;
     }
@@ -71,7 +76,8 @@ public class DeathMenu : MonoBehaviour
     {
         AudioSource.PlayOneShot(MenuClickSound);
 
-        StartCoroutine(WaitForAudioToLoad(() => {
+        StartCoroutine(WaitForAudioToLoad(() =>
+        {
             GameIsPaused = false;
 
             Time.timeScale = 1f;
@@ -83,11 +89,14 @@ public class DeathMenu : MonoBehaviour
     {
         AudioSource.PlayOneShot(MenuClickSound);
 
-        StartCoroutine(WaitForAudioToLoad(() => {
+        StartCoroutine(WaitForAudioToLoad(() =>
+        {
             GameIsPaused = false;
 
             Time.timeScale = 1f;
-            Loader.Load(Loader.Scene.SceneBoss);
+            GameAudio.Stop();
+            Loader.Reload();
+            GameAudio.Play();
         }));
     }
 
@@ -95,7 +104,8 @@ public class DeathMenu : MonoBehaviour
     {
         AudioSource.PlayOneShot(MenuClickSound);
 
-        StartCoroutine(WaitForAudioToLoad(() => {
+        StartCoroutine(WaitForAudioToLoad(() =>
+        {
             GameIsPaused = false;
 
             Application.Quit();
