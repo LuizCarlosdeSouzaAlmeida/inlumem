@@ -30,7 +30,7 @@ public class CaveScript : MonoBehaviour
     }
     private void ExecuteAction()
     {
-        // Coloque aqui o código que você deseja executar quando o jogador pressionar W dentro do trigger.
-        Loader.Load(Loader.Scene.SceneBoss);
+        // Coloque aqui o cï¿½digo que vocï¿½ deseja executar quando o jogador pressionar W dentro do trigger.
+        Loader.Load(Loader.Scene.BossCutscene);
     }
 }

@@ -12,6 +12,7 @@ public static class Loader
 		InitialCutscene,
 		SampleScene,
 		LoadingScene,
+		BossCutscene,
 		SceneBoss
 	}
 
