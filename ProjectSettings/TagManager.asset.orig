@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - AttackArea
+  - Enemy
+  - Ground
+  - playerSpotRight
+  - playerSpotLeft
+  - Dialogue
+  - FxTemporaire
+  - playerSpotCenter
+  - playerSpotBottomCenter
+  - Cave
+<<<<<<< HEAD
+  - CheckpointSaver
+=======
+  - Audio
+>>>>>>> b1843d702620bdf501c1a3f5cb3fe30be1d61a9b
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - Enemy
+  - Player
+  - 
+  - 
+  - Post-Processing
+  - 
+  - CheckPoint
+  - Traps
+  - EnemyProjectile
+  - CheckPointDeath
+  - Cave
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 3502369471
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 1477679631
+    locked: 0
+  - name: Wall
+    uniqueID: 2254577091
+    locked: 0
+  - name: Enemy
+    uniqueID: 3500126171
+    locked: 0
+  - name: UI
+    uniqueID: 2844621987
+    locked: 0

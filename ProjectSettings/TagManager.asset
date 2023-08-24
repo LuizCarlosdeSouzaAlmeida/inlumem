@@ -15,6 +15,7 @@ TagManager:
   - playerSpotBottomCenter
   - Cave
   - Audio
+  - CheckpointSaver
   layers:
   - Default
   - TransparentFX

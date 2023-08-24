@@ -30,7 +30,7 @@ public class PlayerMeleeAttack : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && cooldownTimer > attackCooldown && playerMovement.canAttack())
+        if (Input.GetButtonDown("ButtonMeleeAttack") && cooldownTimer > attackCooldown && playerMovement.canAttack())
             Attack();
 
         cooldownTimer += Time.deltaTime;

@@ -23,7 +23,7 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetButtonDown("ButtonPause"))
         {
             AudioSource.PlayOneShot(MenuClickSound);
 
