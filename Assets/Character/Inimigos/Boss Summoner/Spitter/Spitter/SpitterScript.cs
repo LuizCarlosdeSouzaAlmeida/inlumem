@@ -73,6 +73,10 @@ public class SpitterScript : MonoBehaviour
         }
         return 0;
     }
+    public void Activate()
+    {
+        gameObject.SetActive(true);
+    }
     public void Desactivate() {
         //Desactivate enemy when health is 0
         gameObject.SetActive(false);

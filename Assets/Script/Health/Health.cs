@@ -11,7 +11,8 @@ public class Health : MonoBehaviour
     [SerializeField] private BoxCollider2D boxCollider;
     //[SerializeField] private GameObject light;
 
-
+    private Transform enemyTransform;
+    private Vector2 startPosition;
     public float currentHealth { get; private set; }
     private Animator anim;
     private bool dead;
@@ -21,8 +22,18 @@ public class Health : MonoBehaviour
     private SpriteRenderer spriteRend;
     private DamageFlash _damageFlash;
     private PlayerDeathCheckPoint playerDeathCheckPoint;
+    
+    void Start()
+    {
+        if (GetComponent<PlayerMovement>() == null)
+        {
+            enemyTransform = GetComponent<Transform>();
+            startPosition = enemyTransform.position;
+        }
+    }
     private void Awake()
     {
+        
         boxCollider = GetComponent<BoxCollider2D>();
         body = GetComponent<Rigidbody2D>();
         currentHealth = startingHealth;
@@ -183,7 +194,7 @@ public class Health : MonoBehaviour
         dead = false;
         currentHealth = startingHealth;
     }
-    private void RevivePlayer()
+    public void RevivePlayer()
     {
         //StartCoroutine(DelayedExecution());
         playerDeathCheckPoint.WarpToSafeGround();
@@ -210,12 +221,54 @@ public class Health : MonoBehaviour
         currentHealth = startingHealth;
         //body.velocity = new Vector2(0, 0);
     }
-    private IEnumerator DelayedExecution()
+    public void ReviveEnemy()
     {
-        Debug.Log("Starting execution...");
+        if (gameObject.CompareTag("Enemy"))
+        {
+            enemyTransform.position = startPosition;
+            currentHealth = startingHealth;
+            if (dead == true)
+            {
+                dead = false;
+                anim.SetTrigger("backToLife");
+                currentHealth = startingHealth;
+                anim.SetBool("IsInAction", false);
+                if (GetComponent<EnemyFollowPlayer>() != null)
+                {
+                    anim.SetBool("IsInAction", false);
+                    GetComponent<EnemyFollowPlayer>().enabled = true;
+                    boxCollider.enabled = true;
+                    body.gravityScale = 1;
+                    body.mass = 3;
 
-        yield return new WaitForSeconds(2.0f);  // Espera por 2 segundos
+                }
 
-        Debug.Log("Delayed execution after 2 seconds.");
+
+                if (GetComponentInParent<EnemyFollowPlayerJump>() != null)
+                {
+                    GetComponentInParent<EnemyFollowPlayerJump>().enabled = true;
+                    boxCollider.enabled = true;
+                    body.gravityScale = 1;
+                    body.mass = 3;
+                }
+                if (GetComponent<WarpScript>() != null)
+                {
+                    //GetComponent<WarpScript>().Desactivate();
+                    GetComponent<WarpScript>().enabled = true;
+                    boxCollider.enabled = true;
+                }
+                if (GetComponent<SpitterScript>() != null)
+                {
+
+                    //GetComponent<WarpScript>().Desactivate();
+                    GetComponent<SpitterScript>().Activate();
+                    GetComponent<SpitterScript>().enabled = true;
+                    GetComponent<SpitterScript>().Activate();
+                    GetComponent<SpitterScript>().DesactivateAllProjectiles();
+                    boxCollider.enabled = true;
+
+                }
+            }
+        }
     }
 }

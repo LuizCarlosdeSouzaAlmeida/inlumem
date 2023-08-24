@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         SetParameters();
 
         // Verificar Input de dash e executar a animação correspondente
-        if (Input.GetKeyDown(KeyCode.LeftShift) && !isGrounded() && dashCount > 0)
+        if (Input.GetButtonDown("ButtonDash") && !isGrounded() && dashCount > 0)
         {
             anim.SetTrigger("dash");
             dashCount = 0;
@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         // Ainda falta configurar um cooldown para o roll
-        if (Input.GetKeyDown(KeyCode.LeftShift) && isGrounded())
+        if (Input.GetButtonDown("ButtonDash") && isGrounded())
         {
             anim.SetTrigger("roll");
         }
@@ -82,11 +82,11 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Executar jump caso tecla de espaço seja pressionada
-        if (Input.GetKeyDown(KeyCode.Space) && canMove)
+        if (Input.GetButtonDown("ButtonJump") && canMove)
             Jump();
 
         //Adjustable jump height
-        if (Input.GetKeyUp(KeyCode.Space) && body.velocity.y > 0)
+        if (Input.GetButtonUp("ButtonJump") && body.velocity.y > 0)
             body.velocity = new Vector2(body.velocity.x, body.velocity.y / 2);
 
         //Parar o personagem no eixo X caso ele esteja realizando um ataque e esteja no chão

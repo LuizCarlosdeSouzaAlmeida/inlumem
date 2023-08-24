@@ -53,6 +53,25 @@ public class DeathMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
+    public void MenuAppear()
+    {
+        deathMenuUI.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void RestartCheckpoint()
+    {
+        Health[] objectsWithHealth = FindObjectsOfType<Health>();
+        Health playerHealt = GameObject.FindGameObjectWithTag("Player").GetComponent<Health>();
+        playerHealt.RevivePlayer();
+        // Chama a função em cada objeto com o script
+        foreach (Health enemy in objectsWithHealth)
+        {
+            enemy.ReviveEnemy();
+        }
+        Resume();
+        //Time.timeScale = 0f;
+    }
     public void LoadMainMenu()
     {
         AudioSource.PlayOneShot(MenuClickSound);
