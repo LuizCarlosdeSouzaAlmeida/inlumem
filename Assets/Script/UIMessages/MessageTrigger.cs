@@ -6,14 +6,12 @@ using TMPro;
 public class MessageTrigger : MonoBehaviour
 {
 	public TMP_Text text;
-	public bool waitOnFirstTime;
-	private bool isFirstTime = true;
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.CompareTag("Player"))
 		{
-			StartCoroutine(Activate());
+			text.gameObject.SetActive(true);
 		}
 	}
 
@@ -23,16 +21,5 @@ public class MessageTrigger : MonoBehaviour
 		{
 			text.gameObject.SetActive(false);
 		}
-	}
-
-	private IEnumerator Activate()
-	{
-		if (waitOnFirstTime && isFirstTime)
-		{
-			yield return new WaitForSeconds(0.5f);
-		}
-
-		text.gameObject.SetActive(true);
-		isFirstTime = false;
 	}
 }

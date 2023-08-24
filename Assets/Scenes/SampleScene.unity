@@ -3132,7 +3132,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 687506002}
-  waitOnFirstTime: 0
 --- !u!61 &331359318
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35460,7 +35459,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 231155979}
-  waitOnFirstTime: 0
 --- !u!61 &1424590621
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40147,7 +40145,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 1798502043}
-  waitOnFirstTime: 1
 --- !u!1 &1836310609
 GameObject:
   m_ObjectHideFlags: 0
@@ -40681,7 +40678,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 680112694}
-  waitOnFirstTime: 0
 --- !u!61 &1925321416
 BoxCollider2D:
   m_ObjectHideFlags: 0

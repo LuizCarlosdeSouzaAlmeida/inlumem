@@ -8,7 +8,6 @@ public class MenuSoundScript : MonoBehaviour
 
     void Awake()
     {
-        Destroy(OverworldSoundScript.instance?.gameObject);
         AudioSource = GetComponent<AudioSource>();
         AudioSource.Play();
     }
