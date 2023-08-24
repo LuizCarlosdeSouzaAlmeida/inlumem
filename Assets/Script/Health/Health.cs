@@ -131,6 +131,7 @@ public class Health : MonoBehaviour
                     }
                     if (GetComponent<BossScript>() != null)
                     {
+                        GetComponent<BossScript>().ShowCredits();
                         GetComponent<BossScript>().enabled = false;
                         boxCollider.enabled = false;
                     }
