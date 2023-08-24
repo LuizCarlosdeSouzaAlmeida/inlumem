@@ -18,6 +18,13 @@ public static class Loader
 
 	public static Scene targetScene;
 
+
+	public static void Reload()
+	{
+		var currentScene = SceneManager.GetActiveScene();
+		SceneManager.LoadScene(currentScene.name);
+	}
+
 	public static void Load(Scene targetScene)
 	{
 		Loader.targetScene = targetScene;
